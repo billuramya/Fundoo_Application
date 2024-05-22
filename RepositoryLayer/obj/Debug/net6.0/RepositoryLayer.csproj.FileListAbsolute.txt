@@ -1,0 +1,17 @@
+C:\Users\billu\source\repos\FunduNotesApp\RepositoryLayer\bin\Debug\net6.0\RepositoryLayer.deps.json
+C:\Users\billu\source\repos\FunduNotesApp\RepositoryLayer\bin\Debug\net6.0\RepositoryLayer.runtimeconfig.json
+C:\Users\billu\source\repos\FunduNotesApp\RepositoryLayer\bin\Debug\net6.0\RepositoryLayer.dll
+C:\Users\billu\source\repos\FunduNotesApp\RepositoryLayer\bin\Debug\net6.0\RepositoryLayer.pdb
+C:\Users\billu\source\repos\FunduNotesApp\RepositoryLayer\bin\Debug\net6.0\CommonLayer.dll
+C:\Users\billu\source\repos\FunduNotesApp\RepositoryLayer\bin\Debug\net6.0\CommonLayer.pdb
+C:\Users\billu\source\repos\FunduNotesApp\RepositoryLayer\obj\Debug\net6.0\RepositoryLayer.csproj.AssemblyReference.cache
+C:\Users\billu\source\repos\FunduNotesApp\RepositoryLayer\obj\Debug\net6.0\RepositoryLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\billu\source\repos\FunduNotesApp\RepositoryLayer\obj\Debug\net6.0\RepositoryLayer.AssemblyInfoInputs.cache
+C:\Users\billu\source\repos\FunduNotesApp\RepositoryLayer\obj\Debug\net6.0\RepositoryLayer.AssemblyInfo.cs
+C:\Users\billu\source\repos\FunduNotesApp\RepositoryLayer\obj\Debug\net6.0\RepositoryLayer.csproj.CoreCompileInputs.cache
+C:\Users\billu\source\repos\FunduNotesApp\RepositoryLayer\obj\Debug\net6.0\RepositoryLayer.csproj.CopyComplete
+C:\Users\billu\source\repos\FunduNotesApp\RepositoryLayer\obj\Debug\net6.0\RepositoryLayer.dll
+C:\Users\billu\source\repos\FunduNotesApp\RepositoryLayer\obj\Debug\net6.0\refint\RepositoryLayer.dll
+C:\Users\billu\source\repos\FunduNotesApp\RepositoryLayer\obj\Debug\net6.0\RepositoryLayer.pdb
+C:\Users\billu\source\repos\FunduNotesApp\RepositoryLayer\obj\Debug\net6.0\RepositoryLayer.genruntimeconfig.cache
+C:\Users\billu\source\repos\FunduNotesApp\RepositoryLayer\obj\Debug\net6.0\ref\RepositoryLayer.dll

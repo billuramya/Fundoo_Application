@@ -1,0 +1,958 @@
+2024-04-13 10:19:22.0308 ${level} User profile is available. Using 'C:\Users\billu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-13 10:19:24.6884 ${level} Now listening on: https://localhost:7086
+2024-04-13 10:19:24.6884 ${level} Now listening on: http://localhost:5222
+2024-04-13 10:19:24.6884 ${level} Application started. Press Ctrl+C to shut down.
+2024-04-13 10:19:24.6884 ${level} Hosting environment: Development
+2024-04-13 10:19:24.6884 ${level} Content root path: C:\Users\billu\source\repos\FunduNotesApp\FunduNotesApp\
+2024-04-13 10:19:25.6308 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-13 10:19:26.3115 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 682.1783ms
+2024-04-13 10:19:26.3421 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-13 10:19:26.3421 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 3.4277ms
+2024-04-13 10:19:26.3421 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-13 10:19:26.5095 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 155.2663ms
+2024-04-13 10:19:26.8622 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-13 10:19:27.0824 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 220.0311ms
+2024-04-13 10:19:31.3484 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/[object Module] - -
+2024-04-13 10:19:31.4369 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/[object Module] - - - 404 0 - 88.4765ms
+2024-04-13 10:19:44.4573 ${level} Request starting HTTP/2 GET https://localhost:7086/api/Notes/GetTheNotesByTitleAndDis?Title=Story&discription=Dog - -
+2024-04-13 10:19:44.4573 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.GetDetailsByTitleAndDis (FunduNotesApp)'
+2024-04-13 10:19:44.5128 ${level} Route matched with {action = "GetDetailsByTitleAndDis", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetDetailsByTitleAndDis(System.String, System.String) on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-04-13 10:19:46.8842 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-04-13 10:19:48.8936 ${level} Executed DbCommand (251ms) [Parameters=[@__title_0='?' (Size = 4000), @__description_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[NoteId], [u].[Color], [u].[CreatedAt], [u].[Description], [u].[IsArchive], [u].[IsPinned], [u].[IsTrash], [u].[ModifiedAt], [u].[Remainder], [u].[Title], [u].[UserId]
+FROM [UserNotes] AS [u]
+WHERE ([u].[Title] = @__title_0) AND ([u].[Description] = @__description_1)
+2024-04-13 10:19:48.9440 ${level} Executing BadRequestObjectResult, writing value of type 'CommonLayer.Models.Response`1[[RepositoryLayer.Entity.NotesEntity, RepositoryLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-13 10:19:48.9565 ${level} Executed action FunduNotesApp.Controllers.NotesController.GetDetailsByTitleAndDis (FunduNotesApp) in 4437.4514ms
+2024-04-13 10:19:48.9565 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.GetDetailsByTitleAndDis (FunduNotesApp)'
+2024-04-13 10:19:48.9565 ${level} Request finished HTTP/2 GET https://localhost:7086/api/Notes/GetTheNotesByTitleAndDis?Title=Story&discription=Dog - - - 400 - application/json;+charset=utf-8 4506.4057ms
+2024-04-13 10:19:56.4980 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/[object Module] - -
+2024-04-13 10:19:56.5036 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/[object Module] - - - 404 0 - 5.5715ms
+2024-04-13 10:20:00.2187 ${level} Request starting HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes - -
+2024-04-13 10:20:00.2257 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-04-13 10:20:00.2257 ${level} Route matched with {action = "GetNodes", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetNodes() on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-04-13 10:20:00.2463 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-04-13 10:20:00.2850 ${level} Executed DbCommand (27ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[NoteId], [u].[Color], [u].[CreatedAt], [u].[Description], [u].[IsArchive], [u].[IsPinned], [u].[IsTrash], [u].[ModifiedAt], [u].[Remainder], [u].[Title], [u].[UserId]
+FROM [UserNotes] AS [u]
+2024-04-13 10:20:00.4599 ${level} Executed action FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp) in 230.6151ms
+2024-04-13 10:20:00.4599 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-04-13 10:20:00.4599 ${level} An unhandled exception has occurred while executing the request.
+2024-04-13 10:20:00.7219 ${level} Request finished HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes - - - 500 - text/plain;+charset=utf-8 503.0355ms
+2024-04-13 10:20:17.2587 ${level} Request starting HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes - -
+2024-04-13 10:20:17.2587 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-04-13 10:20:17.2587 ${level} Route matched with {action = "GetNodes", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetNodes() on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-04-13 10:20:17.3861 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-04-13 10:20:17.3957 ${level} Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[NoteId], [u].[Color], [u].[CreatedAt], [u].[Description], [u].[IsArchive], [u].[IsPinned], [u].[IsTrash], [u].[ModifiedAt], [u].[Remainder], [u].[Title], [u].[UserId]
+FROM [UserNotes] AS [u]
+2024-04-13 10:20:17.3957 ${level} Executed action FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp) in 137.1271ms
+2024-04-13 10:20:17.3957 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-04-13 10:20:17.3957 ${level} An unhandled exception has occurred while executing the request.
+2024-04-13 10:20:17.3957 ${level} Request finished HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes - - - 500 - text/plain;+charset=utf-8 140.8352ms
+2024-04-13 10:20:30.6142 ${level} User profile is available. Using 'C:\Users\billu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-13 10:20:31.1276 ${level} Now listening on: https://localhost:7086
+2024-04-13 10:20:31.1276 ${level} Now listening on: http://localhost:5222
+2024-04-13 10:20:31.1276 ${level} Application started. Press Ctrl+C to shut down.
+2024-04-13 10:20:31.1276 ${level} Hosting environment: Development
+2024-04-13 10:20:31.1276 ${level} Content root path: C:\Users\billu\source\repos\FunduNotesApp\FunduNotesApp\
+2024-04-13 10:20:31.9173 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-13 10:20:32.2057 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 292.7753ms
+2024-04-13 10:20:32.2277 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-13 10:20:32.2277 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 3.4599ms
+2024-04-13 10:20:32.2434 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-13 10:20:32.2857 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 42.1755ms
+2024-04-13 10:20:32.3797 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-13 10:20:32.5291 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 149.1099ms
+2024-04-13 10:20:36.5099 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/[object Module] - -
+2024-04-13 10:20:36.5757 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/[object Module] - - - 404 0 - 65.8796ms
+2024-04-13 10:20:40.5459 ${level} Request starting HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes - -
+2024-04-13 10:20:40.5459 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-04-13 10:20:40.5644 ${level} Route matched with {action = "GetNodes", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetNodes() on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-04-13 10:20:41.6930 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-04-13 10:20:42.4662 ${level} Executed DbCommand (40ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[NoteId], [u].[Color], [u].[CreatedAt], [u].[Description], [u].[IsArchive], [u].[IsPinned], [u].[IsTrash], [u].[ModifiedAt], [u].[Remainder], [u].[Title], [u].[UserId]
+FROM [UserNotes] AS [u]
+2024-04-13 10:20:42.5997 ${level} Executed action FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp) in 2027.0243ms
+2024-04-13 10:20:42.5997 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-04-13 10:20:42.6059 ${level} An unhandled exception has occurred while executing the request.
+2024-04-13 10:20:42.6716 ${level} Request finished HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes - - - 500 - text/plain;+charset=utf-8 2125.2065ms
+2024-04-13 10:21:54.0514 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/[object Module] - -
+2024-04-13 10:21:54.0556 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/[object Module] - - - 404 0 - 4.1782ms
+2024-04-13 10:22:11.3168 ${level} Request starting HTTP/2 GET https://localhost:7086/api/Notes/GetTheNotesByTitleAndDis?Title=Story&discription=Dog%20Story - -
+2024-04-13 10:22:11.3230 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.GetDetailsByTitleAndDis (FunduNotesApp)'
+2024-04-13 10:22:11.3230 ${level} Route matched with {action = "GetDetailsByTitleAndDis", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetDetailsByTitleAndDis(System.String, System.String) on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-04-13 10:22:11.3796 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-04-13 10:22:12.1026 ${level} Executed DbCommand (605ms) [Parameters=[@__title_0='?' (Size = 4000), @__description_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[NoteId], [u].[Color], [u].[CreatedAt], [u].[Description], [u].[IsArchive], [u].[IsPinned], [u].[IsTrash], [u].[ModifiedAt], [u].[Remainder], [u].[Title], [u].[UserId]
+FROM [UserNotes] AS [u]
+WHERE ([u].[Title] = @__title_0) AND ([u].[Description] = @__description_1)
+2024-04-13 10:22:12.1121 ${level} Executing OkObjectResult, writing value of type 'CommonLayer.Models.Response`1[[RepositoryLayer.Entity.NotesEntity, RepositoryLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-13 10:22:12.1219 ${level} Executed action FunduNotesApp.Controllers.NotesController.GetDetailsByTitleAndDis (FunduNotesApp) in 782.5713ms
+2024-04-13 10:22:12.1219 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.GetDetailsByTitleAndDis (FunduNotesApp)'
+2024-04-13 10:22:12.1219 ${level} Request finished HTTP/2 GET https://localhost:7086/api/Notes/GetTheNotesByTitleAndDis?Title=Story&discription=Dog%20Story - - - 200 - application/json;+charset=utf-8 805.2741ms
+2024-04-13 10:37:22.5881 ${level} User profile is available. Using 'C:\Users\billu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-13 10:37:22.9564 ${level} Now listening on: https://localhost:7086
+2024-04-13 10:37:22.9564 ${level} Now listening on: http://localhost:5222
+2024-04-13 10:37:22.9564 ${level} Application started. Press Ctrl+C to shut down.
+2024-04-13 10:37:22.9564 ${level} Hosting environment: Development
+2024-04-13 10:37:22.9564 ${level} Content root path: C:\Users\billu\source\repos\FunduNotesApp\FunduNotesApp\
+2024-04-13 10:37:23.2437 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-13 10:37:23.4546 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 212.2865ms
+2024-04-13 10:37:23.4832 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-13 10:37:23.4832 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-13 10:37:23.4854 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 2.1797ms
+2024-04-13 10:37:23.5245 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 41.2081ms
+2024-04-13 10:37:23.6975 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-13 10:37:23.8123 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 114.7002ms
+2024-04-13 10:37:27.3493 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/[object Module] - -
+2024-04-13 10:37:27.3854 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/[object Module] - - - 404 0 - 36.0289ms
+2024-04-13 10:37:33.2558 ${level} Request starting HTTP/2 POST https://localhost:7086/api/Notes/UpdateAndInsertNotes?userId=1 - 0
+2024-04-13 10:37:33.2558 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.UpdateAndInser (FunduNotesApp)'
+2024-04-13 10:37:33.3010 ${level} Route matched with {action = "UpdateAndInser", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UpdateAndInser(Int32) on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-04-13 10:37:35.1876 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-04-13 10:37:36.4678 ${level} Executed DbCommand (103ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[NoteId], [u].[Color], [u].[CreatedAt], [u].[Description], [u].[IsArchive], [u].[IsPinned], [u].[IsTrash], [u].[ModifiedAt], [u].[Remainder], [u].[Title], [u].[UserId]
+FROM [UserNotes] AS [u]
+WHERE @__userId_0 = [u].[UserId]
+2024-04-13 10:37:36.8775 ${level} Executed DbCommand (14ms) [Parameters=[@p3='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [UserNotes] SET [Color] = @p0, [Description] = @p1, [Title] = @p2
+WHERE [NoteId] = @p3;
+SELECT @@ROWCOUNT;
+2024-04-13 10:37:36.9182 ${level} Executed action FunduNotesApp.Controllers.NotesController.UpdateAndInser (FunduNotesApp) in 3610.2771ms
+2024-04-13 10:37:36.9182 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.UpdateAndInser (FunduNotesApp)'
+2024-04-13 10:37:36.9234 ${level} An unhandled exception has occurred while executing the request.
+2024-04-13 10:37:37.0158 ${level} Request finished HTTP/2 POST https://localhost:7086/api/Notes/UpdateAndInsertNotes?userId=1 - 0 - 500 - text/plain;+charset=utf-8 3759.5478ms
+2024-04-13 10:40:29.8633 ${level} User profile is available. Using 'C:\Users\billu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-13 10:40:30.2546 ${level} Now listening on: https://localhost:7086
+2024-04-13 10:40:30.2546 ${level} Now listening on: http://localhost:5222
+2024-04-13 10:40:30.2546 ${level} Application started. Press Ctrl+C to shut down.
+2024-04-13 10:40:30.2546 ${level} Hosting environment: Development
+2024-04-13 10:40:30.2546 ${level} Content root path: C:\Users\billu\source\repos\FunduNotesApp\FunduNotesApp\
+2024-04-13 10:40:30.4427 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-13 10:40:30.6466 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 205.0207ms
+2024-04-13 10:40:30.6675 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-13 10:40:30.6675 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-13 10:40:30.6675 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 2.6012ms
+2024-04-13 10:40:30.7046 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 37.0659ms
+2024-04-13 10:40:30.8897 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-13 10:40:31.0282 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 138.4330ms
+2024-04-13 10:41:45.9491 ${level} User profile is available. Using 'C:\Users\billu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-13 10:41:46.3387 ${level} Now listening on: https://localhost:7086
+2024-04-13 10:41:46.3387 ${level} Now listening on: http://localhost:5222
+2024-04-13 10:41:46.3387 ${level} Application started. Press Ctrl+C to shut down.
+2024-04-13 10:41:46.3387 ${level} Hosting environment: Development
+2024-04-13 10:41:46.3387 ${level} Content root path: C:\Users\billu\source\repos\FunduNotesApp\FunduNotesApp\
+2024-04-13 10:41:46.6306 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-13 10:41:46.8746 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 246.2217ms
+2024-04-13 10:41:46.9009 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-13 10:41:46.9009 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-13 10:41:46.9009 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 2.7952ms
+2024-04-13 10:41:46.9403 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 39.3644ms
+2024-04-13 10:41:47.3315 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-13 10:41:47.4403 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 108.7137ms
+2024-04-13 10:42:11.6857 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-13 10:42:11.7011 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 15.3634ms
+2024-04-13 10:42:11.7261 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-13 10:42:11.7261 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-13 10:42:11.7261 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 2.2694ms
+2024-04-13 10:42:11.7458 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 18.2803ms
+2024-04-13 10:42:12.2697 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-13 10:42:12.2902 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 20.5282ms
+2024-04-13 10:42:17.9380 ${level} User profile is available. Using 'C:\Users\billu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-13 10:42:18.2994 ${level} Now listening on: https://localhost:7086
+2024-04-13 10:42:18.2994 ${level} Now listening on: http://localhost:5222
+2024-04-13 10:42:18.2994 ${level} Application started. Press Ctrl+C to shut down.
+2024-04-13 10:42:18.2994 ${level} Hosting environment: Development
+2024-04-13 10:42:18.2994 ${level} Content root path: C:\Users\billu\source\repos\FunduNotesApp\FunduNotesApp\
+2024-04-13 10:42:18.7027 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-13 10:42:18.8947 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 194.1348ms
+2024-04-13 10:42:18.9244 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-13 10:42:18.9244 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-13 10:42:18.9244 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 1.8726ms
+2024-04-13 10:42:18.9533 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 28.8437ms
+2024-04-13 10:42:19.1347 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-13 10:42:19.2615 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 126.7973ms
+2024-04-13 10:42:27.5853 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/[object Module] - -
+2024-04-13 10:42:27.6626 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/[object Module] - - - 404 0 - 77.2728ms
+2024-04-13 10:42:35.5768 ${level} Request starting HTTP/2 POST https://localhost:7086/api/Notes/UpdateAndInsertNotes?userId=1 application/json 246
+2024-04-13 10:42:35.5768 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.UpdateAndInser (FunduNotesApp)'
+2024-04-13 10:42:35.6199 ${level} Route matched with {action = "UpdateAndInser", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UpdateAndInser(RepositoryLayer.Entity.NotesEntity, Int32) on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-04-13 10:42:35.9561 ${level} Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-04-13 10:42:35.9657 ${level} Executed action FunduNotesApp.Controllers.NotesController.UpdateAndInser (FunduNotesApp) in 340.9007ms
+2024-04-13 10:42:35.9657 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.UpdateAndInser (FunduNotesApp)'
+2024-04-13 10:42:35.9657 ${level} Request finished HTTP/2 POST https://localhost:7086/api/Notes/UpdateAndInsertNotes?userId=1 application/json 246 - 400 - application/problem+json;+charset=utf-8 391.4306ms
+2024-04-13 10:43:14.9844 ${level} Request starting HTTP/2 POST https://localhost:7086/api/Notes/UpdateAndInsertNotes?userId=1 application/json 243
+2024-04-13 10:43:14.9844 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.UpdateAndInser (FunduNotesApp)'
+2024-04-13 10:43:14.9998 ${level} Route matched with {action = "UpdateAndInser", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UpdateAndInser(RepositoryLayer.Entity.NotesEntity, Int32) on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-04-13 10:43:15.0256 ${level} Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-04-13 10:43:15.0256 ${level} Executed action FunduNotesApp.Controllers.NotesController.UpdateAndInser (FunduNotesApp) in 26.7544ms
+2024-04-13 10:43:15.0256 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.UpdateAndInser (FunduNotesApp)'
+2024-04-13 10:43:15.0256 ${level} Request finished HTTP/2 POST https://localhost:7086/api/Notes/UpdateAndInsertNotes?userId=1 application/json 243 - 400 - application/problem+json;+charset=utf-8 42.8022ms
+2024-04-13 10:43:18.6193 ${level} Request starting HTTP/2 POST https://localhost:7086/api/Notes/UpdateAndInsertNotes?userId=1 application/json 243
+2024-04-13 10:43:18.6193 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.UpdateAndInser (FunduNotesApp)'
+2024-04-13 10:43:18.6193 ${level} Route matched with {action = "UpdateAndInser", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UpdateAndInser(RepositoryLayer.Entity.NotesEntity, Int32) on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-04-13 10:43:18.6266 ${level} Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-04-13 10:43:18.6266 ${level} Executed action FunduNotesApp.Controllers.NotesController.UpdateAndInser (FunduNotesApp) in 6.1514ms
+2024-04-13 10:43:18.6266 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.UpdateAndInser (FunduNotesApp)'
+2024-04-13 10:43:18.6266 ${level} Request finished HTTP/2 POST https://localhost:7086/api/Notes/UpdateAndInsertNotes?userId=1 application/json 243 - 400 - application/problem+json;+charset=utf-8 8.3611ms
+2024-04-13 10:43:19.4057 ${level} Request starting HTTP/2 POST https://localhost:7086/api/Notes/UpdateAndInsertNotes?userId=1 application/json 243
+2024-04-13 10:43:19.4057 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.UpdateAndInser (FunduNotesApp)'
+2024-04-13 10:43:19.4057 ${level} Route matched with {action = "UpdateAndInser", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UpdateAndInser(RepositoryLayer.Entity.NotesEntity, Int32) on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-04-13 10:43:19.4057 ${level} Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-04-13 10:43:19.4057 ${level} Executed action FunduNotesApp.Controllers.NotesController.UpdateAndInser (FunduNotesApp) in 0.9348ms
+2024-04-13 10:43:19.4057 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.UpdateAndInser (FunduNotesApp)'
+2024-04-13 10:43:19.4057 ${level} Request finished HTTP/2 POST https://localhost:7086/api/Notes/UpdateAndInsertNotes?userId=1 application/json 243 - 400 - application/problem+json;+charset=utf-8 1.8197ms
+2024-04-13 10:48:46.8095 ${level} User profile is available. Using 'C:\Users\billu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-13 10:48:47.2272 ${level} Now listening on: https://localhost:7086
+2024-04-13 10:48:47.2272 ${level} Now listening on: http://localhost:5222
+2024-04-13 10:48:47.2272 ${level} Application started. Press Ctrl+C to shut down.
+2024-04-13 10:48:47.2272 ${level} Hosting environment: Development
+2024-04-13 10:48:47.2272 ${level} Content root path: C:\Users\billu\source\repos\FunduNotesApp\FunduNotesApp\
+2024-04-13 10:48:47.4650 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-13 10:48:47.6648 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 200.8174ms
+2024-04-13 10:48:47.6884 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-13 10:48:47.6884 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-13 10:48:47.6884 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 1.9327ms
+2024-04-13 10:48:47.7221 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 33.7170ms
+2024-04-13 10:48:48.0886 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-13 10:48:48.2018 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 113.2129ms
+2024-04-13 10:51:05.6315 ${level} User profile is available. Using 'C:\Users\billu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-13 10:51:06.5385 ${level} Now listening on: https://localhost:7086
+2024-04-13 10:51:06.5385 ${level} Now listening on: http://localhost:5222
+2024-04-13 10:51:06.5385 ${level} Application started. Press Ctrl+C to shut down.
+2024-04-13 10:51:06.5385 ${level} Hosting environment: Development
+2024-04-13 10:51:06.5385 ${level} Content root path: C:\Users\billu\source\repos\FunduNotesApp\FunduNotesApp\
+2024-04-13 10:51:07.0146 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-13 10:51:07.2122 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 202.1039ms
+2024-04-13 10:51:07.2341 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-13 10:51:07.2341 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-13 10:51:07.2341 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 2.6431ms
+2024-04-13 10:51:07.2658 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 31.6925ms
+2024-04-13 10:51:07.7349 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-13 10:51:07.8327 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 97.8255ms
+2024-04-13 10:51:29.5317 ${level} User profile is available. Using 'C:\Users\billu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-13 10:51:29.9309 ${level} Now listening on: https://localhost:7086
+2024-04-13 10:51:29.9309 ${level} Now listening on: http://localhost:5222
+2024-04-13 10:51:29.9309 ${level} Application started. Press Ctrl+C to shut down.
+2024-04-13 10:51:29.9309 ${level} Hosting environment: Development
+2024-04-13 10:51:29.9309 ${level} Content root path: C:\Users\billu\source\repos\FunduNotesApp\FunduNotesApp\
+2024-04-13 10:51:30.4002 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-13 10:51:30.6024 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 203.6512ms
+2024-04-13 10:51:30.6205 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-13 10:51:30.6205 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-13 10:51:30.6205 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 1.6613ms
+2024-04-13 10:51:30.6530 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 32.4523ms
+2024-04-13 10:51:30.8268 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-13 10:51:30.9276 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 100.8005ms
+2024-04-13 10:51:35.6882 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/[object Module] - -
+2024-04-13 10:51:35.8277 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/[object Module] - - - 404 0 - 139.5974ms
+2024-04-13 10:51:43.3784 ${level} Request starting HTTP/2 POST https://localhost:7086/api/Notes/UpdateAndInsertNotes?userId=1 application/json 246
+2024-04-13 10:51:43.3784 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.UpdateAndInser (FunduNotesApp)'
+2024-04-13 10:51:43.4245 ${level} Route matched with {action = "UpdateAndInser", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UpdateAndInser(RepositoryLayer.Entity.NotesEntity, Int32) on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-04-13 10:51:43.8443 ${level} Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-04-13 10:51:43.8443 ${level} Executed action FunduNotesApp.Controllers.NotesController.UpdateAndInser (FunduNotesApp) in 424.1095ms
+2024-04-13 10:51:43.8443 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.UpdateAndInser (FunduNotesApp)'
+2024-04-13 10:51:43.8443 ${level} Request finished HTTP/2 POST https://localhost:7086/api/Notes/UpdateAndInsertNotes?userId=1 application/json 246 - 400 - application/problem+json;+charset=utf-8 480.9381ms
+2024-04-13 10:52:17.5710 ${level} User profile is available. Using 'C:\Users\billu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-13 10:52:17.9642 ${level} Now listening on: https://localhost:7086
+2024-04-13 10:52:17.9642 ${level} Now listening on: http://localhost:5222
+2024-04-13 10:52:17.9642 ${level} Application started. Press Ctrl+C to shut down.
+2024-04-13 10:52:17.9642 ${level} Hosting environment: Development
+2024-04-13 10:52:17.9642 ${level} Content root path: C:\Users\billu\source\repos\FunduNotesApp\FunduNotesApp\
+2024-04-13 10:52:18.5637 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-13 10:52:18.7761 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 213.0646ms
+2024-04-13 10:52:18.7971 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-13 10:52:18.7971 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-13 10:52:18.7971 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 1.8826ms
+2024-04-13 10:52:18.8276 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 30.4325ms
+2024-04-13 10:52:18.9962 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-13 10:52:19.1020 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 105.8238ms
+2024-04-13 10:52:22.9176 ${level} User profile is available. Using 'C:\Users\billu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-13 10:52:23.2686 ${level} Now listening on: https://localhost:7086
+2024-04-13 10:52:23.2686 ${level} Now listening on: http://localhost:5222
+2024-04-13 10:52:23.2686 ${level} Application started. Press Ctrl+C to shut down.
+2024-04-13 10:52:23.2686 ${level} Hosting environment: Development
+2024-04-13 10:52:23.2686 ${level} Content root path: C:\Users\billu\source\repos\FunduNotesApp\FunduNotesApp\
+2024-04-13 10:52:23.5959 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-13 10:52:23.8148 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 219.9773ms
+2024-04-13 10:52:23.8374 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-13 10:52:23.8374 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-13 10:52:23.8374 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 2.7097ms
+2024-04-13 10:52:23.8753 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 37.9385ms
+2024-04-13 10:52:24.0227 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-13 10:52:24.1452 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 122.5312ms
+2024-04-13 10:52:33.5348 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/[object Module] - -
+2024-04-13 10:52:33.5974 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/[object Module] - - - 404 0 - 62.4859ms
+2024-04-13 10:52:40.7523 ${level} Request starting HTTP/2 PUT https://localhost:7086/api/Notes/UpdateAndInsertNotes?userId=1 application/json 246
+2024-04-13 10:52:40.7574 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.UpdateAndInser (FunduNotesApp)'
+2024-04-13 10:52:40.7911 ${level} Route matched with {action = "UpdateAndInser", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UpdateAndInser(RepositoryLayer.Entity.NotesEntity, Int32) on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-04-13 10:52:41.1440 ${level} Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-04-13 10:52:41.1545 ${level} Executed action FunduNotesApp.Controllers.NotesController.UpdateAndInser (FunduNotesApp) in 357.0743ms
+2024-04-13 10:52:41.1545 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.UpdateAndInser (FunduNotesApp)'
+2024-04-13 10:52:41.1545 ${level} Request finished HTTP/2 PUT https://localhost:7086/api/Notes/UpdateAndInsertNotes?userId=1 application/json 246 - 400 - application/problem+json;+charset=utf-8 404.9098ms
+2024-04-13 10:53:00.0957 ${level} Request starting HTTP/2 PUT https://localhost:7086/api/Notes/UpdateAndInsertNotes?userId=1 application/json 246
+2024-04-13 10:53:00.1060 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.UpdateAndInser (FunduNotesApp)'
+2024-04-13 10:53:00.1060 ${level} Route matched with {action = "UpdateAndInser", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UpdateAndInser(RepositoryLayer.Entity.NotesEntity, Int32) on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-04-13 10:53:00.1218 ${level} Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-04-13 10:53:00.1218 ${level} Executed action FunduNotesApp.Controllers.NotesController.UpdateAndInser (FunduNotesApp) in 15.7887ms
+2024-04-13 10:53:00.1218 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.UpdateAndInser (FunduNotesApp)'
+2024-04-13 10:53:00.1218 ${level} Request finished HTTP/2 PUT https://localhost:7086/api/Notes/UpdateAndInsertNotes?userId=1 application/json 246 - 400 - application/problem+json;+charset=utf-8 26.6510ms
+2024-04-13 10:53:01.2488 ${level} Request starting HTTP/2 PUT https://localhost:7086/api/Notes/UpdateAndInsertNotes?userId=1 application/json 246
+2024-04-13 10:53:01.2488 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.UpdateAndInser (FunduNotesApp)'
+2024-04-13 10:53:01.2488 ${level} Route matched with {action = "UpdateAndInser", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UpdateAndInser(RepositoryLayer.Entity.NotesEntity, Int32) on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-04-13 10:53:01.2488 ${level} Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-04-13 10:53:01.2488 ${level} Executed action FunduNotesApp.Controllers.NotesController.UpdateAndInser (FunduNotesApp) in 4.1114ms
+2024-04-13 10:53:01.2488 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.UpdateAndInser (FunduNotesApp)'
+2024-04-13 10:53:01.2488 ${level} Request finished HTTP/2 PUT https://localhost:7086/api/Notes/UpdateAndInsertNotes?userId=1 application/json 246 - 400 - application/problem+json;+charset=utf-8 5.8959ms
+2024-04-13 10:54:01.4650 ${level} Request starting HTTP/2 PUT https://localhost:7086/api/Notes/UpdateAndInsertNotes?userId=4 application/json 246
+2024-04-13 10:54:01.4650 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.UpdateAndInser (FunduNotesApp)'
+2024-04-13 10:54:01.4650 ${level} Route matched with {action = "UpdateAndInser", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UpdateAndInser(RepositoryLayer.Entity.NotesEntity, Int32) on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-04-13 10:54:01.4670 ${level} Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-04-13 10:54:01.4670 ${level} Executed action FunduNotesApp.Controllers.NotesController.UpdateAndInser (FunduNotesApp) in 1.2415ms
+2024-04-13 10:54:01.4670 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.UpdateAndInser (FunduNotesApp)'
+2024-04-13 10:54:01.4670 ${level} Request finished HTTP/2 PUT https://localhost:7086/api/Notes/UpdateAndInsertNotes?userId=4 application/json 246 - 400 - application/problem+json;+charset=utf-8 2.9690ms
+2024-04-13 10:54:02.4121 ${level} Request starting HTTP/2 PUT https://localhost:7086/api/Notes/UpdateAndInsertNotes?userId=4 application/json 246
+2024-04-13 10:54:02.4121 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.UpdateAndInser (FunduNotesApp)'
+2024-04-13 10:54:02.4121 ${level} Route matched with {action = "UpdateAndInser", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UpdateAndInser(RepositoryLayer.Entity.NotesEntity, Int32) on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-04-13 10:54:02.4121 ${level} Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-04-13 10:54:02.4121 ${level} Executed action FunduNotesApp.Controllers.NotesController.UpdateAndInser (FunduNotesApp) in 0.9825ms
+2024-04-13 10:54:02.4121 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.UpdateAndInser (FunduNotesApp)'
+2024-04-13 10:54:02.4121 ${level} Request finished HTTP/2 PUT https://localhost:7086/api/Notes/UpdateAndInsertNotes?userId=4 application/json 246 - 400 - application/problem+json;+charset=utf-8 1.8457ms
+2024-04-13 10:57:59.8240 ${level} User profile is available. Using 'C:\Users\billu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-13 10:58:00.3037 ${level} Now listening on: https://localhost:7086
+2024-04-13 10:58:00.3037 ${level} Now listening on: http://localhost:5222
+2024-04-13 10:58:00.3037 ${level} Application started. Press Ctrl+C to shut down.
+2024-04-13 10:58:00.3037 ${level} Hosting environment: Development
+2024-04-13 10:58:00.3037 ${level} Content root path: C:\Users\billu\source\repos\FunduNotesApp\FunduNotesApp\
+2024-04-13 10:58:00.4208 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-13 10:58:00.6282 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 210.1989ms
+2024-04-13 10:58:00.6463 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-13 10:58:00.6463 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-13 10:58:00.6463 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 1.8281ms
+2024-04-13 10:58:00.6794 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 33.1008ms
+2024-04-13 10:58:01.0526 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-13 10:58:01.1730 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 120.4301ms
+2024-04-13 10:58:11.5077 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/[object Module] - -
+2024-04-13 10:58:11.5692 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/[object Module] - - - 404 0 - 61.4110ms
+2024-04-13 10:58:14.9264 ${level} Request starting HTTP/2 GET https://localhost:7086/api/Notes/CountNumberOfNotes - -
+2024-04-13 10:58:14.9407 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.countUsers (FunduNotesApp)'
+2024-04-13 10:58:14.9568 ${level} Route matched with {action = "countUsers", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult countUsers() on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-04-13 10:58:16.8762 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-04-13 10:58:18.0525 ${level} Executed DbCommand (64ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [UserNotes] AS [u]
+2024-04-13 10:58:18.1136 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType2`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-04-13 10:58:18.1280 ${level} Executed action FunduNotesApp.Controllers.NotesController.countUsers (FunduNotesApp) in 3163.5887ms
+2024-04-13 10:58:18.1280 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.countUsers (FunduNotesApp)'
+2024-04-13 10:58:18.1360 ${level} Request finished HTTP/2 GET https://localhost:7086/api/Notes/CountNumberOfNotes - - - 200 - application/json;+charset=utf-8 3209.1363ms
+2024-04-13 10:58:36.6492 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-13 10:58:36.6653 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 16.0635ms
+2024-04-13 10:58:36.7024 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-13 10:58:36.7024 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-13 10:58:36.7024 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 0.6241ms
+2024-04-13 10:58:36.7234 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 20.8964ms
+2024-04-13 10:58:37.2652 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-13 10:58:37.2825 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 17.2422ms
+2024-04-13 11:02:16.9735 ${level} User profile is available. Using 'C:\Users\billu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-13 11:02:17.9206 ${level} Now listening on: https://localhost:7086
+2024-04-13 11:02:17.9206 ${level} Now listening on: http://localhost:5222
+2024-04-13 11:02:17.9206 ${level} Application started. Press Ctrl+C to shut down.
+2024-04-13 11:02:17.9206 ${level} Hosting environment: Development
+2024-04-13 11:02:17.9206 ${level} Content root path: C:\Users\billu\source\repos\FunduNotesApp\FunduNotesApp\
+2024-04-13 11:02:18.3055 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-13 11:02:18.7183 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 416.1987ms
+2024-04-13 11:02:18.7834 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-13 11:02:18.7834 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-13 11:02:18.7834 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 4.4562ms
+2024-04-13 11:02:18.8546 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 71.1283ms
+2024-04-13 11:02:19.3247 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-13 11:02:19.4702 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 145.5276ms
+2024-04-13 11:02:24.4062 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/[object Module] - -
+2024-04-13 11:02:24.4925 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/[object Module] - - - 404 0 - 86.1925ms
+2024-04-13 11:02:31.0409 ${level} Request starting HTTP/2 GET https://localhost:7086/api/Notes/CountNumberOfNotes?userId=1 - -
+2024-04-13 11:02:31.0409 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.countUsers (FunduNotesApp)'
+2024-04-13 11:02:31.0966 ${level} Route matched with {action = "countUsers", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult countUsers(Int32) on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-04-13 11:02:33.2610 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-04-13 11:02:34.5367 ${level} Executed DbCommand (94ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [UserNotes] AS [u]
+WHERE [u].[UserId] = @__userId_0
+2024-04-13 11:02:34.5886 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType2`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-04-13 11:02:34.6005 ${level} Executed action FunduNotesApp.Controllers.NotesController.countUsers (FunduNotesApp) in 3498.137ms
+2024-04-13 11:02:34.6005 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.countUsers (FunduNotesApp)'
+2024-04-13 11:02:34.7200 ${level} Request finished HTTP/2 GET https://localhost:7086/api/Notes/CountNumberOfNotes?userId=1 - - - 200 - application/json;+charset=utf-8 3678.7244ms
+2024-04-13 11:08:01.5381 ${level} User profile is available. Using 'C:\Users\billu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-13 11:08:01.9948 ${level} Now listening on: https://localhost:7086
+2024-04-13 11:08:01.9948 ${level} Now listening on: http://localhost:5222
+2024-04-13 11:08:01.9948 ${level} Application started. Press Ctrl+C to shut down.
+2024-04-13 11:08:01.9948 ${level} Hosting environment: Development
+2024-04-13 11:08:01.9948 ${level} Content root path: C:\Users\billu\source\repos\FunduNotesApp\FunduNotesApp\
+2024-04-13 11:08:02.1888 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-13 11:08:02.4127 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 225.4384ms
+2024-04-13 11:08:02.4333 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-13 11:08:02.4333 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-13 11:08:02.4365 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 3.1343ms
+2024-04-13 11:08:02.4669 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 33.4808ms
+2024-04-13 11:08:02.7751 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-13 11:08:02.9109 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 135.7661ms
+2024-04-13 11:08:06.2829 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/[object Module] - -
+2024-04-13 11:08:06.3266 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/[object Module] - - - 404 0 - 43.6995ms
+2024-04-13 11:08:11.9397 ${level} Request starting HTTP/2 GET https://localhost:7086/api/Collab/GetAllCollabByNote?noteId=1 - -
+2024-04-13 11:08:11.9397 ${level} Executing endpoint 'FunduNotesApp.Controllers.CollabController.GetCollabDataByNotes (FunduNotesApp)'
+2024-04-13 11:08:11.9845 ${level} Route matched with {action = "GetCollabDataByNotes", controller = "Collab"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCollabDataByNotes(Int32) on controller FunduNotesApp.Controllers.CollabController (FunduNotesApp).
+2024-04-13 11:08:13.8599 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-04-13 11:08:15.0991 ${level} Executed DbCommand (121ms) [Parameters=[@__noteId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CollabId], [c].[CollabEmail], [c].[NoteId], [c].[UserId]
+FROM [Collaborator] AS [c]
+WHERE [c].[NoteId] = @__noteId_0
+2024-04-13 11:08:15.2590 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-04-13 11:08:15.2780 ${level} Executed action FunduNotesApp.Controllers.CollabController.GetCollabDataByNotes (FunduNotesApp) in 3286.8948ms
+2024-04-13 11:08:15.2780 ${level} Executed endpoint 'FunduNotesApp.Controllers.CollabController.GetCollabDataByNotes (FunduNotesApp)'
+2024-04-13 11:08:15.2847 ${level} Request finished HTTP/2 GET https://localhost:7086/api/Collab/GetAllCollabByNote?noteId=1 - - - 200 - application/json;+charset=utf-8 3344.7770ms
+2024-04-13 11:14:48.8447 ${level} User profile is available. Using 'C:\Users\billu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-13 11:14:49.5936 ${level} Now listening on: https://localhost:7086
+2024-04-13 11:14:49.5936 ${level} Now listening on: http://localhost:5222
+2024-04-13 11:14:49.5936 ${level} Application started. Press Ctrl+C to shut down.
+2024-04-13 11:14:49.5936 ${level} Hosting environment: Development
+2024-04-13 11:14:49.5936 ${level} Content root path: C:\Users\billu\source\repos\FunduNotesApp\FunduNotesApp\
+2024-04-13 11:14:50.0803 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-13 11:14:50.4013 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 324.4252ms
+2024-04-13 11:14:50.4248 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-13 11:14:50.4248 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-13 11:14:50.4248 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 4.1202ms
+2024-04-13 11:14:50.4627 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 37.8094ms
+2024-04-13 11:14:50.9416 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-13 11:14:51.0921 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 150.1945ms
+2024-04-13 11:15:24.7835 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/[object Module] - -
+2024-04-13 11:15:24.8488 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/[object Module] - - - 404 0 - 65.3370ms
+2024-04-13 11:15:31.6144 ${level} Request starting HTTP/2 GET https://localhost:7086/api/Collab/CountNumberOfCollab?userId=1 - -
+2024-04-13 11:15:31.6144 ${level} Executing endpoint 'FunduNotesApp.Controllers.CollabController.countCollab (FunduNotesApp)'
+2024-04-13 11:15:31.6633 ${level} Route matched with {action = "countCollab", controller = "Collab"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult countCollab(Int32) on controller FunduNotesApp.Controllers.CollabController (FunduNotesApp).
+2024-04-13 11:15:32.8228 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-04-13 11:15:33.7804 ${level} Executed DbCommand (163ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Collaborator] AS [c]
+WHERE [c].[UserId] = @__userId_0
+2024-04-13 11:15:33.8109 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType2`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-04-13 11:15:33.8201 ${level} Executed action FunduNotesApp.Controllers.CollabController.countCollab (FunduNotesApp) in 2152.6105ms
+2024-04-13 11:15:33.8201 ${level} Executed endpoint 'FunduNotesApp.Controllers.CollabController.countCollab (FunduNotesApp)'
+2024-04-13 11:15:33.8201 ${level} Request finished HTTP/2 GET https://localhost:7086/api/Collab/CountNumberOfCollab?userId=1 - - - 200 - application/json;+charset=utf-8 2211.4013ms
+2024-04-13 11:25:42.7915 ${level} User profile is available. Using 'C:\Users\billu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-13 11:25:43.2317 ${level} Now listening on: https://localhost:7086
+2024-04-13 11:25:43.2317 ${level} Now listening on: http://localhost:5222
+2024-04-13 11:25:43.2317 ${level} Application started. Press Ctrl+C to shut down.
+2024-04-13 11:25:43.2317 ${level} Hosting environment: Development
+2024-04-13 11:25:43.2317 ${level} Content root path: C:\Users\billu\source\repos\FunduNotesApp\FunduNotesApp\
+2024-04-13 11:25:43.4467 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-13 11:25:43.7640 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 320.0914ms
+2024-04-13 11:25:43.7895 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-13 11:25:43.7895 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-13 11:25:43.7933 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 3.7796ms
+2024-04-13 11:25:43.8435 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 53.9671ms
+2024-04-13 11:25:44.3549 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-13 11:25:44.4338 ${level} An unhandled exception has occurred while executing the request.
+2024-04-13 11:25:44.6604 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 500 - text/plain;+charset=utf-8 305.4719ms
+2024-04-13 11:25:51.1893 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-13 11:25:51.1893 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 8.2216ms
+2024-04-13 11:25:51.2164 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-13 11:25:51.2164 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-13 11:25:51.2164 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 0.5063ms
+2024-04-13 11:25:51.2318 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 15.3792ms
+2024-04-13 11:25:51.3492 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-13 11:25:51.3528 ${level} An unhandled exception has occurred while executing the request.
+2024-04-13 11:25:51.3528 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 500 - text/plain;+charset=utf-8 7.2621ms
+2024-04-13 11:26:13.4162 ${level} User profile is available. Using 'C:\Users\billu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-13 11:26:13.7581 ${level} Now listening on: https://localhost:7086
+2024-04-13 11:26:13.7581 ${level} Now listening on: http://localhost:5222
+2024-04-13 11:26:13.7601 ${level} Application started. Press Ctrl+C to shut down.
+2024-04-13 11:26:13.7601 ${level} Hosting environment: Development
+2024-04-13 11:26:13.7601 ${level} Content root path: C:\Users\billu\source\repos\FunduNotesApp\FunduNotesApp\
+2024-04-13 11:26:14.2759 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-13 11:26:14.5094 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 234.1688ms
+2024-04-13 11:26:14.5232 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-13 11:26:14.5268 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 3.6138ms
+2024-04-13 11:26:14.5268 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-13 11:26:14.5788 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 49.9207ms
+2024-04-13 11:26:14.6694 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-13 11:26:14.7612 ${level} An unhandled exception has occurred while executing the request.
+2024-04-13 11:26:14.7612 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 500 - text/plain;+charset=utf-8 108.9263ms
+2024-04-13 11:36:24.2540 ${level} User profile is available. Using 'C:\Users\billu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-13 11:36:24.6684 ${level} Now listening on: https://localhost:7086
+2024-04-13 11:36:24.6684 ${level} Now listening on: http://localhost:5222
+2024-04-13 11:36:24.6684 ${level} Application started. Press Ctrl+C to shut down.
+2024-04-13 11:36:24.6684 ${level} Hosting environment: Development
+2024-04-13 11:36:24.6684 ${level} Content root path: C:\Users\billu\source\repos\FunduNotesApp\FunduNotesApp\
+2024-04-13 11:36:25.1413 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-13 11:36:25.4352 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 298.8996ms
+2024-04-13 11:36:25.4352 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-13 11:36:25.4352 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 3.3261ms
+2024-04-13 11:36:25.4609 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-13 11:36:25.5189 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 57.9657ms
+2024-04-13 11:36:25.6131 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-13 11:36:25.7298 ${level} An unhandled exception has occurred while executing the request.
+2024-04-13 11:36:25.7526 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 500 - text/plain;+charset=utf-8 139.5124ms
+2024-04-13 11:37:04.9633 ${level} User profile is available. Using 'C:\Users\billu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-13 11:37:05.3083 ${level} Now listening on: https://localhost:7086
+2024-04-13 11:37:05.3083 ${level} Now listening on: http://localhost:5222
+2024-04-13 11:37:05.3083 ${level} Application started. Press Ctrl+C to shut down.
+2024-04-13 11:37:05.3102 ${level} Hosting environment: Development
+2024-04-13 11:37:05.3102 ${level} Content root path: C:\Users\billu\source\repos\FunduNotesApp\FunduNotesApp\
+2024-04-13 11:37:05.5648 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-13 11:37:05.7678 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 204.2665ms
+2024-04-13 11:37:05.7832 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-13 11:37:05.7832 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 2.8862ms
+2024-04-13 11:37:05.7832 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-13 11:37:05.8239 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 35.4276ms
+2024-04-13 11:37:05.8821 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-13 11:37:05.9454 ${level} An unhandled exception has occurred while executing the request.
+2024-04-13 11:37:05.9770 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 500 - text/plain;+charset=utf-8 94.9096ms
+2024-04-13 11:40:07.6836 ${level} User profile is available. Using 'C:\Users\billu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-13 11:40:08.6792 ${level} Now listening on: https://localhost:7086
+2024-04-13 11:40:08.6792 ${level} Now listening on: http://localhost:5222
+2024-04-13 11:40:08.6792 ${level} Application started. Press Ctrl+C to shut down.
+2024-04-13 11:40:08.6792 ${level} Hosting environment: Development
+2024-04-13 11:40:08.6792 ${level} Content root path: C:\Users\billu\source\repos\FunduNotesApp\FunduNotesApp\
+2024-04-13 11:40:09.2495 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-13 11:40:09.4518 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 202.6814ms
+2024-04-13 11:40:09.4518 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-13 11:40:09.4607 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 2.9006ms
+2024-04-13 11:40:09.4607 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-13 11:40:09.5021 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 31.8715ms
+2024-04-13 11:40:09.5566 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-13 11:40:09.6175 ${level} An unhandled exception has occurred while executing the request.
+2024-04-13 11:40:09.6175 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 500 - text/plain;+charset=utf-8 73.6583ms
+2024-04-13 11:40:51.8101 ${level} User profile is available. Using 'C:\Users\billu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-13 11:40:52.1719 ${level} Now listening on: https://localhost:7086
+2024-04-13 11:40:52.1719 ${level} Now listening on: http://localhost:5222
+2024-04-13 11:40:52.1719 ${level} Application started. Press Ctrl+C to shut down.
+2024-04-13 11:40:52.1719 ${level} Hosting environment: Development
+2024-04-13 11:40:52.1719 ${level} Content root path: C:\Users\billu\source\repos\FunduNotesApp\FunduNotesApp\
+2024-04-13 11:40:52.6175 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-13 11:40:52.8518 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 235.5118ms
+2024-04-13 11:40:52.8574 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-13 11:40:52.8574 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 2.6525ms
+2024-04-13 11:40:52.8731 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-13 11:40:52.9193 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 46.1387ms
+2024-04-13 11:40:52.9754 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-13 11:40:53.0471 ${level} An unhandled exception has occurred while executing the request.
+2024-04-13 11:40:53.0626 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 500 - text/plain;+charset=utf-8 87.2208ms
+2024-04-13 11:42:05.9186 ${level} User profile is available. Using 'C:\Users\billu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-13 11:42:06.3149 ${level} Now listening on: https://localhost:7086
+2024-04-13 11:42:06.3149 ${level} Now listening on: http://localhost:5222
+2024-04-13 11:42:06.3149 ${level} Application started. Press Ctrl+C to shut down.
+2024-04-13 11:42:06.3149 ${level} Hosting environment: Development
+2024-04-13 11:42:06.3149 ${level} Content root path: C:\Users\billu\source\repos\FunduNotesApp\FunduNotesApp\
+2024-04-13 11:42:06.5182 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-13 11:42:06.7615 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 244.4232ms
+2024-04-13 11:42:06.7784 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-13 11:42:06.7784 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 1.6181ms
+2024-04-13 11:42:06.7784 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-13 11:42:06.8172 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 33.7741ms
+2024-04-13 11:42:06.8853 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-13 11:42:06.9841 ${level} An unhandled exception has occurred while executing the request.
+2024-04-13 11:42:07.0063 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 500 - text/plain;+charset=utf-8 120.7190ms
+2024-04-13 11:44:46.2342 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-13 11:44:46.2342 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 14.3827ms
+2024-04-13 11:44:46.2700 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-13 11:44:46.2700 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-13 11:44:46.2700 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 0.5000ms
+2024-04-13 11:44:46.2700 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 10.0673ms
+2024-04-13 11:44:46.6527 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-13 11:44:46.6574 ${level} An unhandled exception has occurred while executing the request.
+2024-04-13 11:44:46.6574 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 500 - text/plain;+charset=utf-8 5.3655ms
+2024-04-13 11:44:52.7635 ${level} User profile is available. Using 'C:\Users\billu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-13 11:44:53.1211 ${level} Now listening on: https://localhost:7086
+2024-04-13 11:44:53.1211 ${level} Now listening on: http://localhost:5222
+2024-04-13 11:44:53.1211 ${level} Application started. Press Ctrl+C to shut down.
+2024-04-13 11:44:53.1211 ${level} Hosting environment: Development
+2024-04-13 11:44:53.1211 ${level} Content root path: C:\Users\billu\source\repos\FunduNotesApp\FunduNotesApp\
+2024-04-13 11:44:53.7182 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-13 11:44:53.9030 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 185.6560ms
+2024-04-13 11:44:53.9220 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-13 11:44:53.9220 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-13 11:44:53.9258 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 3.7691ms
+2024-04-13 11:44:53.9486 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 26.5268ms
+2024-04-13 11:44:54.1072 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-13 11:44:54.1700 ${level} An unhandled exception has occurred while executing the request.
+2024-04-13 11:44:54.1807 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 500 - text/plain;+charset=utf-8 73.5360ms
+2024-04-13 11:45:19.7303 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-13 11:45:19.7303 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 6.4532ms
+2024-04-13 11:45:19.8077 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-13 11:45:19.8077 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 0.4321ms
+2024-04-13 11:45:19.8207 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-13 11:45:19.8327 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 12.0137ms
+2024-04-13 11:45:19.9065 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-13 11:45:19.9083 ${level} An unhandled exception has occurred while executing the request.
+2024-04-13 11:45:19.9083 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 500 - text/plain;+charset=utf-8 2.4973ms
+2024-04-13 11:48:42.3789 ${level} User profile is available. Using 'C:\Users\billu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-13 11:48:42.7323 ${level} Now listening on: https://localhost:7086
+2024-04-13 11:48:42.7323 ${level} Now listening on: http://localhost:5222
+2024-04-13 11:48:42.7323 ${level} Application started. Press Ctrl+C to shut down.
+2024-04-13 11:48:42.7323 ${level} Hosting environment: Development
+2024-04-13 11:48:42.7323 ${level} Content root path: C:\Users\billu\source\repos\FunduNotesApp\FunduNotesApp\
+2024-04-13 11:48:42.9464 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-13 11:48:43.1453 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 200.5756ms
+2024-04-13 11:48:43.1684 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-13 11:48:43.1684 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-13 11:48:43.1684 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 1.4316ms
+2024-04-13 11:48:43.1966 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 28.2199ms
+2024-04-13 11:48:43.3161 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-13 11:48:43.3726 ${level} An unhandled exception has occurred while executing the request.
+2024-04-13 11:48:43.3835 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 500 - text/plain;+charset=utf-8 67.2762ms
+2024-04-13 11:48:52.3347 ${level} User profile is available. Using 'C:\Users\billu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-13 11:48:52.6503 ${level} Now listening on: https://localhost:7086
+2024-04-13 11:48:52.6503 ${level} Now listening on: http://localhost:5222
+2024-04-13 11:48:52.6503 ${level} Application started. Press Ctrl+C to shut down.
+2024-04-13 11:48:52.6503 ${level} Hosting environment: Development
+2024-04-13 11:48:52.6503 ${level} Content root path: C:\Users\billu\source\repos\FunduNotesApp\FunduNotesApp\
+2024-04-13 11:48:53.0688 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-13 11:48:53.2680 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 202.2241ms
+2024-04-13 11:48:53.2793 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-13 11:48:53.2793 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-13 11:48:53.2793 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 1.5349ms
+2024-04-13 11:48:53.3106 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 31.2957ms
+2024-04-13 11:48:53.3772 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-13 11:48:53.4398 ${level} An unhandled exception has occurred while executing the request.
+2024-04-13 11:48:53.4553 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 500 - text/plain;+charset=utf-8 78.1065ms
+2024-04-13 12:10:58.2530 ${level} User profile is available. Using 'C:\Users\billu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-13 12:10:58.7002 ${level} Now listening on: https://localhost:7086
+2024-04-13 12:10:58.7002 ${level} Now listening on: http://localhost:5222
+2024-04-13 12:10:58.7002 ${level} Application started. Press Ctrl+C to shut down.
+2024-04-13 12:10:58.7002 ${level} Hosting environment: Development
+2024-04-13 12:10:58.7002 ${level} Content root path: C:\Users\billu\source\repos\FunduNotesApp\FunduNotesApp\
+2024-04-13 12:10:59.2105 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-13 12:10:59.5488 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 339.7694ms
+2024-04-13 12:10:59.5695 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-13 12:10:59.5695 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 3.5136ms
+2024-04-13 12:10:59.5695 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-13 12:10:59.6418 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 61.8937ms
+2024-04-13 12:10:59.7352 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-13 12:10:59.8081 ${level} An unhandled exception has occurred while executing the request.
+2024-04-13 12:10:59.8462 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 500 - text/plain;+charset=utf-8 110.9807ms
+2024-04-13 13:21:28.1894 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-13 13:21:28.2536 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 65.6069ms
+2024-04-13 13:21:28.2704 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-13 13:21:28.2704 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 1.7097ms
+2024-04-13 13:21:28.2808 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-13 13:21:28.3006 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 19.7186ms
+2024-04-13 13:21:28.4018 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-13 13:21:28.4243 ${level} An unhandled exception has occurred while executing the request.
+2024-04-13 13:21:28.4327 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 500 - text/plain;+charset=utf-8 30.8736ms
+2024-04-13 13:28:05.2714 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-13 13:28:05.2824 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 10.7765ms
+2024-04-13 13:28:05.3178 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-13 13:28:05.3178 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-13 13:28:05.3178 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 0.7063ms
+2024-04-13 13:28:05.3242 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 6.3495ms
+2024-04-13 13:28:05.8080 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-13 13:28:05.8080 ${level} An unhandled exception has occurred while executing the request.
+2024-04-13 13:28:05.8080 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 500 - text/plain;+charset=utf-8 4.4720ms
+2024-04-13 13:28:39.1381 ${level} User profile is available. Using 'C:\Users\billu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-13 13:28:40.8172 ${level} Now listening on: https://localhost:7086
+2024-04-13 13:28:40.8172 ${level} Now listening on: http://localhost:5222
+2024-04-13 13:28:40.8172 ${level} Application started. Press Ctrl+C to shut down.
+2024-04-13 13:28:40.8172 ${level} Hosting environment: Development
+2024-04-13 13:28:40.8172 ${level} Content root path: C:\Users\billu\source\repos\FunduNotesApp\FunduNotesApp\
+2024-04-13 13:28:41.6187 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-13 13:28:41.9832 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 365.5479ms
+2024-04-13 13:28:41.9832 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-13 13:28:41.9832 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 1.8660ms
+2024-04-13 13:28:41.9980 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-13 13:28:42.0544 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 56.3910ms
+2024-04-13 13:28:42.1763 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-13 13:28:42.2360 ${level} An unhandled exception has occurred while executing the request.
+2024-04-13 13:28:42.3762 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 500 - text/plain;+charset=utf-8 199.9023ms
+2024-04-13 14:36:48.5418 ${level} User profile is available. Using 'C:\Users\billu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-13 14:36:49.3037 ${level} Now listening on: https://localhost:7086
+2024-04-13 14:36:49.3037 ${level} Now listening on: http://localhost:5222
+2024-04-13 14:36:49.3037 ${level} Application started. Press Ctrl+C to shut down.
+2024-04-13 14:36:49.3037 ${level} Hosting environment: Development
+2024-04-13 14:36:49.3037 ${level} Content root path: C:\Users\billu\source\repos\FunduNotesApp\FunduNotesApp\
+2024-04-13 14:36:51.6446 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-13 14:36:52.1365 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 496.4308ms
+2024-04-13 14:36:52.1365 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-13 14:36:52.1563 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 4.5212ms
+2024-04-13 14:36:52.1563 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-13 14:36:52.2803 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 117.4660ms
+2024-04-13 14:36:52.3393 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-13 14:36:52.4132 ${level} An unhandled exception has occurred while executing the request.
+2024-04-13 14:36:52.4622 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 500 - text/plain;+charset=utf-8 122.7934ms
+2024-04-13 14:43:05.2553 ${level} User profile is available. Using 'C:\Users\billu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-13 14:43:06.2862 ${level} Now listening on: https://localhost:7086
+2024-04-13 14:43:06.2862 ${level} Now listening on: http://localhost:5222
+2024-04-13 14:43:06.2862 ${level} Application started. Press Ctrl+C to shut down.
+2024-04-13 14:43:06.2862 ${level} Hosting environment: Development
+2024-04-13 14:43:06.2862 ${level} Content root path: C:\Users\billu\source\repos\FunduNotesApp\FunduNotesApp\
+2024-04-13 14:43:06.4686 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-13 14:43:06.7139 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 246.6223ms
+2024-04-13 14:43:06.7393 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-13 14:43:06.7393 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-13 14:43:06.7393 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 2.2032ms
+2024-04-13 14:43:06.7693 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 30.0534ms
+2024-04-13 14:43:07.1229 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-13 14:43:07.1776 ${level} An unhandled exception has occurred while executing the request.
+2024-04-13 14:43:07.1960 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 500 - text/plain;+charset=utf-8 73.0558ms
+2024-04-13 14:43:17.1318 ${level} User profile is available. Using 'C:\Users\billu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-13 14:43:17.4542 ${level} Now listening on: https://localhost:7086
+2024-04-13 14:43:17.4542 ${level} Now listening on: http://localhost:5222
+2024-04-13 14:43:17.4542 ${level} Application started. Press Ctrl+C to shut down.
+2024-04-13 14:43:17.4542 ${level} Hosting environment: Development
+2024-04-13 14:43:17.4542 ${level} Content root path: C:\Users\billu\source\repos\FunduNotesApp\FunduNotesApp\
+2024-04-13 14:43:57.4669 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-13 14:43:57.6701 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 204.1394ms
+2024-04-13 14:43:57.6959 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-13 14:43:57.6959 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-13 14:43:57.6959 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 2.7529ms
+2024-04-13 14:43:57.7326 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 36.6172ms
+2024-04-13 14:43:57.9023 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-13 14:43:57.9795 ${level} An unhandled exception has occurred while executing the request.
+2024-04-13 14:43:57.9962 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 500 - text/plain;+charset=utf-8 93.8307ms
+2024-04-13 15:00:10.7935 ${level} User profile is available. Using 'C:\Users\billu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-13 15:00:11.1469 ${level} Now listening on: https://localhost:7086
+2024-04-13 15:00:11.1469 ${level} Now listening on: http://localhost:5222
+2024-04-13 15:00:11.1469 ${level} Application started. Press Ctrl+C to shut down.
+2024-04-13 15:00:11.1469 ${level} Hosting environment: Development
+2024-04-13 15:00:11.1469 ${level} Content root path: C:\Users\billu\source\repos\FunduNotesApp\FunduNotesApp\
+2024-04-13 15:00:12.1941 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-13 15:00:12.4577 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 268.3211ms
+2024-04-13 15:00:12.4883 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-13 15:00:12.4883 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 1.8456ms
+2024-04-13 15:00:12.4883 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-13 15:00:12.5262 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 33.0818ms
+2024-04-13 15:00:12.5722 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-13 15:00:12.6253 ${level} An unhandled exception has occurred while executing the request.
+2024-04-13 15:00:12.6434 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 500 - text/plain;+charset=utf-8 71.1280ms
+2024-04-13 15:00:45.3299 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-13 15:00:45.3299 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 4.4434ms
+2024-04-13 15:00:45.3622 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-13 15:00:45.3622 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-13 15:00:45.3622 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 0.6584ms
+2024-04-13 15:00:45.3622 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 8.6453ms
+2024-04-13 15:00:45.5648 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-13 15:00:45.5648 ${level} An unhandled exception has occurred while executing the request.
+2024-04-13 15:00:45.5648 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 500 - text/plain;+charset=utf-8 4.4264ms
+2024-04-13 15:01:40.6985 ${level} User profile is available. Using 'C:\Users\billu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-13 15:01:40.9817 ${level} Now listening on: https://localhost:7086
+2024-04-13 15:01:40.9817 ${level} Now listening on: http://localhost:5222
+2024-04-13 15:01:40.9817 ${level} Application started. Press Ctrl+C to shut down.
+2024-04-13 15:01:40.9817 ${level} Hosting environment: Development
+2024-04-13 15:01:40.9817 ${level} Content root path: C:\Users\billu\source\repos\FunduNotesApp\FunduNotesApp\
+2024-04-13 15:01:42.0278 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-13 15:01:42.2688 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 244.0224ms
+2024-04-13 15:01:42.3039 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-13 15:01:42.3039 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 3.3807ms
+2024-04-13 15:01:42.3142 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-13 15:01:42.3558 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 41.6113ms
+2024-04-13 15:01:42.4223 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-13 15:01:42.4812 ${level} An unhandled exception has occurred while executing the request.
+2024-04-13 15:01:42.4930 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 500 - text/plain;+charset=utf-8 70.6960ms
+2024-04-13 15:02:21.9170 ${level} User profile is available. Using 'C:\Users\billu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-13 15:02:22.2234 ${level} Now listening on: https://localhost:7086
+2024-04-13 15:02:22.2234 ${level} Now listening on: http://localhost:5222
+2024-04-13 15:02:22.2234 ${level} Application started. Press Ctrl+C to shut down.
+2024-04-13 15:02:22.2234 ${level} Hosting environment: Development
+2024-04-13 15:02:22.2234 ${level} Content root path: C:\Users\billu\source\repos\FunduNotesApp\FunduNotesApp\
+2024-04-13 15:02:23.2320 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-13 15:02:23.4549 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 225.8219ms
+2024-04-13 15:02:23.4774 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-13 15:02:23.4774 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 1.8458ms
+2024-04-13 15:02:23.4838 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-13 15:02:23.5747 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 90.7975ms
+2024-04-13 15:02:23.6443 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-13 15:02:23.7295 ${level} An unhandled exception has occurred while executing the request.
+2024-04-13 15:02:23.7451 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 500 - text/plain;+charset=utf-8 100.8552ms
+2024-04-13 15:02:41.1541 ${level} User profile is available. Using 'C:\Users\billu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-13 15:02:41.4511 ${level} Now listening on: https://localhost:7086
+2024-04-13 15:02:41.4511 ${level} Now listening on: http://localhost:5222
+2024-04-13 15:02:41.4511 ${level} Application started. Press Ctrl+C to shut down.
+2024-04-13 15:02:41.4511 ${level} Hosting environment: Development
+2024-04-13 15:02:41.4511 ${level} Content root path: C:\Users\billu\source\repos\FunduNotesApp\FunduNotesApp\
+2024-04-13 15:02:42.4531 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-13 15:02:42.7002 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 249.2306ms
+2024-04-13 15:02:42.7102 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-13 15:02:42.7102 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 1.4764ms
+2024-04-13 15:02:42.7102 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-13 15:02:42.7610 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 45.2149ms
+2024-04-13 15:02:42.8457 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-13 15:02:42.9701 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 124.4167ms
+2024-04-13 15:11:16.2951 ${level} User profile is available. Using 'C:\Users\billu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-13 15:11:16.6925 ${level} Now listening on: https://localhost:7086
+2024-04-13 15:11:16.6925 ${level} Now listening on: http://localhost:5222
+2024-04-13 15:11:16.6925 ${level} Application started. Press Ctrl+C to shut down.
+2024-04-13 15:11:16.6925 ${level} Hosting environment: Development
+2024-04-13 15:11:16.6925 ${level} Content root path: C:\Users\billu\source\repos\FunduNotesApp\FunduNotesApp\
+2024-04-13 15:11:17.0468 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-13 15:11:17.2611 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 215.6205ms
+2024-04-13 15:11:17.2842 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-13 15:11:17.2842 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-13 15:11:17.2842 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 1.5291ms
+2024-04-13 15:11:17.3140 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 29.7718ms
+2024-04-13 15:11:17.6810 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-13 15:11:17.8297 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 148.6508ms
+2024-04-13 15:11:32.6932 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/[object Module] - -
+2024-04-13 15:11:32.8103 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/[object Module] - - - 404 0 - 117.1787ms
+2024-04-13 15:11:51.8553 ${level} Request starting HTTP/2 GET https://localhost:7086/api/Notes/NoteCreatedDate?createAt=2024%2F2%2F4 - -
+2024-04-13 15:11:51.8622 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.CreateAtNote (FunduNotesApp)'
+2024-04-13 15:11:51.9213 ${level} Route matched with {action = "CreateAtNote", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateAtNote(System.DateTime) on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-04-13 15:11:54.8362 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-04-13 15:11:57.0082 ${level} Executed DbCommand (196ms) [Parameters=[@__createAt_0='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[NoteId], [u].[Color], [u].[CreatedAt], [u].[Description], [u].[IsArchive], [u].[IsPinned], [u].[IsTrash], [u].[ModifiedAt], [u].[Remainder], [u].[Title], [u].[UserId]
+FROM [UserNotes] AS [u]
+WHERE [u].[CreatedAt] <= @__createAt_0
+2024-04-13 15:11:57.2237 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType2`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-04-13 15:11:57.2441 ${level} Executed action FunduNotesApp.Controllers.NotesController.CreateAtNote (FunduNotesApp) in 5316.2761ms
+2024-04-13 15:11:57.2441 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.CreateAtNote (FunduNotesApp)'
+2024-04-13 15:11:57.2513 ${level} Request finished HTTP/2 GET https://localhost:7086/api/Notes/NoteCreatedDate?createAt=2024%2F2%2F4 - - - 200 - application/json;+charset=utf-8 5396.0195ms
+2024-04-13 15:12:25.8436 ${level} User profile is available. Using 'C:\Users\billu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-13 15:12:26.1738 ${level} Now listening on: https://localhost:7086
+2024-04-13 15:12:26.1738 ${level} Now listening on: http://localhost:5222
+2024-04-13 15:12:26.1738 ${level} Application started. Press Ctrl+C to shut down.
+2024-04-13 15:12:26.1738 ${level} Hosting environment: Development
+2024-04-13 15:12:26.1738 ${level} Content root path: C:\Users\billu\source\repos\FunduNotesApp\FunduNotesApp\
+2024-04-13 15:12:26.3990 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-13 15:12:26.6209 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 224.6350ms
+2024-04-13 15:12:26.6485 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-13 15:12:26.6485 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-13 15:12:26.6485 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 2.9794ms
+2024-04-13 15:12:26.6938 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 45.2349ms
+2024-04-13 15:12:27.1340 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-13 15:12:27.2313 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 97.2537ms
+2024-04-13 15:13:00.0290 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/[object Module] - -
+2024-04-13 15:13:00.0979 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/[object Module] - - - 404 0 - 68.9058ms
+2024-04-13 15:13:09.0477 ${level} Request starting HTTP/2 GET https://localhost:7086/api/Notes/NoteCreatedDate?createAt=2024%2F3%2F4 - -
+2024-04-13 15:13:09.0477 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.CreateAtNote (FunduNotesApp)'
+2024-04-13 15:13:09.0891 ${level} Route matched with {action = "CreateAtNote", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateAtNote(System.DateTime) on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-04-13 15:13:11.1717 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-04-13 15:13:12.7756 ${level} Executed DbCommand (117ms) [Parameters=[@__createAt_0='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[NoteId], [u].[Color], [u].[CreatedAt], [u].[Description], [u].[IsArchive], [u].[IsPinned], [u].[IsTrash], [u].[ModifiedAt], [u].[Remainder], [u].[Title], [u].[UserId]
+FROM [UserNotes] AS [u]
+WHERE [u].[CreatedAt] <= @__createAt_0
+2024-04-13 15:13:12.9869 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType2`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-04-13 15:13:13.0078 ${level} Executed action FunduNotesApp.Controllers.NotesController.CreateAtNote (FunduNotesApp) in 3912.1038ms
+2024-04-13 15:13:13.0078 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.CreateAtNote (FunduNotesApp)'
+2024-04-13 15:13:13.0078 ${level} Request finished HTTP/2 GET https://localhost:7086/api/Notes/NoteCreatedDate?createAt=2024%2F3%2F4 - - - 200 - application/json;+charset=utf-8 3966.7145ms
+2024-04-13 15:15:19.3187 ${level} User profile is available. Using 'C:\Users\billu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-13 15:15:19.6133 ${level} Now listening on: https://localhost:7086
+2024-04-13 15:15:19.6133 ${level} Now listening on: http://localhost:5222
+2024-04-13 15:15:19.6133 ${level} Application started. Press Ctrl+C to shut down.
+2024-04-13 15:15:19.6133 ${level} Hosting environment: Development
+2024-04-13 15:15:19.6133 ${level} Content root path: C:\Users\billu\source\repos\FunduNotesApp\FunduNotesApp\
+2024-04-13 15:15:20.0878 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-13 15:15:20.3050 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 218.2690ms
+2024-04-13 15:15:20.3377 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-13 15:15:20.3402 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-13 15:15:20.3402 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 2.5667ms
+2024-04-13 15:15:20.4395 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 99.2401ms
+2024-04-13 15:15:20.6071 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-13 15:15:20.7138 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 106.6801ms
+2024-04-13 15:15:28.7167 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/[object Module] - -
+2024-04-13 15:15:28.7803 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/[object Module] - - - 404 0 - 63.6057ms
+2024-04-13 15:15:39.2061 ${level} Request starting HTTP/2 GET https://localhost:7086/api/Notes/CountNumberOfNotes?noteId=1 - -
+2024-04-13 15:15:39.2061 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.countUsers (FunduNotesApp)'
+2024-04-13 15:15:39.2509 ${level} Route matched with {action = "countUsers", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult countUsers(Int32) on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-04-13 15:15:41.2629 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-04-13 15:15:42.6345 ${level} Executed DbCommand (105ms) [Parameters=[@__noteId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [UserNotes] AS [u]
+WHERE [u].[NoteId] = @__noteId_0
+2024-04-13 15:15:42.6897 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType2`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-04-13 15:15:42.7066 ${level} Executed action FunduNotesApp.Controllers.NotesController.countUsers (FunduNotesApp) in 3446.8207ms
+2024-04-13 15:15:42.7066 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.countUsers (FunduNotesApp)'
+2024-04-13 15:15:42.7152 ${level} Request finished HTTP/2 GET https://localhost:7086/api/Notes/CountNumberOfNotes?noteId=1 - - - 200 - application/json;+charset=utf-8 3508.9885ms
+2024-04-13 15:16:17.9541 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-13 15:16:17.9541 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 11.2608ms
+2024-04-13 15:16:18.0032 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-13 15:16:18.0032 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-13 15:16:18.0032 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 0.7389ms
+2024-04-13 15:16:18.0182 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 14.9334ms
+2024-04-13 15:16:18.2705 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-13 15:16:18.2912 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 20.6207ms
+2024-04-13 15:16:19.6275 ${level} User profile is available. Using 'C:\Users\billu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-13 15:16:19.9558 ${level} Now listening on: https://localhost:7086
+2024-04-13 15:16:19.9558 ${level} Now listening on: http://localhost:5222
+2024-04-13 15:16:19.9558 ${level} Application started. Press Ctrl+C to shut down.
+2024-04-13 15:16:19.9558 ${level} Hosting environment: Development
+2024-04-13 15:16:19.9558 ${level} Content root path: C:\Users\billu\source\repos\FunduNotesApp\FunduNotesApp\
+2024-04-13 15:16:20.5511 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-13 15:16:20.7495 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 199.1878ms
+2024-04-13 15:16:20.7739 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-13 15:16:20.7739 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-13 15:16:20.7739 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 2.9224ms
+2024-04-13 15:16:20.8166 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 42.7483ms
+2024-04-13 15:16:20.9371 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-13 15:16:21.0315 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 94.4507ms
+2024-04-13 15:17:02.3637 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-13 15:17:02.3817 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 18.0459ms
+2024-04-13 15:17:02.4159 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-13 15:17:02.4159 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-13 15:17:02.4159 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 0.7187ms
+2024-04-13 15:17:02.4358 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 19.5625ms
+2024-04-13 15:17:02.6542 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-13 15:17:02.6740 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 19.7598ms
+2024-04-13 15:17:06.0069 ${level} User profile is available. Using 'C:\Users\billu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-13 15:17:06.3285 ${level} Now listening on: https://localhost:7086
+2024-04-13 15:17:06.3285 ${level} Now listening on: http://localhost:5222
+2024-04-13 15:17:06.3285 ${level} Application started. Press Ctrl+C to shut down.
+2024-04-13 15:17:06.3285 ${level} Hosting environment: Development
+2024-04-13 15:17:06.3285 ${level} Content root path: C:\Users\billu\source\repos\FunduNotesApp\FunduNotesApp\
+2024-04-13 15:17:06.6780 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-13 15:17:06.8461 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 170.1945ms
+2024-04-13 15:17:06.8703 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-13 15:17:06.8703 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-13 15:17:06.8741 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 3.6916ms
+2024-04-13 15:17:06.9061 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 35.7207ms
+2024-04-13 15:17:07.0297 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-13 15:17:07.1295 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 99.8190ms
+2024-04-13 15:17:19.6054 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/[object Module] - -
+2024-04-13 15:17:19.6675 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/[object Module] - - - 404 0 - 61.9806ms
+2024-04-13 15:17:53.0613 ${level} Request starting HTTP/2 PUT https://localhost:7086/api/User/InserAndUpdate?userId=1 application/json 91
+2024-04-13 15:17:53.0613 ${level} Executing endpoint 'FunduNotesApp.Controllers.UserController.InsderAndCreate (FunduNotesApp)'
+2024-04-13 15:17:53.1112 ${level} Route matched with {action = "InsderAndCreate", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult InsderAndCreate(CommonLayer.Models.UserRegisterModel, Int32) on controller FunduNotesApp.Controllers.UserController (FunduNotesApp).
+2024-04-13 15:17:55.0456 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-04-13 15:17:56.7216 ${level} Executed DbCommand (103ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[CreatedDate], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedDate]
+FROM [Users] AS [u]
+WHERE @__userId_0 = [u].[UserId]
+2024-04-13 15:17:57.1591 ${level} Executed DbCommand (33ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Users] SET [FirstName] = @p0, [LastName] = @p1
+WHERE [UserId] = @p2;
+SELECT @@ROWCOUNT;
+2024-04-13 15:17:57.1978 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType6`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-04-13 15:17:57.2093 ${level} Executed action FunduNotesApp.Controllers.UserController.InsderAndCreate (FunduNotesApp) in 4091.8158ms
+2024-04-13 15:17:57.2093 ${level} Executed endpoint 'FunduNotesApp.Controllers.UserController.InsderAndCreate (FunduNotesApp)'
+2024-04-13 15:17:57.2093 ${level} Request finished HTTP/2 PUT https://localhost:7086/api/User/InserAndUpdate?userId=1 application/json 91 - 200 - application/json;+charset=utf-8 4154.6192ms
+2024-04-13 15:18:08.6995 ${level} Request starting HTTP/2 PUT https://localhost:7086/api/User/InserAndUpdate?userId=2 application/json 91
+2024-04-13 15:18:08.7140 ${level} Executing endpoint 'FunduNotesApp.Controllers.UserController.InsderAndCreate (FunduNotesApp)'
+2024-04-13 15:18:08.7140 ${level} Route matched with {action = "InsderAndCreate", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult InsderAndCreate(CommonLayer.Models.UserRegisterModel, Int32) on controller FunduNotesApp.Controllers.UserController (FunduNotesApp).
+2024-04-13 15:18:08.7355 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-04-13 15:18:08.7355 ${level} Executed DbCommand (4ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[CreatedDate], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedDate]
+FROM [Users] AS [u]
+WHERE @__userId_0 = [u].[UserId]
+2024-04-13 15:18:08.8401 ${level} Executed DbCommand (26ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([CreatedDate], [Email], [FirstName], [LastName], [Password], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT [UserId]
+FROM [Users]
+WHERE @@ROWCOUNT = 1 AND [UserId] = scope_identity();
+2024-04-13 15:18:08.8963 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType6`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-04-13 15:18:08.8963 ${level} Executed action FunduNotesApp.Controllers.UserController.InsderAndCreate (FunduNotesApp) in 182.1194ms
+2024-04-13 15:18:08.8963 ${level} Executed endpoint 'FunduNotesApp.Controllers.UserController.InsderAndCreate (FunduNotesApp)'
+2024-04-13 15:18:08.8963 ${level} Request finished HTTP/2 PUT https://localhost:7086/api/User/InserAndUpdate?userId=2 application/json 91 - 200 - application/json;+charset=utf-8 198.0553ms
+2024-04-13 15:18:21.2020 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/[object Module] - -
+2024-04-13 15:18:21.2020 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/[object Module] - - - 404 0 - 1.4666ms
+2024-04-13 15:18:24.6290 ${level} Request starting HTTP/2 GET https://localhost:7086/api/User/GetAllData - -
+2024-04-13 15:18:24.6290 ${level} Executing endpoint 'FunduNotesApp.Controllers.UserController.GetAll (FunduNotesApp)'
+2024-04-13 15:18:24.6290 ${level} Route matched with {action = "GetAll", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller FunduNotesApp.Controllers.UserController (FunduNotesApp).
+2024-04-13 15:18:24.7698 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-04-13 15:18:24.7869 ${level} Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[CreatedDate], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedDate]
+FROM [Users] AS [u]
+2024-04-13 15:18:24.7869 ${level} Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[RepositoryLayer.Entity.UserEntity, RepositoryLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-13 15:18:24.7980 ${level} Executed action FunduNotesApp.Controllers.UserController.GetAll (FunduNotesApp) in 166.7093ms
+2024-04-13 15:18:24.7980 ${level} Executed endpoint 'FunduNotesApp.Controllers.UserController.GetAll (FunduNotesApp)'
+2024-04-13 15:18:24.7980 ${level} Request finished HTTP/2 GET https://localhost:7086/api/User/GetAllData - - - 200 - application/json;+charset=utf-8 169.3308ms

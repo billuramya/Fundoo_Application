@@ -1,0 +1,29 @@
+2024-05-18 09:12:21.8273 ${level} User profile is available. Using 'C:\Users\billu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-18 09:12:24.4173 ${level} Now listening on: https://localhost:7086
+2024-05-18 09:12:24.4173 ${level} Now listening on: http://localhost:5222
+2024-05-18 09:12:24.4173 ${level} Application started. Press Ctrl+C to shut down.
+2024-05-18 09:12:24.4173 ${level} Hosting environment: Development
+2024-05-18 09:12:24.4173 ${level} Content root path: C:\Users\billu\source\repos\FunduNotesApp\FunduNotesApp\
+2024-05-18 09:12:26.7555 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-05-18 09:12:28.0249 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 1270.7859ms
+2024-05-18 09:12:28.0704 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-05-18 09:12:28.0704 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 3.4520ms
+2024-05-18 09:12:28.1050 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-05-18 09:12:28.1897 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 84.7664ms
+2024-05-18 09:12:28.3267 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-05-18 09:12:28.5036 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 176.8172ms
+2024-05-18 10:17:19.5854 ${level} Request starting HTTP/2 OPTIONS https://localhost:7086/api/Notes/GetAllNotes - -
+2024-05-18 10:17:19.7020 ${level} CORS policy execution successful.
+2024-05-18 10:17:19.7298 ${level} Request finished HTTP/2 OPTIONS https://localhost:7086/api/Notes/GetAllNotes - - - 204 - - 151.6002ms
+2024-05-18 10:17:19.7298 ${level} Request starting HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json -
+2024-05-18 10:17:19.7580 ${level} CORS policy execution successful.
+2024-05-18 10:17:20.9223 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-18 10:17:20.9543 ${level} Route matched with {action = "GetNodes", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetNodes() on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-05-18 10:17:23.5149 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-18 10:17:27.0010 ${level} Executed DbCommand (92ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[NoteId], [u].[Color], [u].[CreatedAt], [u].[Description], [u].[IsArchive], [u].[IsPinned], [u].[IsTrash], [u].[ModifiedAt], [u].[Remainder], [u].[Title], [u].[UserId]
+FROM [UserNotes] AS [u]
+2024-05-18 10:17:27.2917 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-18 10:17:27.4978 ${level} Executed action FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp) in 6536.0993ms
+2024-05-18 10:17:27.4978 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-18 10:17:27.5113 ${level} Request finished HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json - - 0 - application/json;+charset=utf-8 7779.9025ms

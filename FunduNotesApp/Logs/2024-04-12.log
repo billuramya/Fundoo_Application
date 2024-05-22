@@ -1,0 +1,785 @@
+2024-04-12 10:26:48.2332 ${level} User profile is available. Using 'C:\Users\billu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-12 10:26:50.7054 ${level} Now listening on: https://localhost:7086
+2024-04-12 10:26:50.7054 ${level} Now listening on: http://localhost:5222
+2024-04-12 10:26:50.7054 ${level} Application started. Press Ctrl+C to shut down.
+2024-04-12 10:26:50.7054 ${level} Hosting environment: Development
+2024-04-12 10:26:50.7054 ${level} Content root path: C:\Users\billu\source\repos\FunduNotesApp\FunduNotesApp\
+2024-04-12 10:26:51.2388 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger - -
+2024-04-12 10:26:51.6787 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger - - - 301 0 - 439.2143ms
+2024-04-12 10:26:51.6787 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-12 10:26:51.8248 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 142.3729ms
+2024-04-12 10:26:51.8498 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/swagger-ui.css - -
+2024-04-12 10:26:51.8498 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/swagger-ui-bundle.js - -
+2024-04-12 10:26:51.8498 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/swagger-ui-standalone-preset.js - -
+2024-04-12 10:26:51.8498 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-12 10:26:51.8571 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 6.6235ms
+2024-04-12 10:26:51.8571 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-12 10:26:51.9001 ${level} Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-04-12 10:26:51.9001 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/swagger-ui.css - - - 200 143171 text/css 55.1182ms
+2024-04-12 10:26:51.9247 ${level} Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-04-12 10:26:51.9247 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/swagger-ui-standalone-preset.js - - - 200 332754 application/javascript 74.6848ms
+2024-04-12 10:26:51.9497 ${level} Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-04-12 10:26:51.9497 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/swagger-ui-bundle.js - - - 200 1056524 application/javascript 100.3658ms
+2024-04-12 10:26:52.0400 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 178.1358ms
+2024-04-12 10:26:52.2086 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-12 10:26:52.2449 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/favicon-32x32.png - -
+2024-04-12 10:26:52.2456 ${level} Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2024-04-12 10:26:52.2456 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/favicon-32x32.png - - - 200 628 image/png 1.1715ms
+2024-04-12 10:26:52.4220 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 213.3249ms
+2024-04-12 10:26:59.5262 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/[object Module] - -
+2024-04-12 10:26:59.5960 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/[object Module] - - - 404 0 - 69.8416ms
+2024-04-12 10:27:25.8339 ${level} Request starting HTTP/2 POST https://localhost:7086/api/User/login application/json 54
+2024-04-12 10:27:25.8408 ${level} Executing endpoint 'FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp)'
+2024-04-12 10:27:25.8950 ${level} Route matched with {action = "UserLogin", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UserLogin(CommonLayer.Models.UserLogin) on controller FunduNotesApp.Controllers.UserController (FunduNotesApp).
+2024-04-12 10:27:28.3382 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-04-12 10:27:30.3425 ${level} Executed DbCommand (145ms) [Parameters=[@__user_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[CreatedDate], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedDate]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__user_Email_0
+2024-04-12 10:27:30.5435 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType2`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-04-12 10:27:30.5682 ${level} Executed action FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp) in 4666.3666ms
+2024-04-12 10:27:30.5682 ${level} Executed endpoint 'FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp)'
+2024-04-12 10:27:30.5682 ${level} Request finished HTTP/2 POST https://localhost:7086/api/User/login application/json 54 - 200 - application/json;+charset=utf-8 4742.5163ms
+2024-04-12 10:30:24.7699 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-12 10:30:24.7864 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 16.4594ms
+2024-04-12 10:30:24.8157 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-12 10:30:24.8157 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-12 10:30:24.8157 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 0.5905ms
+2024-04-12 10:30:24.8157 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 7.6181ms
+2024-04-12 10:30:25.3222 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-12 10:30:25.3449 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 22.6582ms
+2024-04-12 10:30:27.6577 ${level} User profile is available. Using 'C:\Users\billu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-12 10:30:28.0521 ${level} Now listening on: https://localhost:7086
+2024-04-12 10:30:28.0521 ${level} Now listening on: http://localhost:5222
+2024-04-12 10:30:28.0521 ${level} Application started. Press Ctrl+C to shut down.
+2024-04-12 10:30:28.0521 ${level} Hosting environment: Development
+2024-04-12 10:30:28.0521 ${level} Content root path: C:\Users\billu\source\repos\FunduNotesApp\FunduNotesApp\
+2024-04-12 10:30:28.5853 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-12 10:30:28.8073 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 225.1645ms
+2024-04-12 10:30:28.8440 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-12 10:30:28.8440 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-12 10:30:28.8440 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 2.4990ms
+2024-04-12 10:30:28.8825 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 38.4697ms
+2024-04-12 10:30:29.4660 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-12 10:30:29.5640 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 97.9250ms
+2024-04-12 10:30:38.1101 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/[object Module] - -
+2024-04-12 10:30:38.1713 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/[object Module] - - - 404 0 - 61.1135ms
+2024-04-12 10:31:07.4126 ${level} Request starting HTTP/2 POST https://localhost:7086/api/User/login application/json 54
+2024-04-12 10:31:07.4126 ${level} Executing endpoint 'FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp)'
+2024-04-12 10:31:07.4559 ${level} Route matched with {action = "UserLogin", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UserLogin(CommonLayer.Models.UserLogin) on controller FunduNotesApp.Controllers.UserController (FunduNotesApp).
+2024-04-12 10:31:09.6443 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-04-12 10:31:11.1366 ${level} Executed DbCommand (108ms) [Parameters=[@__user_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[CreatedDate], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedDate]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__user_Email_0
+2024-04-12 10:31:11.3371 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType2`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-04-12 10:31:11.3496 ${level} Executed action FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp) in 3887.3706ms
+2024-04-12 10:31:11.3496 ${level} Executed endpoint 'FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp)'
+2024-04-12 10:31:11.3496 ${level} Request finished HTTP/2 POST https://localhost:7086/api/User/login application/json 54 - 200 - application/json;+charset=utf-8 3942.2660ms
+2024-04-12 10:32:08.9069 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-12 10:32:08.9291 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 22.2701ms
+2024-04-12 10:32:08.9635 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-12 10:32:08.9635 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-12 10:32:08.9635 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 0.4940ms
+2024-04-12 10:32:08.9825 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 18.9058ms
+2024-04-12 10:32:09.2333 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-12 10:32:09.2556 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 22.3161ms
+2024-04-12 10:32:11.6735 ${level} User profile is available. Using 'C:\Users\billu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-12 10:32:12.0198 ${level} Now listening on: https://localhost:7086
+2024-04-12 10:32:12.0198 ${level} Now listening on: http://localhost:5222
+2024-04-12 10:32:12.0198 ${level} Application started. Press Ctrl+C to shut down.
+2024-04-12 10:32:12.0198 ${level} Hosting environment: Development
+2024-04-12 10:32:12.0198 ${level} Content root path: C:\Users\billu\source\repos\FunduNotesApp\FunduNotesApp\
+2024-04-12 10:32:12.5142 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-12 10:32:12.7059 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 191.7834ms
+2024-04-12 10:32:12.7338 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-12 10:32:12.7338 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-12 10:32:12.7338 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 1.5087ms
+2024-04-12 10:32:12.7662 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 32.4120ms
+2024-04-12 10:32:12.8962 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-12 10:32:12.9952 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 99.0508ms
+2024-04-12 10:32:30.0070 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/[object Module] - -
+2024-04-12 10:32:30.0694 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/[object Module] - - - 404 0 - 62.3260ms
+2024-04-12 10:32:55.4546 ${level} Request starting HTTP/2 POST https://localhost:7086/api/User/login application/json 54
+2024-04-12 10:32:55.4546 ${level} Executing endpoint 'FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp)'
+2024-04-12 10:32:55.5023 ${level} Route matched with {action = "UserLogin", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UserLogin(CommonLayer.Models.UserLogin) on controller FunduNotesApp.Controllers.UserController (FunduNotesApp).
+2024-04-12 10:32:57.6177 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-04-12 10:32:59.0805 ${level} Executed DbCommand (107ms) [Parameters=[@__user_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[CreatedDate], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedDate]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__user_Email_0
+2024-04-12 10:32:59.2892 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType2`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-04-12 10:32:59.3006 ${level} Executed action FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp) in 3793.1655ms
+2024-04-12 10:32:59.3006 ${level} Executed endpoint 'FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp)'
+2024-04-12 10:32:59.3006 ${level} Request finished HTTP/2 POST https://localhost:7086/api/User/login application/json 54 - 200 - application/json;+charset=utf-8 3853.4568ms
+2024-04-12 10:33:47.8423 ${level} User profile is available. Using 'C:\Users\billu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-12 10:33:48.1972 ${level} Now listening on: https://localhost:7086
+2024-04-12 10:33:48.1972 ${level} Now listening on: http://localhost:5222
+2024-04-12 10:33:48.1972 ${level} Application started. Press Ctrl+C to shut down.
+2024-04-12 10:33:48.1972 ${level} Hosting environment: Development
+2024-04-12 10:33:48.1972 ${level} Content root path: C:\Users\billu\source\repos\FunduNotesApp\FunduNotesApp\
+2024-04-12 10:33:48.6668 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-12 10:33:48.8894 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 224.9243ms
+2024-04-12 10:33:48.9143 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-12 10:33:48.9143 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-12 10:33:48.9143 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 3.2221ms
+2024-04-12 10:33:48.9515 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 37.2094ms
+2024-04-12 10:33:49.1461 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-12 10:33:49.2524 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 106.2262ms
+2024-04-12 10:34:02.6128 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/[object Module] - -
+2024-04-12 10:34:02.6777 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/[object Module] - - - 404 0 - 64.9933ms
+2024-04-12 10:34:26.8286 ${level} Request starting HTTP/2 POST https://localhost:7086/api/User/login application/json 54
+2024-04-12 10:34:26.8286 ${level} Executing endpoint 'FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp)'
+2024-04-12 10:34:26.8800 ${level} Route matched with {action = "UserLogin", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UserLogin(CommonLayer.Models.UserLogin) on controller FunduNotesApp.Controllers.UserController (FunduNotesApp).
+2024-04-12 10:34:28.9499 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-04-12 10:34:30.4124 ${level} Executed DbCommand (118ms) [Parameters=[@__user_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[CreatedDate], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedDate]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__user_Email_0
+2024-04-12 10:34:30.6274 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType2`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-04-12 10:34:30.6396 ${level} Executed action FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp) in 3753.7575ms
+2024-04-12 10:34:30.6396 ${level} Executed endpoint 'FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp)'
+2024-04-12 10:34:30.6396 ${level} Request finished HTTP/2 POST https://localhost:7086/api/User/login application/json 54 - 200 - application/json;+charset=utf-8 3819.0549ms
+2024-04-12 10:35:34.4387 ${level} User profile is available. Using 'C:\Users\billu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-12 10:35:34.8041 ${level} Now listening on: https://localhost:7086
+2024-04-12 10:35:34.8041 ${level} Now listening on: http://localhost:5222
+2024-04-12 10:35:34.8041 ${level} Application started. Press Ctrl+C to shut down.
+2024-04-12 10:35:34.8041 ${level} Hosting environment: Development
+2024-04-12 10:35:34.8041 ${level} Content root path: C:\Users\billu\source\repos\FunduNotesApp\FunduNotesApp\
+2024-04-12 10:35:34.9470 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-12 10:35:35.1599 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 215.3321ms
+2024-04-12 10:35:35.1872 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-12 10:35:35.1872 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-12 10:35:35.1872 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 2.8563ms
+2024-04-12 10:35:35.2206 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 33.3826ms
+2024-04-12 10:35:35.4132 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-12 10:35:35.5118 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 98.5129ms
+2024-04-12 10:36:00.6335 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/[object Module] - -
+2024-04-12 10:36:00.6977 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/[object Module] - - - 404 0 - 64.1775ms
+2024-04-12 10:36:28.3882 ${level} Request starting HTTP/2 POST https://localhost:7086/api/User/login application/json 54
+2024-04-12 10:36:28.3882 ${level} Executing endpoint 'FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp)'
+2024-04-12 10:36:28.4363 ${level} Route matched with {action = "UserLogin", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UserLogin(CommonLayer.Models.UserLogin) on controller FunduNotesApp.Controllers.UserController (FunduNotesApp).
+2024-04-12 10:36:30.5104 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-04-12 10:36:31.9824 ${level} Executed DbCommand (116ms) [Parameters=[@__user_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[CreatedDate], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedDate]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__user_Email_0
+2024-04-12 10:36:32.1744 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType2`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-04-12 10:36:32.1890 ${level} Executed action FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp) in 3745.6696ms
+2024-04-12 10:36:32.1890 ${level} Executed endpoint 'FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp)'
+2024-04-12 10:36:32.1890 ${level} Request finished HTTP/2 POST https://localhost:7086/api/User/login application/json 54 - 200 - application/json;+charset=utf-8 3811.6760ms
+2024-04-12 10:39:00.2472 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-12 10:39:00.2472 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 17.2803ms
+2024-04-12 10:39:00.2877 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-12 10:39:00.2877 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 1.1472ms
+2024-04-12 10:39:00.2990 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-12 10:39:00.3205 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 21.4606ms
+2024-04-12 10:39:00.4973 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-12 10:39:00.5159 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 18.5634ms
+2024-04-12 10:39:07.4744 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/[object Module] - -
+2024-04-12 10:39:07.4744 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/[object Module] - - - 404 0 - 5.3084ms
+2024-04-12 10:39:18.8738 ${level} Request starting HTTP/2 POST https://localhost:7086/api/User/login application/json 54
+2024-04-12 10:39:18.8850 ${level} Executing endpoint 'FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp)'
+2024-04-12 10:39:18.8850 ${level} Route matched with {action = "UserLogin", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UserLogin(CommonLayer.Models.UserLogin) on controller FunduNotesApp.Controllers.UserController (FunduNotesApp).
+2024-04-12 10:39:18.9060 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-04-12 10:39:18.9386 ${level} Executed DbCommand (22ms) [Parameters=[@__user_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[CreatedDate], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedDate]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__user_Email_0
+2024-04-12 10:39:18.9386 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType2`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-04-12 10:39:18.9386 ${level} Executed action FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp) in 54.8267ms
+2024-04-12 10:39:18.9386 ${level} Executed endpoint 'FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp)'
+2024-04-12 10:39:18.9386 ${level} Request finished HTTP/2 POST https://localhost:7086/api/User/login application/json 54 - 200 - application/json;+charset=utf-8 67.1495ms
+2024-04-12 10:42:14.5427 ${level} User profile is available. Using 'C:\Users\billu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-12 10:42:14.9360 ${level} Now listening on: https://localhost:7086
+2024-04-12 10:42:14.9360 ${level} Now listening on: http://localhost:5222
+2024-04-12 10:42:14.9360 ${level} Application started. Press Ctrl+C to shut down.
+2024-04-12 10:42:14.9360 ${level} Hosting environment: Development
+2024-04-12 10:42:14.9360 ${level} Content root path: C:\Users\billu\source\repos\FunduNotesApp\FunduNotesApp\
+2024-04-12 10:42:15.2732 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-12 10:42:15.5228 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 251.4692ms
+2024-04-12 10:42:15.5465 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-12 10:42:15.5465 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-12 10:42:15.5465 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 1.5134ms
+2024-04-12 10:42:15.5844 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 37.8819ms
+2024-04-12 10:42:15.7611 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-12 10:42:15.8748 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 113.7003ms
+2024-04-12 10:42:23.9913 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/[object Module] - -
+2024-04-12 10:42:24.0607 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/[object Module] - - - 404 0 - 68.7920ms
+2024-04-12 10:42:35.2795 ${level} Request starting HTTP/2 POST https://localhost:7086/api/User/login application/json 54
+2024-04-12 10:42:35.2795 ${level} Executing endpoint 'FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp)'
+2024-04-12 10:42:35.3147 ${level} Route matched with {action = "UserLogin", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UserLogin(CommonLayer.Models.UserLogin) on controller FunduNotesApp.Controllers.UserController (FunduNotesApp).
+2024-04-12 10:42:37.4125 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-04-12 10:42:38.8840 ${level} Executed DbCommand (101ms) [Parameters=[@__user_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[CreatedDate], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedDate]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__user_Email_0
+2024-04-12 10:42:39.0544 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType2`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-04-12 10:42:39.0655 ${level} Executed action FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp) in 3744.7898ms
+2024-04-12 10:42:39.0655 ${level} Executed endpoint 'FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp)'
+2024-04-12 10:42:39.0655 ${level} Request finished HTTP/2 POST https://localhost:7086/api/User/login application/json 54 - 200 - application/json;+charset=utf-8 3793.0792ms
+2024-04-12 10:43:46.6132 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-12 10:43:46.6381 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 24.9105ms
+2024-04-12 10:43:46.6768 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-12 10:43:46.6768 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-12 10:43:46.6768 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 0.7277ms
+2024-04-12 10:43:46.7078 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 30.8878ms
+2024-04-12 10:43:47.1468 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-12 10:43:47.1615 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 14.7288ms
+2024-04-12 10:43:49.0121 ${level} User profile is available. Using 'C:\Users\billu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-12 10:43:49.3467 ${level} Now listening on: https://localhost:7086
+2024-04-12 10:43:49.3467 ${level} Now listening on: http://localhost:5222
+2024-04-12 10:43:49.3467 ${level} Application started. Press Ctrl+C to shut down.
+2024-04-12 10:43:49.3467 ${level} Hosting environment: Development
+2024-04-12 10:43:49.3467 ${level} Content root path: C:\Users\billu\source\repos\FunduNotesApp\FunduNotesApp\
+2024-04-12 10:43:49.7758 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-12 10:43:49.9983 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 223.7424ms
+2024-04-12 10:43:50.0247 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-12 10:43:50.0247 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-12 10:43:50.0247 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 2.6181ms
+2024-04-12 10:43:50.0687 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 43.9019ms
+2024-04-12 10:43:50.5050 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-12 10:43:50.6098 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 104.7877ms
+2024-04-12 10:43:56.5627 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/[object Module] - -
+2024-04-12 10:43:56.6259 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/[object Module] - - - 404 0 - 63.2257ms
+2024-04-12 10:44:34.6289 ${level} Request starting HTTP/2 POST https://localhost:7086/api/User/login application/json 54
+2024-04-12 10:44:34.6289 ${level} Executing endpoint 'FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp)'
+2024-04-12 10:44:34.6834 ${level} Route matched with {action = "UserLogin", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UserLogin(CommonLayer.Models.UserLogin) on controller FunduNotesApp.Controllers.UserController (FunduNotesApp).
+2024-04-12 10:44:36.7425 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-04-12 10:44:38.1192 ${level} Executed DbCommand (110ms) [Parameters=[@__user_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[CreatedDate], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedDate]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__user_Email_0
+2024-04-12 10:44:38.3048 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType2`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-04-12 10:44:38.3187 ${level} Executed action FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp) in 3626.6044ms
+2024-04-12 10:44:38.3187 ${level} Executed endpoint 'FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp)'
+2024-04-12 10:44:38.3263 ${level} Request finished HTTP/2 POST https://localhost:7086/api/User/login application/json 54 - 200 - application/json;+charset=utf-8 3697.4459ms
+2024-04-12 10:48:09.0052 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-12 10:48:09.0230 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 17.8790ms
+2024-04-12 10:48:09.0453 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-12 10:48:09.0453 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-12 10:48:09.0453 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 0.3515ms
+2024-04-12 10:48:09.0809 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 35.5750ms
+2024-04-12 10:48:09.2300 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-12 10:48:09.2511 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 20.9563ms
+2024-04-12 10:48:24.2129 ${level} User profile is available. Using 'C:\Users\billu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-12 10:48:24.6649 ${level} Now listening on: https://localhost:7086
+2024-04-12 10:48:24.6649 ${level} Now listening on: http://localhost:5222
+2024-04-12 10:48:24.6649 ${level} Application started. Press Ctrl+C to shut down.
+2024-04-12 10:48:24.6649 ${level} Hosting environment: Development
+2024-04-12 10:48:24.6649 ${level} Content root path: C:\Users\billu\source\repos\FunduNotesApp\FunduNotesApp\
+2024-04-12 10:48:25.0707 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-12 10:48:25.3134 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 245.1196ms
+2024-04-12 10:48:25.3134 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-12 10:48:25.3134 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-12 10:48:25.3255 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 1.8922ms
+2024-04-12 10:48:25.3586 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 35.0303ms
+2024-04-12 10:48:25.5202 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-12 10:48:25.6322 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 112.0480ms
+2024-04-12 10:48:36.9681 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/[object Module] - -
+2024-04-12 10:48:37.0291 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/[object Module] - - - 404 0 - 60.9865ms
+2024-04-12 10:49:02.0957 ${level} Request starting HTTP/2 POST https://localhost:7086/api/User/login application/json 54
+2024-04-12 10:49:02.0957 ${level} Executing endpoint 'FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp)'
+2024-04-12 10:49:02.1541 ${level} Route matched with {action = "UserLogin", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UserLogin(CommonLayer.Models.UserLogin) on controller FunduNotesApp.Controllers.UserController (FunduNotesApp).
+2024-04-12 10:49:04.1704 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-04-12 10:49:05.7673 ${level} Executed DbCommand (106ms) [Parameters=[@__user_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[CreatedDate], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedDate]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__user_Email_0
+2024-04-12 10:49:05.9657 ${level} Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType2`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-04-12 10:49:05.9657 ${level} Executed action FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp) in 3818.8121ms
+2024-04-12 10:49:05.9821 ${level} Executed endpoint 'FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp)'
+2024-04-12 10:49:05.9821 ${level} Request finished HTTP/2 POST https://localhost:7086/api/User/login application/json 54 - 400 - application/json;+charset=utf-8 3892.2451ms
+2024-04-12 10:49:21.6885 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/[object Module] - -
+2024-04-12 10:49:21.6885 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/[object Module] - - - 404 0 - 4.2272ms
+2024-04-12 10:49:25.1237 ${level} Request starting HTTP/2 GET https://localhost:7086/api/User/GetAllData - -
+2024-04-12 10:49:25.1237 ${level} Executing endpoint 'FunduNotesApp.Controllers.UserController.GetAll (FunduNotesApp)'
+2024-04-12 10:49:25.1237 ${level} Route matched with {action = "GetAll", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller FunduNotesApp.Controllers.UserController (FunduNotesApp).
+2024-04-12 10:49:25.1493 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-04-12 10:49:25.1752 ${level} Executed DbCommand (13ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[CreatedDate], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedDate]
+FROM [Users] AS [u]
+2024-04-12 10:49:25.1752 ${level} Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[RepositoryLayer.Entity.UserEntity, RepositoryLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-12 10:49:25.1859 ${level} Executed action FunduNotesApp.Controllers.UserController.GetAll (FunduNotesApp) in 54.1412ms
+2024-04-12 10:49:25.1859 ${level} Executed endpoint 'FunduNotesApp.Controllers.UserController.GetAll (FunduNotesApp)'
+2024-04-12 10:49:25.1859 ${level} Request finished HTTP/2 GET https://localhost:7086/api/User/GetAllData - - - 200 - application/json;+charset=utf-8 62.6207ms
+2024-04-12 10:50:40.9728 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-12 10:50:40.9901 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 17.3286ms
+2024-04-12 10:50:41.0217 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-12 10:50:41.0217 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-12 10:50:41.0217 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 0.3613ms
+2024-04-12 10:50:41.0574 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 35.6867ms
+2024-04-12 10:50:41.5125 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-12 10:50:41.5125 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 14.1916ms
+2024-04-12 10:50:43.5687 ${level} User profile is available. Using 'C:\Users\billu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-12 10:50:43.9574 ${level} Now listening on: https://localhost:7086
+2024-04-12 10:50:43.9574 ${level} Now listening on: http://localhost:5222
+2024-04-12 10:50:43.9574 ${level} Application started. Press Ctrl+C to shut down.
+2024-04-12 10:50:43.9574 ${level} Hosting environment: Development
+2024-04-12 10:50:43.9574 ${level} Content root path: C:\Users\billu\source\repos\FunduNotesApp\FunduNotesApp\
+2024-04-12 10:50:44.3742 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-12 10:50:44.6111 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 240.1798ms
+2024-04-12 10:50:44.6381 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-12 10:50:44.6381 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-12 10:50:44.6381 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 2.2178ms
+2024-04-12 10:50:44.6805 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 42.2897ms
+2024-04-12 10:50:45.1931 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-12 10:50:45.3000 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 106.7900ms
+2024-04-12 10:51:02.0821 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/[object Module] - -
+2024-04-12 10:51:02.1537 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/[object Module] - - - 404 0 - 71.5945ms
+2024-04-12 10:51:25.9830 ${level} Request starting HTTP/2 POST https://localhost:7086/api/User/login application/json 54
+2024-04-12 10:51:25.9830 ${level} Executing endpoint 'FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp)'
+2024-04-12 10:51:26.0260 ${level} Route matched with {action = "UserLogin", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UserLogin(CommonLayer.Models.UserLogin) on controller FunduNotesApp.Controllers.UserController (FunduNotesApp).
+2024-04-12 10:51:28.1143 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-04-12 10:51:29.5787 ${level} Executed DbCommand (108ms) [Parameters=[@__user_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[CreatedDate], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedDate]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__user_Email_0
+2024-04-12 10:51:29.7638 ${level} Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType2`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-04-12 10:51:29.7750 ${level} Executed action FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp) in 3743.2525ms
+2024-04-12 10:51:29.7750 ${level} Executed endpoint 'FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp)'
+2024-04-12 10:51:29.7817 ${level} Request finished HTTP/2 POST https://localhost:7086/api/User/login application/json 54 - 400 - application/json;+charset=utf-8 3798.7168ms
+2024-04-12 10:53:43.2063 ${level} User profile is available. Using 'C:\Users\billu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-12 10:53:44.0343 ${level} Now listening on: https://localhost:7086
+2024-04-12 10:53:44.0343 ${level} Now listening on: http://localhost:5222
+2024-04-12 10:53:44.0343 ${level} Application started. Press Ctrl+C to shut down.
+2024-04-12 10:53:44.0343 ${level} Hosting environment: Development
+2024-04-12 10:53:44.0343 ${level} Content root path: C:\Users\billu\source\repos\FunduNotesApp\FunduNotesApp\
+2024-04-12 10:53:47.0400 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-12 10:53:48.1131 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 1076.6184ms
+2024-04-12 10:53:48.1287 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-12 10:53:48.1287 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-12 10:53:48.1486 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 19.7925ms
+2024-04-12 10:53:48.2912 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 162.3548ms
+2024-04-12 10:53:48.3419 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-12 10:53:48.8683 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 526.3757ms
+2024-04-12 10:53:55.4184 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/[object Module] - -
+2024-04-12 10:53:55.6179 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/[object Module] - - - 404 0 - 199.5099ms
+2024-04-12 10:54:17.3822 ${level} Request starting HTTP/2 POST https://localhost:7086/api/User/login application/json 54
+2024-04-12 10:54:17.3919 ${level} Executing endpoint 'FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp)'
+2024-04-12 10:54:17.4773 ${level} Route matched with {action = "UserLogin", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UserLogin(CommonLayer.Models.UserLogin) on controller FunduNotesApp.Controllers.UserController (FunduNotesApp).
+2024-04-12 10:54:20.9007 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-04-12 10:54:23.7373 ${level} Executed DbCommand (212ms) [Parameters=[@__user_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[CreatedDate], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedDate]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__user_Email_0
+2024-04-12 10:55:44.2747 ${level} Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType2`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-04-12 10:55:44.3427 ${level} Executed action FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp) in 86856.3637ms
+2024-04-12 10:55:44.3427 ${level} Executed endpoint 'FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp)'
+2024-04-12 10:55:44.3621 ${level} Request finished HTTP/2 POST https://localhost:7086/api/User/login application/json 54 - 400 - application/json;+charset=utf-8 86979.8868ms
+2024-04-12 10:55:52.6594 ${level} Request starting HTTP/2 POST https://localhost:7086/api/User/login application/json 54
+2024-04-12 10:55:52.6714 ${level} Executing endpoint 'FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp)'
+2024-04-12 10:55:52.6714 ${level} Route matched with {action = "UserLogin", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UserLogin(CommonLayer.Models.UserLogin) on controller FunduNotesApp.Controllers.UserController (FunduNotesApp).
+2024-04-12 10:55:52.6998 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-04-12 10:55:52.7287 ${level} Executed DbCommand (12ms) [Parameters=[@__user_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[CreatedDate], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedDate]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__user_Email_0
+2024-04-12 10:55:58.3252 ${level} Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType2`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-04-12 10:55:58.3252 ${level} Executed action FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp) in 5654.0954ms
+2024-04-12 10:55:58.3252 ${level} Executed endpoint 'FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp)'
+2024-04-12 10:55:58.3252 ${level} Request finished HTTP/2 POST https://localhost:7086/api/User/login application/json 54 - 400 - application/json;+charset=utf-8 5667.3375ms
+2024-04-12 10:56:03.5870 ${level} Request starting HTTP/2 POST https://localhost:7086/api/User/login application/json 54
+2024-04-12 10:56:03.5870 ${level} Executing endpoint 'FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp)'
+2024-04-12 10:56:03.5870 ${level} Route matched with {action = "UserLogin", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UserLogin(CommonLayer.Models.UserLogin) on controller FunduNotesApp.Controllers.UserController (FunduNotesApp).
+2024-04-12 10:56:03.7224 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-04-12 10:56:03.7224 ${level} Executed DbCommand (4ms) [Parameters=[@__user_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[CreatedDate], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedDate]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__user_Email_0
+2024-04-12 10:56:47.0347 ${level} Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType2`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-04-12 10:56:47.0935 ${level} Executed action FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp) in 43504.1059ms
+2024-04-12 10:56:47.0935 ${level} Executed endpoint 'FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp)'
+2024-04-12 10:56:47.0935 ${level} Request finished HTTP/2 POST https://localhost:7086/api/User/login application/json 54 - 400 - application/json;+charset=utf-8 43506.8944ms
+2024-04-12 10:56:56.0075 ${level} Request starting HTTP/2 POST https://localhost:7086/api/User/login application/json 54
+2024-04-12 10:56:56.0075 ${level} Executing endpoint 'FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp)'
+2024-04-12 10:56:56.0075 ${level} Route matched with {action = "UserLogin", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UserLogin(CommonLayer.Models.UserLogin) on controller FunduNotesApp.Controllers.UserController (FunduNotesApp).
+2024-04-12 10:56:56.0191 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-04-12 10:56:56.0191 ${level} Executed DbCommand (5ms) [Parameters=[@__user_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[CreatedDate], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedDate]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__user_Email_0
+2024-04-12 10:59:39.2866 ${level} User profile is available. Using 'C:\Users\billu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-12 10:59:40.1423 ${level} Now listening on: https://localhost:7086
+2024-04-12 10:59:40.1423 ${level} Now listening on: http://localhost:5222
+2024-04-12 10:59:40.1423 ${level} Application started. Press Ctrl+C to shut down.
+2024-04-12 10:59:40.1423 ${level} Hosting environment: Development
+2024-04-12 10:59:40.1423 ${level} Content root path: C:\Users\billu\source\repos\FunduNotesApp\FunduNotesApp\
+2024-04-12 10:59:42.9263 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-12 10:59:43.2422 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 317.7188ms
+2024-04-12 10:59:43.2615 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-12 10:59:43.2615 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-12 10:59:43.2615 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 9.0101ms
+2024-04-12 10:59:43.3509 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 80.1137ms
+2024-04-12 10:59:43.3858 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-12 10:59:43.5555 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 169.6631ms
+2024-04-12 10:59:48.3270 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/[object Module] - -
+2024-04-12 10:59:48.4890 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/[object Module] - - - 404 0 - 162.0519ms
+2024-04-12 11:00:20.4269 ${level} Request starting HTTP/2 POST https://localhost:7086/api/User/login application/json 62
+2024-04-12 11:00:20.4801 ${level} Executing endpoint 'FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp)'
+2024-04-12 11:00:20.5371 ${level} Route matched with {action = "UserLogin", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UserLogin(CommonLayer.Models.UserLogin) on controller FunduNotesApp.Controllers.UserController (FunduNotesApp).
+2024-04-12 11:00:21.2395 ${level} Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-04-12 11:00:21.2639 ${level} Executed action FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp) in 713.1205ms
+2024-04-12 11:00:21.2639 ${level} Executed endpoint 'FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp)'
+2024-04-12 11:00:21.2639 ${level} Request finished HTTP/2 POST https://localhost:7086/api/User/login application/json 62 - 400 - application/problem+json;+charset=utf-8 844.2005ms
+2024-04-12 11:01:22.2743 ${level} Request starting HTTP/2 POST https://localhost:7086/api/User/login application/json 62
+2024-04-12 11:01:22.3104 ${level} Executing endpoint 'FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp)'
+2024-04-12 11:01:22.3104 ${level} Route matched with {action = "UserLogin", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UserLogin(CommonLayer.Models.UserLogin) on controller FunduNotesApp.Controllers.UserController (FunduNotesApp).
+2024-04-12 11:01:22.3354 ${level} Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-04-12 11:01:22.3354 ${level} Executed action FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp) in 24.8352ms
+2024-04-12 11:01:22.3354 ${level} Executed endpoint 'FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp)'
+2024-04-12 11:01:22.3354 ${level} Request finished HTTP/2 POST https://localhost:7086/api/User/login application/json 62 - 400 - application/problem+json;+charset=utf-8 62.1039ms
+2024-04-12 11:42:23.6888 ${level} User profile is available. Using 'C:\Users\billu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-12 11:42:24.4222 ${level} Now listening on: https://localhost:7086
+2024-04-12 11:42:24.4222 ${level} Now listening on: http://localhost:5222
+2024-04-12 11:42:24.4222 ${level} Application started. Press Ctrl+C to shut down.
+2024-04-12 11:42:24.4222 ${level} Hosting environment: Development
+2024-04-12 11:42:24.4222 ${level} Content root path: C:\Users\billu\source\repos\FunduNotesApp\FunduNotesApp\
+2024-04-12 11:42:24.6652 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-12 11:42:24.9399 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 276.3248ms
+2024-04-12 11:42:24.9567 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-12 11:42:24.9567 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 2.2758ms
+2024-04-12 11:42:24.9862 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-12 11:42:25.0275 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 41.1903ms
+2024-04-12 11:42:25.2060 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-12 11:42:25.3336 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 127.5876ms
+2024-04-12 11:42:31.5706 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/[object Module] - -
+2024-04-12 11:42:31.6214 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/[object Module] - - - 404 0 - 50.8338ms
+2024-04-12 11:42:54.4224 ${level} Request starting HTTP/2 POST https://localhost:7086/api/User/login application/json 54
+2024-04-12 11:42:54.4224 ${level} Executing endpoint 'FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp)'
+2024-04-12 11:42:54.4568 ${level} Route matched with {action = "UserLogin", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UserLogin(CommonLayer.Models.UserLogin) on controller FunduNotesApp.Controllers.UserController (FunduNotesApp).
+2024-04-12 11:42:55.4541 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-04-12 11:42:56.5711 ${level} Executed DbCommand (64ms) [Parameters=[@__login_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[CreatedDate], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedDate]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__login_Email_0
+2024-04-12 11:42:56.6378 ${level} Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType2`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-04-12 11:42:56.6447 ${level} Executed action FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp) in 2183.9439ms
+2024-04-12 11:42:56.6447 ${level} Executed endpoint 'FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp)'
+2024-04-12 11:42:56.6447 ${level} Request finished HTTP/2 POST https://localhost:7086/api/User/login application/json 54 - 400 - application/json;+charset=utf-8 2226.8931ms
+2024-04-12 11:43:30.6192 ${level} Request starting HTTP/2 POST https://localhost:7086/api/User/login application/json 48
+2024-04-12 11:43:30.6286 ${level} Executing endpoint 'FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp)'
+2024-04-12 11:43:30.6286 ${level} Route matched with {action = "UserLogin", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UserLogin(CommonLayer.Models.UserLogin) on controller FunduNotesApp.Controllers.UserController (FunduNotesApp).
+2024-04-12 11:43:30.6461 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-04-12 11:43:30.6638 ${level} Executed DbCommand (12ms) [Parameters=[@__login_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[CreatedDate], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedDate]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__login_Email_0
+2024-04-12 11:43:30.6749 ${level} Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType2`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-04-12 11:43:30.6749 ${level} Executed action FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp) in 46.7643ms
+2024-04-12 11:43:30.6749 ${level} Executed endpoint 'FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp)'
+2024-04-12 11:43:30.6749 ${level} Request finished HTTP/2 POST https://localhost:7086/api/User/login application/json 48 - 400 - application/json;+charset=utf-8 57.1503ms
+2024-04-12 11:43:35.2874 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/[object Module] - -
+2024-04-12 11:43:35.2874 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/[object Module] - - - 404 0 - 0.5536ms
+2024-04-12 11:43:39.3409 ${level} Request starting HTTP/2 GET https://localhost:7086/api/User/GetAllData - -
+2024-04-12 11:43:39.3422 ${level} Executing endpoint 'FunduNotesApp.Controllers.UserController.GetAll (FunduNotesApp)'
+2024-04-12 11:43:39.3422 ${level} Route matched with {action = "GetAll", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller FunduNotesApp.Controllers.UserController (FunduNotesApp).
+2024-04-12 11:43:39.3932 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-04-12 11:43:39.3932 ${level} Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[CreatedDate], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedDate]
+FROM [Users] AS [u]
+2024-04-12 11:43:39.3932 ${level} Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[RepositoryLayer.Entity.UserEntity, RepositoryLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-12 11:43:39.4063 ${level} Executed action FunduNotesApp.Controllers.UserController.GetAll (FunduNotesApp) in 62.242ms
+2024-04-12 11:43:39.4063 ${level} Executed endpoint 'FunduNotesApp.Controllers.UserController.GetAll (FunduNotesApp)'
+2024-04-12 11:43:39.4063 ${level} Request finished HTTP/2 GET https://localhost:7086/api/User/GetAllData - - - 200 - application/json;+charset=utf-8 65.8018ms
+2024-04-12 11:44:27.6479 ${level} Request starting HTTP/2 POST https://localhost:7086/api/User/login application/json 54
+2024-04-12 11:44:27.6479 ${level} Executing endpoint 'FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp)'
+2024-04-12 11:44:27.6479 ${level} Route matched with {action = "UserLogin", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UserLogin(CommonLayer.Models.UserLogin) on controller FunduNotesApp.Controllers.UserController (FunduNotesApp).
+2024-04-12 11:44:27.6479 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-04-12 11:44:27.6479 ${level} Executed DbCommand (3ms) [Parameters=[@__login_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[CreatedDate], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedDate]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__login_Email_0
+2024-04-12 11:44:27.6479 ${level} Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType2`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-04-12 11:44:27.6543 ${level} Executed action FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp) in 5.6707ms
+2024-04-12 11:44:27.6543 ${level} Executed endpoint 'FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp)'
+2024-04-12 11:44:27.6543 ${level} Request finished HTTP/2 POST https://localhost:7086/api/User/login application/json 54 - 400 - application/json;+charset=utf-8 6.5953ms
+2024-04-12 11:45:28.0013 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-12 11:45:28.0147 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 13.4222ms
+2024-04-12 11:45:28.0543 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-12 11:45:28.0543 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-12 11:45:28.0543 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 0.4289ms
+2024-04-12 11:45:28.0652 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 10.8870ms
+2024-04-12 11:45:28.1917 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-12 11:45:28.1917 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 9.7223ms
+2024-04-12 11:45:31.2848 ${level} User profile is available. Using 'C:\Users\billu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-12 11:45:31.5954 ${level} Now listening on: https://localhost:7086
+2024-04-12 11:45:31.5954 ${level} Now listening on: http://localhost:5222
+2024-04-12 11:45:31.5954 ${level} Application started. Press Ctrl+C to shut down.
+2024-04-12 11:45:31.5954 ${level} Hosting environment: Development
+2024-04-12 11:45:31.5954 ${level} Content root path: C:\Users\billu\source\repos\FunduNotesApp\FunduNotesApp\
+2024-04-12 11:45:31.7323 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-12 11:45:31.9013 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 170.4522ms
+2024-04-12 11:45:31.9285 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-12 11:45:31.9285 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-12 11:45:31.9285 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 1.3458ms
+2024-04-12 11:45:31.9646 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 36.0672ms
+2024-04-12 11:45:32.0811 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-12 11:45:32.1746 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 93.5415ms
+2024-04-12 11:45:40.1455 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/[object Module] - -
+2024-04-12 11:45:40.2186 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/[object Module] - - - 404 0 - 73.0443ms
+2024-04-12 11:46:04.8519 ${level} Request starting HTTP/2 POST https://localhost:7086/api/User/login application/json 54
+2024-04-12 11:46:04.8564 ${level} Executing endpoint 'FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp)'
+2024-04-12 11:46:04.8966 ${level} Route matched with {action = "UserLogin", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UserLogin(CommonLayer.Models.UserLogin) on controller FunduNotesApp.Controllers.UserController (FunduNotesApp).
+2024-04-12 11:46:06.7222 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-04-12 11:46:08.0709 ${level} Executed DbCommand (112ms) [Parameters=[@__login_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[CreatedDate], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedDate]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__login_Email_0
+2024-04-12 11:46:08.2462 ${level} Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType2`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-04-12 11:46:08.2589 ${level} Executed action FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp) in 3355.1105ms
+2024-04-12 11:46:08.2589 ${level} Executed endpoint 'FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp)'
+2024-04-12 11:46:08.2654 ${level} Request finished HTTP/2 POST https://localhost:7086/api/User/login application/json 54 - 400 - application/json;+charset=utf-8 3413.4699ms
+2024-04-12 11:53:35.1140 ${level} User profile is available. Using 'C:\Users\billu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-12 11:53:35.4653 ${level} Now listening on: https://localhost:7086
+2024-04-12 11:53:35.4653 ${level} Now listening on: http://localhost:5222
+2024-04-12 11:53:35.4653 ${level} Application started. Press Ctrl+C to shut down.
+2024-04-12 11:53:35.4653 ${level} Hosting environment: Development
+2024-04-12 11:53:35.4653 ${level} Content root path: C:\Users\billu\source\repos\FunduNotesApp\FunduNotesApp\
+2024-04-12 11:53:35.9511 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-12 11:53:36.2176 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 267.8703ms
+2024-04-12 11:53:36.2455 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-12 11:53:36.2455 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-12 11:53:36.2455 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 2.9773ms
+2024-04-12 11:53:36.2831 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 37.5200ms
+2024-04-12 11:53:36.6491 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-12 11:53:36.7530 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 103.8702ms
+2024-04-12 11:54:03.5922 ${level} User profile is available. Using 'C:\Users\billu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-12 11:54:03.9030 ${level} Now listening on: https://localhost:7086
+2024-04-12 11:54:03.9030 ${level} Now listening on: http://localhost:5222
+2024-04-12 11:54:03.9030 ${level} Application started. Press Ctrl+C to shut down.
+2024-04-12 11:54:03.9030 ${level} Hosting environment: Development
+2024-04-12 11:54:03.9030 ${level} Content root path: C:\Users\billu\source\repos\FunduNotesApp\FunduNotesApp\
+2024-04-12 11:54:04.3677 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-12 11:54:04.5648 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 197.5955ms
+2024-04-12 11:54:04.5904 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-12 11:54:04.5904 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-12 11:54:04.5904 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 2.9655ms
+2024-04-12 11:54:04.6381 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 47.5504ms
+2024-04-12 11:54:05.0089 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-12 11:54:05.1016 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 92.6966ms
+2024-04-12 11:56:38.2422 ${level} User profile is available. Using 'C:\Users\billu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-12 11:56:38.5396 ${level} Now listening on: https://localhost:7086
+2024-04-12 11:56:38.5396 ${level} Now listening on: http://localhost:5222
+2024-04-12 11:56:38.5396 ${level} Application started. Press Ctrl+C to shut down.
+2024-04-12 11:56:38.5396 ${level} Hosting environment: Development
+2024-04-12 11:56:38.5396 ${level} Content root path: C:\Users\billu\source\repos\FunduNotesApp\FunduNotesApp\
+2024-04-12 11:56:39.0164 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-12 11:56:39.2133 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 199.2848ms
+2024-04-12 11:56:39.2283 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-12 11:56:39.2283 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-12 11:56:39.2283 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 1.9534ms
+2024-04-12 11:56:39.2666 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 38.2750ms
+2024-04-12 11:56:39.3956 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-12 11:56:39.5290 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 133.4170ms
+2024-04-12 11:57:32.1368 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-12 11:57:32.1452 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 8.3453ms
+2024-04-12 11:57:32.1650 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-12 11:57:32.1650 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-12 11:57:32.1650 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 0.4797ms
+2024-04-12 11:57:32.1753 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 9.8324ms
+2024-04-12 11:57:32.3726 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-12 11:57:32.3726 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 14.3572ms
+2024-04-12 11:57:36.3877 ${level} User profile is available. Using 'C:\Users\billu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-12 11:57:36.7287 ${level} Now listening on: https://localhost:7086
+2024-04-12 11:57:36.7287 ${level} Now listening on: http://localhost:5222
+2024-04-12 11:57:36.7287 ${level} Application started. Press Ctrl+C to shut down.
+2024-04-12 11:57:36.7287 ${level} Hosting environment: Development
+2024-04-12 11:57:36.7287 ${level} Content root path: C:\Users\billu\source\repos\FunduNotesApp\FunduNotesApp\
+2024-04-12 11:57:36.8584 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-12 11:57:37.0213 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 163.9260ms
+2024-04-12 11:57:37.0384 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-12 11:57:37.0384 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-12 11:57:37.0384 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 1.4180ms
+2024-04-12 11:57:37.0713 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 32.8168ms
+2024-04-12 11:57:37.2231 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-12 11:57:37.3294 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 106.3235ms
+2024-04-12 11:57:46.7283 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/[object Module] - -
+2024-04-12 11:57:46.7890 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/[object Module] - - - 404 0 - 60.5600ms
+2024-04-12 11:58:16.1336 ${level} Request starting HTTP/2 POST https://localhost:7086/api/User/login Method application/json 54
+2024-04-12 11:58:16.1394 ${level} Executing endpoint 'FunduNotesApp.Controllers.UserController.Login (FunduNotesApp)'
+2024-04-12 11:58:16.1788 ${level} Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(CommonLayer.Models.UserLogin) on controller FunduNotesApp.Controllers.UserController (FunduNotesApp).
+2024-04-12 11:58:17.4029 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-04-12 11:58:19.1481 ${level} Executed DbCommand (85ms) [Parameters=[@__login_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[CreatedDate], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedDate]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__login_Email_0
+2024-04-12 11:58:19.2763 ${level} Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType2`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-04-12 11:58:19.2859 ${level} Executed action FunduNotesApp.Controllers.UserController.Login (FunduNotesApp) in 3103.8049ms
+2024-04-12 11:58:19.2859 ${level} Executed endpoint 'FunduNotesApp.Controllers.UserController.Login (FunduNotesApp)'
+2024-04-12 11:58:19.2859 ${level} Request finished HTTP/2 POST https://localhost:7086/api/User/login Method application/json 54 - 400 - application/json;+charset=utf-8 3157.2883ms
+2024-04-12 15:33:25.2980 ${level} User profile is available. Using 'C:\Users\billu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-12 15:33:28.1242 ${level} Now listening on: https://localhost:7086
+2024-04-12 15:33:28.1242 ${level} Now listening on: http://localhost:5222
+2024-04-12 15:33:28.1242 ${level} Application started. Press Ctrl+C to shut down.
+2024-04-12 15:33:28.1242 ${level} Hosting environment: Development
+2024-04-12 15:33:28.1242 ${level} Content root path: C:\Users\billu\source\repos\FunduNotesApp\FunduNotesApp\
+2024-04-12 15:33:28.8567 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-12 15:33:29.5053 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 652.3664ms
+2024-04-12 15:33:29.5109 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-12 15:33:29.5109 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 4.8882ms
+2024-04-12 15:33:29.5109 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-12 15:33:29.6315 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 107.5312ms
+2024-04-12 15:33:29.6767 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-12 15:33:29.8853 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 208.5260ms
+2024-04-12 15:34:01.9830 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/[object Module] - -
+2024-04-12 15:34:02.0878 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/[object Module] - - - 404 0 - 104.7969ms
+2024-04-12 15:34:34.0342 ${level} Request starting HTTP/2 POST https://localhost:7086/api/User/LoginMethod application/json 54
+2024-04-12 15:34:34.0342 ${level} Executing endpoint 'FunduNotesApp.Controllers.UserController.LoginMethod (FunduNotesApp)'
+2024-04-12 15:34:34.0953 ${level} Route matched with {action = "LoginMethod", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult LoginMethod(CommonLayer.Models.UserLogin) on controller FunduNotesApp.Controllers.UserController (FunduNotesApp).
+2024-04-12 15:34:36.7418 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-04-12 15:34:38.9462 ${level} Executed DbCommand (180ms) [Parameters=[@__login_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[CreatedDate], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedDate]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__login_Email_0
+2024-04-12 15:34:39.1670 ${level} Executing NotFoundObjectResult, writing value of type 'System.String'.
+2024-04-12 15:34:39.1757 ${level} Executed action FunduNotesApp.Controllers.UserController.LoginMethod (FunduNotesApp) in 5072.7947ms
+2024-04-12 15:34:39.1757 ${level} Executed endpoint 'FunduNotesApp.Controllers.UserController.LoginMethod (FunduNotesApp)'
+2024-04-12 15:34:39.1757 ${level} Request finished HTTP/2 POST https://localhost:7086/api/User/LoginMethod application/json 54 - 404 - text/plain;+charset=utf-8 5150.2304ms
+2024-04-12 15:35:00.1435 ${level} Request starting HTTP/2 POST https://localhost:7086/api/User/LoginMethod application/json 54
+2024-04-12 15:35:00.1570 ${level} Executing endpoint 'FunduNotesApp.Controllers.UserController.LoginMethod (FunduNotesApp)'
+2024-04-12 15:35:00.1570 ${level} Route matched with {action = "LoginMethod", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult LoginMethod(CommonLayer.Models.UserLogin) on controller FunduNotesApp.Controllers.UserController (FunduNotesApp).
+2024-04-12 15:35:00.1765 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-04-12 15:35:00.2152 ${level} Executed DbCommand (30ms) [Parameters=[@__login_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[CreatedDate], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedDate]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__login_Email_0
+2024-04-12 15:35:00.2165 ${level} Executing NotFoundObjectResult, writing value of type 'System.String'.
+2024-04-12 15:35:00.2165 ${level} Executed action FunduNotesApp.Controllers.UserController.LoginMethod (FunduNotesApp) in 59.2339ms
+2024-04-12 15:35:00.2165 ${level} Executed endpoint 'FunduNotesApp.Controllers.UserController.LoginMethod (FunduNotesApp)'
+2024-04-12 15:35:00.2165 ${level} Request finished HTTP/2 POST https://localhost:7086/api/User/LoginMethod application/json 54 - 404 - text/plain;+charset=utf-8 74.0731ms
+2024-04-12 15:35:16.7911 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/[object Module] - -
+2024-04-12 15:35:16.7911 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/[object Module] - - - 404 0 - 2.7444ms
+2024-04-12 15:35:55.3372 ${level} Request starting HTTP/2 POST https://localhost:7086/api/User/UserRegister application/json 86
+2024-04-12 15:35:55.3372 ${level} Executing endpoint 'FunduNotesApp.Controllers.UserController.Reg (FunduNotesApp)'
+2024-04-12 15:35:55.3445 ${level} Route matched with {action = "Reg", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Reg(CommonLayer.Models.UserRegisterModel) on controller FunduNotesApp.Controllers.UserController (FunduNotesApp).
+2024-04-12 15:35:55.4723 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-04-12 15:35:55.5047 ${level} Executed DbCommand (22ms) [Parameters=[@__Mail_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[CreatedDate], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedDate]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__Mail_0
+2024-04-12 15:35:55.7970 ${level} Executed DbCommand (49ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([CreatedDate], [Email], [FirstName], [LastName], [Password], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT [UserId]
+FROM [Users]
+WHERE @@ROWCOUNT = 1 AND [UserId] = scope_identity();
+2024-04-12 15:35:55.8713 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType2`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[RepositoryLayer.Entity.UserEntity, RepositoryLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-12 15:35:55.8713 ${level} Executed action FunduNotesApp.Controllers.UserController.Reg (FunduNotesApp) in 540.8645ms
+2024-04-12 15:35:55.8713 ${level} Executed endpoint 'FunduNotesApp.Controllers.UserController.Reg (FunduNotesApp)'
+2024-04-12 15:35:55.8713 ${level} Request finished HTTP/2 POST https://localhost:7086/api/User/UserRegister application/json 86 - 200 - application/json;+charset=utf-8 548.6753ms
+2024-04-12 15:36:18.9455 ${level} Request starting HTTP/2 POST https://localhost:7086/api/User/LoginMethod application/json 48
+2024-04-12 15:36:18.9455 ${level} Executing endpoint 'FunduNotesApp.Controllers.UserController.LoginMethod (FunduNotesApp)'
+2024-04-12 15:36:18.9455 ${level} Route matched with {action = "LoginMethod", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult LoginMethod(CommonLayer.Models.UserLogin) on controller FunduNotesApp.Controllers.UserController (FunduNotesApp).
+2024-04-12 15:36:18.9455 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-04-12 15:36:18.9656 ${level} Executed DbCommand (15ms) [Parameters=[@__login_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[CreatedDate], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedDate]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__login_Email_0
+2024-04-12 15:36:18.9700 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType5`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[CommonLayer.Models.TokenModel, CommonLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-12 15:36:18.9813 ${level} Executed action FunduNotesApp.Controllers.UserController.LoginMethod (FunduNotesApp) in 34.5305ms
+2024-04-12 15:36:18.9813 ${level} Executed endpoint 'FunduNotesApp.Controllers.UserController.LoginMethod (FunduNotesApp)'
+2024-04-12 15:36:18.9813 ${level} Session started; Key:ff0a1f5f-d1e9-39a7-a12c-2020c4386f3b, Id:7c5058e9-6e83-a5ce-a71f-6edcd0856bf9
+2024-04-12 15:36:18.9813 ${level} Request finished HTTP/2 POST https://localhost:7086/api/User/LoginMethod application/json 48 - 200 - application/json;+charset=utf-8 39.5546ms
+2024-04-12 15:39:02.9957 ${level} User profile is available. Using 'C:\Users\billu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-12 15:39:03.3733 ${level} Now listening on: https://localhost:7086
+2024-04-12 15:39:03.3733 ${level} Now listening on: http://localhost:5222
+2024-04-12 15:39:03.3733 ${level} Application started. Press Ctrl+C to shut down.
+2024-04-12 15:39:03.3733 ${level} Hosting environment: Development
+2024-04-12 15:39:03.3733 ${level} Content root path: C:\Users\billu\source\repos\FunduNotesApp\FunduNotesApp\
+2024-04-12 15:39:03.9894 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-12 15:39:04.1910 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 203.0383ms
+2024-04-12 15:39:04.2207 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-12 15:39:04.2207 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-12 15:39:04.2207 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 1.3786ms
+2024-04-12 15:39:04.2603 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 39.5680ms
+2024-04-12 15:39:04.3588 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-12 15:39:04.4723 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 113.5668ms
+2024-04-12 15:39:14.2986 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/[object Module] - -
+2024-04-12 15:39:14.3972 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/[object Module] - - - 404 0 - 98.5955ms
+2024-04-12 15:39:36.7329 ${level} Request starting HTTP/2 POST https://localhost:7086/api/User/LoginMethod application/json 48
+2024-04-12 15:39:36.7329 ${level} Executing endpoint 'FunduNotesApp.Controllers.UserController.LoginMethod (FunduNotesApp)'
+2024-04-12 15:39:36.7783 ${level} Route matched with {action = "LoginMethod", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult LoginMethod(CommonLayer.Models.UserLogin) on controller FunduNotesApp.Controllers.UserController (FunduNotesApp).
+2024-04-12 15:39:38.9456 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-04-12 15:39:42.5736 ${level} Executed DbCommand (124ms) [Parameters=[@__login_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[CreatedDate], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedDate]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__login_Email_0
+2024-04-12 15:39:42.7608 ${level} Accessing expired session, Key:ff0a1f5f-d1e9-39a7-a12c-2020c4386f3b
+2024-04-12 15:39:42.7706 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType5`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[CommonLayer.Models.TokenModel, CommonLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-12 15:39:42.7865 ${level} Executed action FunduNotesApp.Controllers.UserController.LoginMethod (FunduNotesApp) in 6000.0559ms
+2024-04-12 15:39:42.7865 ${level} Executed endpoint 'FunduNotesApp.Controllers.UserController.LoginMethod (FunduNotesApp)'
+2024-04-12 15:39:42.7865 ${level} Session started; Key:ff0a1f5f-d1e9-39a7-a12c-2020c4386f3b, Id:4e02f33f-78da-b1d3-1fa7-1ed0fbd88e0a
+2024-04-12 15:39:42.7975 ${level} Request finished HTTP/2 POST https://localhost:7086/api/User/LoginMethod application/json 48 - 200 - application/json;+charset=utf-8 6064.6755ms
+2024-04-12 15:39:51.1881 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/[object Module] - -
+2024-04-12 15:39:51.1881 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/[object Module] - - - 404 0 - 6.2023ms
+2024-04-12 15:40:44.1790 ${level} Request starting HTTP/2 POST https://localhost:7086/api/Notes/CreateNotes application/json 171
+2024-04-12 15:40:44.1790 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.Create (FunduNotesApp)'
+2024-04-12 15:40:44.1870 ${level} Route matched with {action = "Create", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create(CommonLayer.Models.NotesModel) on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-04-12 15:40:44.2241 ${level} Executed action FunduNotesApp.Controllers.NotesController.Create (FunduNotesApp) in 36.9612ms
+2024-04-12 15:40:44.2241 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.Create (FunduNotesApp)'
+2024-04-12 15:40:44.2336 ${level} An unhandled exception has occurred while executing the request.
+2024-04-12 15:40:44.5677 ${level} Request finished HTTP/2 POST https://localhost:7086/api/Notes/CreateNotes application/json 171 - 500 - text/plain;+charset=utf-8 388.7410ms
+2024-04-12 15:41:07.9759 ${level} Request starting HTTP/2 POST https://localhost:7086/api/Notes/CreateNotes application/json 171
+2024-04-12 15:41:07.9759 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.Create (FunduNotesApp)'
+2024-04-12 15:41:07.9759 ${level} Route matched with {action = "Create", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create(CommonLayer.Models.NotesModel) on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-04-12 15:41:07.9848 ${level} Executed action FunduNotesApp.Controllers.NotesController.Create (FunduNotesApp) in 3.2425ms
+2024-04-12 15:41:07.9848 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.Create (FunduNotesApp)'
+2024-04-12 15:41:07.9848 ${level} An unhandled exception has occurred while executing the request.
+2024-04-12 15:41:07.9848 ${level} Request finished HTTP/2 POST https://localhost:7086/api/Notes/CreateNotes application/json 171 - 500 - text/plain;+charset=utf-8 11.3681ms
+2024-04-12 15:41:08.9014 ${level} Request starting HTTP/2 POST https://localhost:7086/api/Notes/CreateNotes application/json 171
+2024-04-12 15:41:08.9014 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.Create (FunduNotesApp)'
+2024-04-12 15:41:08.9014 ${level} Route matched with {action = "Create", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create(CommonLayer.Models.NotesModel) on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-04-12 15:41:08.9062 ${level} Executed action FunduNotesApp.Controllers.NotesController.Create (FunduNotesApp) in 3.9648ms
+2024-04-12 15:41:08.9062 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.Create (FunduNotesApp)'
+2024-04-12 15:41:08.9062 ${level} An unhandled exception has occurred while executing the request.
+2024-04-12 15:41:08.9062 ${level} Request finished HTTP/2 POST https://localhost:7086/api/Notes/CreateNotes application/json 171 - 500 - text/plain;+charset=utf-8 7.9554ms
+2024-04-12 15:41:09.1230 ${level} Request starting HTTP/2 POST https://localhost:7086/api/Notes/CreateNotes application/json 171
+2024-04-12 15:41:09.1230 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.Create (FunduNotesApp)'
+2024-04-12 15:41:09.1230 ${level} Route matched with {action = "Create", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create(CommonLayer.Models.NotesModel) on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-04-12 15:41:09.1230 ${level} Executed action FunduNotesApp.Controllers.NotesController.Create (FunduNotesApp) in 1.3747ms
+2024-04-12 15:41:09.1230 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.Create (FunduNotesApp)'
+2024-04-12 15:41:09.1230 ${level} An unhandled exception has occurred while executing the request.
+2024-04-12 15:41:09.1230 ${level} Request finished HTTP/2 POST https://localhost:7086/api/Notes/CreateNotes application/json 171 - 500 - text/plain;+charset=utf-8 5.2776ms
+2024-04-12 15:41:09.2754 ${level} Request starting HTTP/2 POST https://localhost:7086/api/Notes/CreateNotes application/json 171
+2024-04-12 15:41:09.2754 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.Create (FunduNotesApp)'
+2024-04-12 15:41:09.2754 ${level} Route matched with {action = "Create", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create(CommonLayer.Models.NotesModel) on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-04-12 15:41:09.2754 ${level} Executed action FunduNotesApp.Controllers.NotesController.Create (FunduNotesApp) in 1.2038ms
+2024-04-12 15:41:09.2777 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.Create (FunduNotesApp)'
+2024-04-12 15:41:09.2777 ${level} An unhandled exception has occurred while executing the request.
+2024-04-12 15:41:09.2777 ${level} Request finished HTTP/2 POST https://localhost:7086/api/Notes/CreateNotes application/json 171 - 500 - text/plain;+charset=utf-8 4.2300ms
+2024-04-12 15:41:16.2904 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/[object Module] - -
+2024-04-12 15:41:16.2904 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/[object Module] - - - 404 0 - 0.6646ms
+2024-04-12 15:41:20.4268 ${level} Request starting HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes - -
+2024-04-12 15:41:20.4268 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-04-12 15:41:20.4268 ${level} Route matched with {action = "GetNodes", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetNodes() on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-04-12 15:41:20.4362 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-04-12 15:41:20.4831 ${level} Executed DbCommand (30ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[NoteId], [u].[Color], [u].[CreatedAt], [u].[Description], [u].[IsArchive], [u].[IsPinned], [u].[IsTrash], [u].[ModifiedAt], [u].[Remainder], [u].[Title], [u].[UserId]
+FROM [UserNotes] AS [u]
+2024-04-12 15:41:20.5297 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-04-12 15:41:20.5297 ${level} Executed action FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp) in 107.7929ms
+2024-04-12 15:41:20.5297 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-04-12 15:41:20.5297 ${level} Request finished HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes - - - 200 - application/json;+charset=utf-8 111.7666ms
+2024-04-12 15:42:16.1652 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/[object Module] - -
+2024-04-12 15:42:16.1652 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/[object Module] - - - 404 0 - 0.8865ms
+2024-04-12 15:42:19.6879 ${level} Request starting HTTP/2 GET https://localhost:7086/api/User/GetAllData - -
+2024-04-12 15:42:19.6879 ${level} Executing endpoint 'FunduNotesApp.Controllers.UserController.GetAll (FunduNotesApp)'
+2024-04-12 15:42:19.6879 ${level} Route matched with {action = "GetAll", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller FunduNotesApp.Controllers.UserController (FunduNotesApp).
+2024-04-12 15:42:19.8063 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-04-12 15:42:19.8331 ${level} Executed DbCommand (15ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[CreatedDate], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedDate]
+FROM [Users] AS [u]
+2024-04-12 15:42:19.8331 ${level} Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[RepositoryLayer.Entity.UserEntity, RepositoryLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-12 15:42:19.8331 ${level} Executed action FunduNotesApp.Controllers.UserController.GetAll (FunduNotesApp) in 141.9647ms
+2024-04-12 15:42:19.8331 ${level} Executed endpoint 'FunduNotesApp.Controllers.UserController.GetAll (FunduNotesApp)'
+2024-04-12 15:42:19.8331 ${level} Request finished HTTP/2 GET https://localhost:7086/api/User/GetAllData - - - 200 - application/json;+charset=utf-8 150.0121ms
+2024-04-12 16:52:46.0980 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-12 16:52:46.1535 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 56.3156ms
+2024-04-12 16:52:46.1797 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-12 16:52:46.1797 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-12 16:52:46.1797 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 1.3622ms
+2024-04-12 16:52:46.1955 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 15.3335ms
+2024-04-12 16:52:46.3428 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-12 16:52:46.3801 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 37.4888ms

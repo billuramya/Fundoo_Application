@@ -1,0 +1,946 @@
+2024-05-15 09:38:56.5124 ${level} User profile is available. Using 'C:\Users\billu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-15 09:38:59.0859 ${level} Now listening on: https://localhost:7086
+2024-05-15 09:38:59.0859 ${level} Now listening on: http://localhost:5222
+2024-05-15 09:38:59.0859 ${level} Application started. Press Ctrl+C to shut down.
+2024-05-15 09:38:59.0859 ${level} Hosting environment: Development
+2024-05-15 09:38:59.0859 ${level} Content root path: C:\Users\billu\source\repos\FunduNotesApp\FunduNotesApp\
+2024-05-15 09:39:01.9062 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-05-15 09:39:02.5794 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 674.8661ms
+2024-05-15 09:39:02.6214 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-05-15 09:39:02.6214 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 2.8260ms
+2024-05-15 09:39:02.6670 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-05-15 09:39:02.7607 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 93.6030ms
+2024-05-15 09:39:02.8915 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-05-15 09:39:03.0819 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 190.4201ms
+2024-05-15 09:43:07.4522 ${level} Request starting HTTP/2 OPTIONS https://localhost:7086/api/User/login - -
+2024-05-15 09:43:07.5418 ${level} CORS policy execution successful.
+2024-05-15 09:43:07.5580 ${level} Request finished HTTP/2 OPTIONS https://localhost:7086/api/User/login - - - 204 - - 110.4280ms
+2024-05-15 09:43:07.5580 ${level} Request starting HTTP/2 POST https://localhost:7086/api/User/login application/json 52
+2024-05-15 09:43:07.5777 ${level} CORS policy execution successful.
+2024-05-15 09:43:07.7844 ${level} Executing endpoint 'FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp)'
+2024-05-15 09:43:07.8938 ${level} Route matched with {action = "UserLogin", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UserLogin(CommonLayer.Models.UserLogin) on controller FunduNotesApp.Controllers.UserController (FunduNotesApp).
+2024-05-15 09:43:10.5310 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-15 09:43:12.5183 ${level} Request starting HTTP/2 POST https://localhost:7086/api/User/login application/json 52
+2024-05-15 09:43:12.5183 ${level} CORS policy execution successful.
+2024-05-15 09:43:12.5183 ${level} Executing endpoint 'FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp)'
+2024-05-15 09:43:12.5218 ${level} Route matched with {action = "UserLogin", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UserLogin(CommonLayer.Models.UserLogin) on controller FunduNotesApp.Controllers.UserController (FunduNotesApp).
+2024-05-15 09:43:12.5399 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-15 09:43:12.7600 ${level} Executed DbCommand (162ms) [Parameters=[@__login_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[CreatedDate], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedDate]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__login_Email_0
+2024-05-15 09:43:12.7600 ${level} Executed DbCommand (166ms) [Parameters=[@__login_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[CreatedDate], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedDate]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__login_Email_0
+2024-05-15 09:43:13.3238 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-15 09:43:13.3238 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-15 09:43:13.3469 ${level} Executed action FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp) in 5445.4295ms
+2024-05-15 09:43:13.3469 ${level} Executed action FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp) in 818.0675ms
+2024-05-15 09:43:13.3469 ${level} Executed endpoint 'FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp)'
+2024-05-15 09:43:13.3469 ${level} Executed endpoint 'FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp)'
+2024-05-15 09:43:13.3572 ${level} Request finished HTTP/2 POST https://localhost:7086/api/User/login application/json 52 - 200 - application/json;+charset=utf-8 5795.2867ms
+2024-05-15 09:43:13.3572 ${level} Request finished HTTP/2 POST https://localhost:7086/api/User/login application/json 52 - 200 - application/json;+charset=utf-8 838.7540ms
+2024-05-15 09:43:13.3803 ${level} Request starting HTTP/2 OPTIONS https://localhost:7086/api/Notes/GetAllNotes - -
+2024-05-15 09:43:13.3803 ${level} CORS policy execution successful.
+2024-05-15 09:43:13.3803 ${level} Request finished HTTP/2 OPTIONS https://localhost:7086/api/Notes/GetAllNotes - - - 204 - - 0.5828ms
+2024-05-15 09:43:13.3829 ${level} Request starting HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json -
+2024-05-15 09:43:13.3829 ${level} CORS policy execution successful.
+2024-05-15 09:43:13.5318 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 09:43:13.5318 ${level} Route matched with {action = "GetNodes", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetNodes() on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-05-15 09:43:13.6830 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-15 09:43:13.7232 ${level} Executed DbCommand (22ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[NoteId], [u].[Color], [u].[CreatedAt], [u].[Description], [u].[IsArchive], [u].[IsPinned], [u].[IsTrash], [u].[ModifiedAt], [u].[Remainder], [u].[Title], [u].[UserId]
+FROM [UserNotes] AS [u]
+2024-05-15 09:43:13.8015 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-15 09:43:13.8332 ${level} Executed action FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp) in 297.4211ms
+2024-05-15 09:43:13.8332 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 09:43:13.8332 ${level} Request finished HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json - - 200 - application/json;+charset=utf-8 450.9178ms
+2024-05-15 09:44:53.1055 ${level} Request starting HTTP/2 OPTIONS https://localhost:7086/api/User/login - -
+2024-05-15 09:44:53.1055 ${level} CORS policy execution successful.
+2024-05-15 09:44:53.1055 ${level} Request finished HTTP/2 OPTIONS https://localhost:7086/api/User/login - - - 204 - - 1.3161ms
+2024-05-15 09:44:53.1055 ${level} Request starting HTTP/2 POST https://localhost:7086/api/User/login application/json 52
+2024-05-15 09:44:53.1055 ${level} CORS policy execution successful.
+2024-05-15 09:44:53.1055 ${level} Executing endpoint 'FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp)'
+2024-05-15 09:44:53.1055 ${level} Route matched with {action = "UserLogin", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UserLogin(CommonLayer.Models.UserLogin) on controller FunduNotesApp.Controllers.UserController (FunduNotesApp).
+2024-05-15 09:44:53.1055 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-15 09:44:53.1229 ${level} Executed DbCommand (8ms) [Parameters=[@__login_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[CreatedDate], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedDate]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__login_Email_0
+2024-05-15 09:44:53.1229 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-15 09:44:53.1229 ${level} Executed action FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp) in 15.9112ms
+2024-05-15 09:44:53.1229 ${level} Executed endpoint 'FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp)'
+2024-05-15 09:44:53.1229 ${level} Request finished HTTP/2 POST https://localhost:7086/api/User/login application/json 52 - 200 - application/json;+charset=utf-8 16.6669ms
+2024-05-15 09:44:53.1587 ${level} Request starting HTTP/2 OPTIONS https://localhost:7086/api/Notes/GetAllNotes - -
+2024-05-15 09:44:53.1587 ${level} CORS policy execution successful.
+2024-05-15 09:44:53.1587 ${level} Request finished HTTP/2 OPTIONS https://localhost:7086/api/Notes/GetAllNotes - - - 204 - - 0.4543ms
+2024-05-15 09:44:53.1587 ${level} Request starting HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json -
+2024-05-15 09:44:53.1587 ${level} CORS policy execution successful.
+2024-05-15 09:44:53.1587 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 09:44:53.1587 ${level} Route matched with {action = "GetNodes", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetNodes() on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-05-15 09:44:53.1641 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-15 09:44:53.1641 ${level} Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[NoteId], [u].[Color], [u].[CreatedAt], [u].[Description], [u].[IsArchive], [u].[IsPinned], [u].[IsTrash], [u].[ModifiedAt], [u].[Remainder], [u].[Title], [u].[UserId]
+FROM [UserNotes] AS [u]
+2024-05-15 09:44:53.1641 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-15 09:44:53.1641 ${level} Executed action FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp) in 5.4378ms
+2024-05-15 09:44:53.1641 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 09:44:53.1641 ${level} Request finished HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json - - 200 - application/json;+charset=utf-8 7.0195ms
+2024-05-15 09:45:37.3201 ${level} Request starting HTTP/2 OPTIONS https://localhost:7086/api/Notes/ChangeColor?noteId=10&color=Bisque - -
+2024-05-15 09:45:37.3201 ${level} CORS policy execution successful.
+2024-05-15 09:45:37.3201 ${level} Request finished HTTP/2 OPTIONS https://localhost:7086/api/Notes/ChangeColor?noteId=10&color=Bisque - - - 204 - - 1.9358ms
+2024-05-15 09:45:37.3201 ${level} Request starting HTTP/2 PUT https://localhost:7086/api/Notes/ChangeColor?noteId=10&color=Bisque application/json 2
+2024-05-15 09:45:37.3201 ${level} CORS policy execution successful.
+2024-05-15 09:45:37.3201 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.ChangeNoteColor (FunduNotesApp)'
+2024-05-15 09:45:37.3201 ${level} Route matched with {action = "ChangeNoteColor", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ChangeNoteColor(Int32, System.String) on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-05-15 09:45:37.3572 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-15 09:45:37.3809 ${level} Executed DbCommand (11ms) [Parameters=[@__noteId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[NoteId], [u].[Color], [u].[CreatedAt], [u].[Description], [u].[IsArchive], [u].[IsPinned], [u].[IsTrash], [u].[ModifiedAt], [u].[Remainder], [u].[Title], [u].[UserId]
+FROM [UserNotes] AS [u]
+WHERE [u].[NoteId] = @__noteId_0
+2024-05-15 09:45:37.6160 ${level} Executed DbCommand (49ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [UserNotes] SET [Color] = @p0
+WHERE [NoteId] = @p1;
+SELECT @@ROWCOUNT;
+2024-05-15 09:45:37.6457 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-15 09:45:37.6480 ${level} Executed action FunduNotesApp.Controllers.NotesController.ChangeNoteColor (FunduNotesApp) in 316.0154ms
+2024-05-15 09:45:37.6480 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.ChangeNoteColor (FunduNotesApp)'
+2024-05-15 09:45:37.6480 ${level} Request finished HTTP/2 PUT https://localhost:7086/api/Notes/ChangeColor?noteId=10&color=Bisque application/json 2 - 200 - application/json;+charset=utf-8 324.3744ms
+2024-05-15 09:45:40.0135 ${level} Request starting HTTP/2 OPTIONS https://localhost:7086/api/Notes/GetAllNotes - -
+2024-05-15 09:45:40.0135 ${level} CORS policy execution successful.
+2024-05-15 09:45:40.0135 ${level} Request finished HTTP/2 OPTIONS https://localhost:7086/api/Notes/GetAllNotes - - - 204 - - 0.8067ms
+2024-05-15 09:45:40.0135 ${level} Request starting HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json -
+2024-05-15 09:45:40.0135 ${level} CORS policy execution successful.
+2024-05-15 09:45:40.0135 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 09:45:40.0135 ${level} Route matched with {action = "GetNodes", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetNodes() on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-05-15 09:45:40.0135 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-15 09:45:40.0287 ${level} Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[NoteId], [u].[Color], [u].[CreatedAt], [u].[Description], [u].[IsArchive], [u].[IsPinned], [u].[IsTrash], [u].[ModifiedAt], [u].[Remainder], [u].[Title], [u].[UserId]
+FROM [UserNotes] AS [u]
+2024-05-15 09:45:40.0287 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-15 09:45:40.0287 ${level} Executed action FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp) in 9.589ms
+2024-05-15 09:45:40.0287 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 09:45:40.0287 ${level} Request finished HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json - - 200 - application/json;+charset=utf-8 11.5978ms
+2024-05-15 09:45:52.4349 ${level} Request starting HTTP/2 OPTIONS https://localhost:7086/api/Notes/GetAllNotes - -
+2024-05-15 09:45:52.4349 ${level} CORS policy execution successful.
+2024-05-15 09:45:52.4349 ${level} Request finished HTTP/2 OPTIONS https://localhost:7086/api/Notes/GetAllNotes - - - 204 - - 1.1770ms
+2024-05-15 09:45:52.4349 ${level} Request starting HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json -
+2024-05-15 09:45:52.4349 ${level} CORS policy execution successful.
+2024-05-15 09:45:52.4349 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 09:45:52.4349 ${level} Route matched with {action = "GetNodes", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetNodes() on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-05-15 09:45:52.4349 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-15 09:45:52.4464 ${level} Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[NoteId], [u].[Color], [u].[CreatedAt], [u].[Description], [u].[IsArchive], [u].[IsPinned], [u].[IsTrash], [u].[ModifiedAt], [u].[Remainder], [u].[Title], [u].[UserId]
+FROM [UserNotes] AS [u]
+2024-05-15 09:45:52.4464 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-15 09:45:52.4464 ${level} Executed action FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp) in 7.734ms
+2024-05-15 09:45:52.4464 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 09:45:52.4464 ${level} Request finished HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json - - 200 - application/json;+charset=utf-8 9.5725ms
+2024-05-15 09:46:00.1888 ${level} Request starting HTTP/2 OPTIONS https://localhost:7086/api/Notes/GetAllNotes - -
+2024-05-15 09:46:00.1888 ${level} CORS policy execution successful.
+2024-05-15 09:46:00.1888 ${level} Request finished HTTP/2 OPTIONS https://localhost:7086/api/Notes/GetAllNotes - - - 204 - - 0.5241ms
+2024-05-15 09:46:00.1888 ${level} Request starting HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json -
+2024-05-15 09:46:00.1888 ${level} CORS policy execution successful.
+2024-05-15 09:46:00.1888 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 09:46:00.1888 ${level} Route matched with {action = "GetNodes", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetNodes() on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-05-15 09:46:00.1932 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-15 09:46:00.1932 ${level} Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[NoteId], [u].[Color], [u].[CreatedAt], [u].[Description], [u].[IsArchive], [u].[IsPinned], [u].[IsTrash], [u].[ModifiedAt], [u].[Remainder], [u].[Title], [u].[UserId]
+FROM [UserNotes] AS [u]
+2024-05-15 09:46:00.1932 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-15 09:46:00.1932 ${level} Executed action FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp) in 3.5972ms
+2024-05-15 09:46:00.1932 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 09:46:00.1932 ${level} Request finished HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json - - 200 - application/json;+charset=utf-8 5.1003ms
+2024-05-15 09:46:10.8152 ${level} Request starting HTTP/2 OPTIONS https://localhost:7086/api/Notes/GetAllNotes - -
+2024-05-15 09:46:10.8152 ${level} CORS policy execution successful.
+2024-05-15 09:46:10.8152 ${level} Request finished HTTP/2 OPTIONS https://localhost:7086/api/Notes/GetAllNotes - - - 204 - - 0.9101ms
+2024-05-15 09:46:10.8152 ${level} Request starting HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json -
+2024-05-15 09:46:10.8152 ${level} CORS policy execution successful.
+2024-05-15 09:46:10.8204 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 09:46:10.8204 ${level} Route matched with {action = "GetNodes", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetNodes() on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-05-15 09:46:10.8204 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-15 09:46:10.8204 ${level} Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[NoteId], [u].[Color], [u].[CreatedAt], [u].[Description], [u].[IsArchive], [u].[IsPinned], [u].[IsTrash], [u].[ModifiedAt], [u].[Remainder], [u].[Title], [u].[UserId]
+FROM [UserNotes] AS [u]
+2024-05-15 09:46:10.8204 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-15 09:46:10.8204 ${level} Executed action FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp) in 7.3392ms
+2024-05-15 09:46:10.8204 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 09:46:10.8204 ${level} Request finished HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json - - 200 - application/json;+charset=utf-8 8.8981ms
+2024-05-15 09:46:13.1070 ${level} Request starting HTTP/2 OPTIONS https://localhost:7086/api/Notes/IsAchive?noteid=6 - -
+2024-05-15 09:46:13.1070 ${level} CORS policy execution successful.
+2024-05-15 09:46:13.1070 ${level} Request finished HTTP/2 OPTIONS https://localhost:7086/api/Notes/IsAchive?noteid=6 - - - 204 - - 0.5311ms
+2024-05-15 09:46:13.1070 ${level} Request starting HTTP/2 PUT https://localhost:7086/api/Notes/IsAchive?noteid=6 application/json 12
+2024-05-15 09:46:13.1070 ${level} CORS policy execution successful.
+2024-05-15 09:46:13.1198 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.AchiveNotes (FunduNotesApp)'
+2024-05-15 09:46:13.1198 ${level} Route matched with {action = "AchiveNotes", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AchiveNotes(Int32) on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-05-15 09:46:13.1198 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-15 09:46:13.1538 ${level} Executed DbCommand (9ms) [Parameters=[@__userId_0='?' (DbType = Int32), @__NoteId_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[NoteId], [u].[Color], [u].[CreatedAt], [u].[Description], [u].[IsArchive], [u].[IsPinned], [u].[IsTrash], [u].[ModifiedAt], [u].[Remainder], [u].[Title], [u].[UserId]
+FROM [UserNotes] AS [u]
+WHERE ([u].[UserId] = @__userId_0) AND ([u].[NoteId] = @__NoteId_1)
+2024-05-15 09:46:13.1538 ${level} Executing OkObjectResult, writing value of type 'CommonLayer.Models.Response`1[[RepositoryLayer.Entity.NotesEntity, RepositoryLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-15 09:46:13.1538 ${level} Executed action FunduNotesApp.Controllers.NotesController.AchiveNotes (FunduNotesApp) in 34.9504ms
+2024-05-15 09:46:13.1538 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.AchiveNotes (FunduNotesApp)'
+2024-05-15 09:46:13.1538 ${level} Request finished HTTP/2 PUT https://localhost:7086/api/Notes/IsAchive?noteid=6 application/json 12 - 200 - application/json;+charset=utf-8 48.3876ms
+2024-05-15 09:46:16.2313 ${level} Request starting HTTP/2 OPTIONS https://localhost:7086/api/Notes/IsAchive?noteid=15 - -
+2024-05-15 09:46:16.2313 ${level} CORS policy execution successful.
+2024-05-15 09:46:16.2313 ${level} Request finished HTTP/2 OPTIONS https://localhost:7086/api/Notes/IsAchive?noteid=15 - - - 204 - - 1.4499ms
+2024-05-15 09:46:16.2313 ${level} Request starting HTTP/2 PUT https://localhost:7086/api/Notes/IsAchive?noteid=15 application/json 13
+2024-05-15 09:46:16.2313 ${level} CORS policy execution successful.
+2024-05-15 09:46:16.2313 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.AchiveNotes (FunduNotesApp)'
+2024-05-15 09:46:16.2313 ${level} Route matched with {action = "AchiveNotes", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AchiveNotes(Int32) on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-05-15 09:46:16.2313 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-15 09:46:16.2313 ${level} Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32), @__NoteId_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[NoteId], [u].[Color], [u].[CreatedAt], [u].[Description], [u].[IsArchive], [u].[IsPinned], [u].[IsTrash], [u].[ModifiedAt], [u].[Remainder], [u].[Title], [u].[UserId]
+FROM [UserNotes] AS [u]
+WHERE ([u].[UserId] = @__userId_0) AND ([u].[NoteId] = @__NoteId_1)
+2024-05-15 09:46:16.2409 ${level} Executing OkObjectResult, writing value of type 'CommonLayer.Models.Response`1[[RepositoryLayer.Entity.NotesEntity, RepositoryLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-15 09:46:16.2409 ${level} Executed action FunduNotesApp.Controllers.NotesController.AchiveNotes (FunduNotesApp) in 4.0389ms
+2024-05-15 09:46:16.2409 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.AchiveNotes (FunduNotesApp)'
+2024-05-15 09:46:16.2409 ${level} Request finished HTTP/2 PUT https://localhost:7086/api/Notes/IsAchive?noteid=15 application/json 13 - 200 - application/json;+charset=utf-8 6.8587ms
+2024-05-15 09:46:19.7885 ${level} Request starting HTTP/2 OPTIONS https://localhost:7086/api/Notes/IsAchive?noteid=11 - -
+2024-05-15 09:46:19.7885 ${level} CORS policy execution successful.
+2024-05-15 09:46:19.7890 ${level} Request finished HTTP/2 OPTIONS https://localhost:7086/api/Notes/IsAchive?noteid=11 - - - 204 - - 0.5484ms
+2024-05-15 09:46:19.7890 ${level} Request starting HTTP/2 PUT https://localhost:7086/api/Notes/IsAchive?noteid=11 application/json 13
+2024-05-15 09:46:19.7890 ${level} CORS policy execution successful.
+2024-05-15 09:46:19.7890 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.AchiveNotes (FunduNotesApp)'
+2024-05-15 09:46:19.7890 ${level} Route matched with {action = "AchiveNotes", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AchiveNotes(Int32) on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-05-15 09:46:19.7890 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-15 09:46:19.7890 ${level} Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32), @__NoteId_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[NoteId], [u].[Color], [u].[CreatedAt], [u].[Description], [u].[IsArchive], [u].[IsPinned], [u].[IsTrash], [u].[ModifiedAt], [u].[Remainder], [u].[Title], [u].[UserId]
+FROM [UserNotes] AS [u]
+WHERE ([u].[UserId] = @__userId_0) AND ([u].[NoteId] = @__NoteId_1)
+2024-05-15 09:46:19.8099 ${level} Executed DbCommand (9ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Boolean)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [UserNotes] SET [IsArchive] = @p0
+WHERE [NoteId] = @p1;
+SELECT @@ROWCOUNT;
+2024-05-15 09:46:19.8099 ${level} Executing OkObjectResult, writing value of type 'CommonLayer.Models.Response`1[[RepositoryLayer.Entity.NotesEntity, RepositoryLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-15 09:46:19.8099 ${level} Executed action FunduNotesApp.Controllers.NotesController.AchiveNotes (FunduNotesApp) in 17.526ms
+2024-05-15 09:46:19.8099 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.AchiveNotes (FunduNotesApp)'
+2024-05-15 09:46:19.8099 ${level} Request finished HTTP/2 PUT https://localhost:7086/api/Notes/IsAchive?noteid=11 application/json 13 - 200 - application/json;+charset=utf-8 19.8461ms
+2024-05-15 09:46:22.1860 ${level} Request starting HTTP/2 OPTIONS https://localhost:7086/api/Notes/GetAllNotes - -
+2024-05-15 09:46:22.1860 ${level} CORS policy execution successful.
+2024-05-15 09:46:22.1860 ${level} Request finished HTTP/2 OPTIONS https://localhost:7086/api/Notes/GetAllNotes - - - 204 - - 1.5671ms
+2024-05-15 09:46:22.1860 ${level} Request starting HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json -
+2024-05-15 09:46:22.1860 ${level} CORS policy execution successful.
+2024-05-15 09:46:22.1860 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 09:46:22.1860 ${level} Route matched with {action = "GetNodes", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetNodes() on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-05-15 09:46:22.1860 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-15 09:46:22.1860 ${level} Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[NoteId], [u].[Color], [u].[CreatedAt], [u].[Description], [u].[IsArchive], [u].[IsPinned], [u].[IsTrash], [u].[ModifiedAt], [u].[Remainder], [u].[Title], [u].[UserId]
+FROM [UserNotes] AS [u]
+2024-05-15 09:46:22.1860 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-15 09:46:22.1860 ${level} Executed action FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp) in 3.0325ms
+2024-05-15 09:46:22.1860 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 09:46:22.1860 ${level} Request finished HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json - - 200 - application/json;+charset=utf-8 4.1609ms
+2024-05-15 09:46:24.1801 ${level} Request starting HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json -
+2024-05-15 09:46:24.1801 ${level} CORS policy execution successful.
+2024-05-15 09:46:24.1801 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 09:46:24.1801 ${level} Route matched with {action = "GetNodes", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetNodes() on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-05-15 09:46:24.1801 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-15 09:46:24.1801 ${level} Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[NoteId], [u].[Color], [u].[CreatedAt], [u].[Description], [u].[IsArchive], [u].[IsPinned], [u].[IsTrash], [u].[ModifiedAt], [u].[Remainder], [u].[Title], [u].[UserId]
+FROM [UserNotes] AS [u]
+2024-05-15 09:46:24.1801 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-15 09:46:24.1801 ${level} Executed action FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp) in 5.777ms
+2024-05-15 09:46:24.1801 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 09:46:24.1801 ${level} Request finished HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json - - 200 - application/json;+charset=utf-8 11.1224ms
+2024-05-15 09:46:26.8940 ${level} Request starting HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json -
+2024-05-15 09:46:26.8940 ${level} CORS policy execution successful.
+2024-05-15 09:46:26.8940 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 09:46:26.8940 ${level} Route matched with {action = "GetNodes", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetNodes() on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-05-15 09:46:26.8975 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-15 09:46:26.8975 ${level} Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[NoteId], [u].[Color], [u].[CreatedAt], [u].[Description], [u].[IsArchive], [u].[IsPinned], [u].[IsTrash], [u].[ModifiedAt], [u].[Remainder], [u].[Title], [u].[UserId]
+FROM [UserNotes] AS [u]
+2024-05-15 09:46:26.8975 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-15 09:46:26.8975 ${level} Executed action FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp) in 4.7587ms
+2024-05-15 09:46:26.8975 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 09:46:26.8975 ${level} Request finished HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json - - 200 - application/json;+charset=utf-8 7.1515ms
+2024-05-15 09:46:34.5267 ${level} Request starting HTTP/2 OPTIONS https://localhost:7086/api/Notes/GetAllNotes - -
+2024-05-15 09:46:34.5267 ${level} CORS policy execution successful.
+2024-05-15 09:46:34.5267 ${level} Request finished HTTP/2 OPTIONS https://localhost:7086/api/Notes/GetAllNotes - - - 204 - - 1.3505ms
+2024-05-15 09:46:34.5267 ${level} Request starting HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json -
+2024-05-15 09:46:34.5267 ${level} CORS policy execution successful.
+2024-05-15 09:46:34.5267 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 09:46:34.5267 ${level} Route matched with {action = "GetNodes", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetNodes() on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-05-15 09:46:34.5267 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-15 09:46:34.5267 ${level} Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[NoteId], [u].[Color], [u].[CreatedAt], [u].[Description], [u].[IsArchive], [u].[IsPinned], [u].[IsTrash], [u].[ModifiedAt], [u].[Remainder], [u].[Title], [u].[UserId]
+FROM [UserNotes] AS [u]
+2024-05-15 09:46:34.5267 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-15 09:46:34.5267 ${level} Executed action FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp) in 3.4173ms
+2024-05-15 09:46:34.5267 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 09:46:34.5267 ${level} Request finished HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json - - 200 - application/json;+charset=utf-8 4.6572ms
+2024-05-15 09:46:41.2210 ${level} Request starting HTTP/2 OPTIONS https://localhost:7086/api/Notes/IsAchive?noteid=15 - -
+2024-05-15 09:46:41.2210 ${level} CORS policy execution successful.
+2024-05-15 09:46:41.2210 ${level} Request finished HTTP/2 OPTIONS https://localhost:7086/api/Notes/IsAchive?noteid=15 - - - 204 - - 0.5377ms
+2024-05-15 09:46:41.2210 ${level} Request starting HTTP/2 PUT https://localhost:7086/api/Notes/IsAchive?noteid=15 application/json 13
+2024-05-15 09:46:41.2210 ${level} CORS policy execution successful.
+2024-05-15 09:46:41.2210 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.AchiveNotes (FunduNotesApp)'
+2024-05-15 09:46:41.2210 ${level} Route matched with {action = "AchiveNotes", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AchiveNotes(Int32) on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-05-15 09:46:41.2276 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-15 09:46:41.2276 ${level} Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32), @__NoteId_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[NoteId], [u].[Color], [u].[CreatedAt], [u].[Description], [u].[IsArchive], [u].[IsPinned], [u].[IsTrash], [u].[ModifiedAt], [u].[Remainder], [u].[Title], [u].[UserId]
+FROM [UserNotes] AS [u]
+WHERE ([u].[UserId] = @__userId_0) AND ([u].[NoteId] = @__NoteId_1)
+2024-05-15 09:46:41.2276 ${level} Executing OkObjectResult, writing value of type 'CommonLayer.Models.Response`1[[RepositoryLayer.Entity.NotesEntity, RepositoryLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-15 09:46:41.2276 ${level} Executed action FunduNotesApp.Controllers.NotesController.AchiveNotes (FunduNotesApp) in 6.7442ms
+2024-05-15 09:46:41.2276 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.AchiveNotes (FunduNotesApp)'
+2024-05-15 09:46:41.2276 ${level} Request finished HTTP/2 PUT https://localhost:7086/api/Notes/IsAchive?noteid=15 application/json 13 - 200 - application/json;+charset=utf-8 8.8202ms
+2024-05-15 09:46:45.2828 ${level} Request starting HTTP/2 OPTIONS https://localhost:7086/api/Notes/IsAchive?noteid=11 - -
+2024-05-15 09:46:45.2828 ${level} CORS policy execution successful.
+2024-05-15 09:46:45.2828 ${level} Request finished HTTP/2 OPTIONS https://localhost:7086/api/Notes/IsAchive?noteid=11 - - - 204 - - 1.0226ms
+2024-05-15 09:46:45.2828 ${level} Request starting HTTP/2 PUT https://localhost:7086/api/Notes/IsAchive?noteid=11 application/json 13
+2024-05-15 09:46:45.2828 ${level} CORS policy execution successful.
+2024-05-15 09:46:45.2828 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.AchiveNotes (FunduNotesApp)'
+2024-05-15 09:46:45.2863 ${level} Route matched with {action = "AchiveNotes", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AchiveNotes(Int32) on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-05-15 09:46:45.2863 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-15 09:46:45.2863 ${level} Executed DbCommand (7ms) [Parameters=[@__userId_0='?' (DbType = Int32), @__NoteId_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[NoteId], [u].[Color], [u].[CreatedAt], [u].[Description], [u].[IsArchive], [u].[IsPinned], [u].[IsTrash], [u].[ModifiedAt], [u].[Remainder], [u].[Title], [u].[UserId]
+FROM [UserNotes] AS [u]
+WHERE ([u].[UserId] = @__userId_0) AND ([u].[NoteId] = @__NoteId_1)
+2024-05-15 09:46:45.3029 ${level} Executed DbCommand (5ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Boolean)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [UserNotes] SET [IsArchive] = @p0
+WHERE [NoteId] = @p1;
+SELECT @@ROWCOUNT;
+2024-05-15 09:46:45.3029 ${level} Executing OkObjectResult, writing value of type 'CommonLayer.Models.Response`1[[RepositoryLayer.Entity.NotesEntity, RepositoryLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-15 09:46:45.3029 ${level} Executed action FunduNotesApp.Controllers.NotesController.AchiveNotes (FunduNotesApp) in 18.891ms
+2024-05-15 09:46:45.3029 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.AchiveNotes (FunduNotesApp)'
+2024-05-15 09:46:45.3029 ${level} Request finished HTTP/2 PUT https://localhost:7086/api/Notes/IsAchive?noteid=11 application/json 13 - 200 - application/json;+charset=utf-8 19.8326ms
+2024-05-15 09:46:48.2813 ${level} Request starting HTTP/2 OPTIONS https://localhost:7086/api/Notes/GetAllNotes - -
+2024-05-15 09:46:48.2813 ${level} CORS policy execution successful.
+2024-05-15 09:46:48.2813 ${level} Request finished HTTP/2 OPTIONS https://localhost:7086/api/Notes/GetAllNotes - - - 204 - - 0.6478ms
+2024-05-15 09:46:48.2813 ${level} Request starting HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json -
+2024-05-15 09:46:48.2813 ${level} CORS policy execution successful.
+2024-05-15 09:46:48.2813 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 09:46:48.2813 ${level} Route matched with {action = "GetNodes", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetNodes() on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-05-15 09:46:48.2865 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-15 09:46:48.2865 ${level} Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[NoteId], [u].[Color], [u].[CreatedAt], [u].[Description], [u].[IsArchive], [u].[IsPinned], [u].[IsTrash], [u].[ModifiedAt], [u].[Remainder], [u].[Title], [u].[UserId]
+FROM [UserNotes] AS [u]
+2024-05-15 09:46:48.2865 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-15 09:46:48.2865 ${level} Executed action FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp) in 7.0355ms
+2024-05-15 09:46:48.2865 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 09:46:48.2865 ${level} Request finished HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json - - 200 - application/json;+charset=utf-8 8.1588ms
+2024-05-15 10:17:37.0910 ${level} Request starting HTTP/2 OPTIONS https://localhost:7086/api/Notes/GetAllNotes - -
+2024-05-15 10:17:37.1024 ${level} CORS policy execution successful.
+2024-05-15 10:17:37.1024 ${level} Request finished HTTP/2 OPTIONS https://localhost:7086/api/Notes/GetAllNotes - - - 204 - - 16.1056ms
+2024-05-15 10:17:37.1089 ${level} Request starting HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json -
+2024-05-15 10:17:37.1089 ${level} CORS policy execution successful.
+2024-05-15 10:17:37.1375 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 10:17:37.1445 ${level} Route matched with {action = "GetNodes", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetNodes() on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-05-15 10:17:37.1708 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-15 10:17:37.3575 ${level} Executed DbCommand (30ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[NoteId], [u].[Color], [u].[CreatedAt], [u].[Description], [u].[IsArchive], [u].[IsPinned], [u].[IsTrash], [u].[ModifiedAt], [u].[Remainder], [u].[Title], [u].[UserId]
+FROM [UserNotes] AS [u]
+2024-05-15 10:17:37.3575 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-15 10:17:37.3575 ${level} Executed action FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp) in 221.4785ms
+2024-05-15 10:17:37.3575 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 10:17:37.3575 ${level} Request finished HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json - - 200 - application/json;+charset=utf-8 257.7085ms
+2024-05-15 10:17:45.5212 ${level} Request starting HTTP/2 OPTIONS https://localhost:7086/api/Notes/GetAllNotes - -
+2024-05-15 10:17:45.5212 ${level} CORS policy execution successful.
+2024-05-15 10:17:45.5212 ${level} Request finished HTTP/2 OPTIONS https://localhost:7086/api/Notes/GetAllNotes - - - 204 - - 0.4787ms
+2024-05-15 10:17:45.5212 ${level} Request starting HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json -
+2024-05-15 10:17:45.5212 ${level} CORS policy execution successful.
+2024-05-15 10:17:45.5290 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 10:17:45.5290 ${level} Route matched with {action = "GetNodes", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetNodes() on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-05-15 10:17:45.5290 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-15 10:17:45.5290 ${level} Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[NoteId], [u].[Color], [u].[CreatedAt], [u].[Description], [u].[IsArchive], [u].[IsPinned], [u].[IsTrash], [u].[ModifiedAt], [u].[Remainder], [u].[Title], [u].[UserId]
+FROM [UserNotes] AS [u]
+2024-05-15 10:17:45.5290 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-15 10:17:45.5290 ${level} Executed action FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp) in 6.7793ms
+2024-05-15 10:17:45.5290 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 10:17:45.5290 ${level} Request finished HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json - - 200 - application/json;+charset=utf-8 9.0716ms
+2024-05-15 10:49:40.7117 ${level} Request starting HTTP/2 OPTIONS https://localhost:7086/api/Notes/GetAllNotes - -
+2024-05-15 10:49:40.7285 ${level} CORS policy execution successful.
+2024-05-15 10:49:40.7341 ${level} Request finished HTTP/2 OPTIONS https://localhost:7086/api/Notes/GetAllNotes - - - 204 - - 26.3364ms
+2024-05-15 10:49:40.7341 ${level} Request starting HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json -
+2024-05-15 10:49:40.7474 ${level} CORS policy execution successful.
+2024-05-15 10:49:40.7821 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 10:49:40.7821 ${level} Route matched with {action = "GetNodes", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetNodes() on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-05-15 10:49:40.8230 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-15 10:49:41.0872 ${level} Executed DbCommand (35ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[NoteId], [u].[Color], [u].[CreatedAt], [u].[Description], [u].[IsArchive], [u].[IsPinned], [u].[IsTrash], [u].[ModifiedAt], [u].[Remainder], [u].[Title], [u].[UserId]
+FROM [UserNotes] AS [u]
+2024-05-15 10:49:41.0935 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-15 10:49:41.0935 ${level} Executed action FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp) in 307.399ms
+2024-05-15 10:49:41.0935 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 10:49:41.0935 ${level} Request finished HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json - - 200 - application/json;+charset=utf-8 359.1981ms
+2024-05-15 10:49:52.4460 ${level} Request starting HTTP/2 OPTIONS https://localhost:7086/api/Notes/GetAllNotes - -
+2024-05-15 10:49:52.4460 ${level} CORS policy execution successful.
+2024-05-15 10:49:52.4460 ${level} Request finished HTTP/2 OPTIONS https://localhost:7086/api/Notes/GetAllNotes - - - 204 - - 0.3557ms
+2024-05-15 10:49:52.4460 ${level} Request starting HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json -
+2024-05-15 10:49:52.4496 ${level} CORS policy execution successful.
+2024-05-15 10:49:52.4496 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 10:49:52.4496 ${level} Route matched with {action = "GetNodes", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetNodes() on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-05-15 10:49:52.4496 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-15 10:49:52.4703 ${level} Executed DbCommand (12ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[NoteId], [u].[Color], [u].[CreatedAt], [u].[Description], [u].[IsArchive], [u].[IsPinned], [u].[IsTrash], [u].[ModifiedAt], [u].[Remainder], [u].[Title], [u].[UserId]
+FROM [UserNotes] AS [u]
+2024-05-15 10:49:52.4703 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-15 10:49:52.4703 ${level} Executed action FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp) in 18.491ms
+2024-05-15 10:49:52.4703 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 10:49:52.4703 ${level} Request finished HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json - - 200 - application/json;+charset=utf-8 23.6865ms
+2024-05-15 10:50:00.1585 ${level} Request starting HTTP/2 OPTIONS https://localhost:7086/api/Notes/GetAllNotes - -
+2024-05-15 10:50:00.1585 ${level} CORS policy execution successful.
+2024-05-15 10:50:00.1585 ${level} Request finished HTTP/2 OPTIONS https://localhost:7086/api/Notes/GetAllNotes - - - 204 - - 2.6676ms
+2024-05-15 10:50:00.1813 ${level} Request starting HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json -
+2024-05-15 10:50:00.1876 ${level} CORS policy execution successful.
+2024-05-15 10:50:00.1876 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 10:50:00.1876 ${level} Route matched with {action = "GetNodes", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetNodes() on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-05-15 10:50:00.1994 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-15 10:50:00.2476 ${level} Executed DbCommand (46ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[NoteId], [u].[Color], [u].[CreatedAt], [u].[Description], [u].[IsArchive], [u].[IsPinned], [u].[IsTrash], [u].[ModifiedAt], [u].[Remainder], [u].[Title], [u].[UserId]
+FROM [UserNotes] AS [u]
+2024-05-15 10:50:00.2476 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-15 10:50:00.2476 ${level} Executed action FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp) in 59.1317ms
+2024-05-15 10:50:00.2476 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 10:50:00.2476 ${level} Request finished HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json - - 200 - application/json;+charset=utf-8 70.3787ms
+2024-05-15 10:50:05.4503 ${level} Request starting HTTP/2 OPTIONS https://localhost:7086/api/Notes/GetAllNotes - -
+2024-05-15 10:50:05.4503 ${level} CORS policy execution successful.
+2024-05-15 10:50:05.4503 ${level} Request finished HTTP/2 OPTIONS https://localhost:7086/api/Notes/GetAllNotes - - - 204 - - 1.4254ms
+2024-05-15 10:50:05.4503 ${level} Request starting HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json -
+2024-05-15 10:50:05.4503 ${level} CORS policy execution successful.
+2024-05-15 10:50:05.4503 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 10:50:05.4503 ${level} Route matched with {action = "GetNodes", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetNodes() on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-05-15 10:50:05.4503 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-15 10:50:05.4686 ${level} Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[NoteId], [u].[Color], [u].[CreatedAt], [u].[Description], [u].[IsArchive], [u].[IsPinned], [u].[IsTrash], [u].[ModifiedAt], [u].[Remainder], [u].[Title], [u].[UserId]
+FROM [UserNotes] AS [u]
+2024-05-15 10:50:05.4686 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-15 10:50:05.4686 ${level} Executed action FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp) in 14.2481ms
+2024-05-15 10:50:05.4686 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 10:50:05.4686 ${level} Request finished HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json - - 200 - application/json;+charset=utf-8 15.7041ms
+2024-05-15 10:50:07.9829 ${level} Request starting HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json -
+2024-05-15 10:50:07.9829 ${level} CORS policy execution successful.
+2024-05-15 10:50:07.9829 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 10:50:07.9829 ${level} Route matched with {action = "GetNodes", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetNodes() on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-05-15 10:50:07.9829 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-15 10:50:07.9992 ${level} Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[NoteId], [u].[Color], [u].[CreatedAt], [u].[Description], [u].[IsArchive], [u].[IsPinned], [u].[IsTrash], [u].[ModifiedAt], [u].[Remainder], [u].[Title], [u].[UserId]
+FROM [UserNotes] AS [u]
+2024-05-15 10:50:07.9992 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-15 10:50:07.9992 ${level} Executed action FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp) in 12.6956ms
+2024-05-15 10:50:07.9992 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 10:50:07.9992 ${level} Request finished HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json - - 200 - application/json;+charset=utf-8 17.7566ms
+2024-05-15 10:50:13.0311 ${level} Request starting HTTP/2 OPTIONS https://localhost:7086/api/Notes/GetAllNotes - -
+2024-05-15 10:50:13.0311 ${level} CORS policy execution successful.
+2024-05-15 10:50:13.0311 ${level} Request finished HTTP/2 OPTIONS https://localhost:7086/api/Notes/GetAllNotes - - - 204 - - 0.8019ms
+2024-05-15 10:50:13.0311 ${level} Request starting HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json -
+2024-05-15 10:50:13.0311 ${level} CORS policy execution successful.
+2024-05-15 10:50:13.0311 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 10:50:13.0311 ${level} Route matched with {action = "GetNodes", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetNodes() on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-05-15 10:50:13.0311 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-15 10:50:13.0311 ${level} Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[NoteId], [u].[Color], [u].[CreatedAt], [u].[Description], [u].[IsArchive], [u].[IsPinned], [u].[IsTrash], [u].[ModifiedAt], [u].[Remainder], [u].[Title], [u].[UserId]
+FROM [UserNotes] AS [u]
+2024-05-15 10:50:13.0311 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-15 10:50:13.0311 ${level} Executed action FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp) in 6.0084ms
+2024-05-15 10:50:13.0311 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 10:50:13.0311 ${level} Request finished HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json - - 200 - application/json;+charset=utf-8 7.4312ms
+2024-05-15 10:50:18.1922 ${level} Request starting HTTP/2 OPTIONS https://localhost:7086/api/Notes/GetAllNotes - -
+2024-05-15 10:50:18.1922 ${level} CORS policy execution successful.
+2024-05-15 10:50:18.1922 ${level} Request finished HTTP/2 OPTIONS https://localhost:7086/api/Notes/GetAllNotes - - - 204 - - 1.1150ms
+2024-05-15 10:50:18.1922 ${level} Request starting HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json -
+2024-05-15 10:50:18.1922 ${level} CORS policy execution successful.
+2024-05-15 10:50:18.1989 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 10:50:18.1989 ${level} Route matched with {action = "GetNodes", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetNodes() on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-05-15 10:50:18.1989 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-15 10:50:18.1989 ${level} Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[NoteId], [u].[Color], [u].[CreatedAt], [u].[Description], [u].[IsArchive], [u].[IsPinned], [u].[IsTrash], [u].[ModifiedAt], [u].[Remainder], [u].[Title], [u].[UserId]
+FROM [UserNotes] AS [u]
+2024-05-15 10:50:18.1989 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-15 10:50:18.1989 ${level} Executed action FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp) in 12.6707ms
+2024-05-15 10:50:18.1989 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 10:50:18.1989 ${level} Request finished HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json - - 200 - application/json;+charset=utf-8 16.6090ms
+2024-05-15 10:51:48.8172 ${level} Request starting HTTP/2 OPTIONS https://localhost:7086/api/Notes/GetAllNotes - -
+2024-05-15 10:51:48.8172 ${level} CORS policy execution successful.
+2024-05-15 10:51:48.8172 ${level} Request finished HTTP/2 OPTIONS https://localhost:7086/api/Notes/GetAllNotes - - - 204 - - 0.4526ms
+2024-05-15 10:51:48.8172 ${level} Request starting HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json -
+2024-05-15 10:51:48.8172 ${level} CORS policy execution successful.
+2024-05-15 10:51:48.8226 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 10:51:48.8226 ${level} Route matched with {action = "GetNodes", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetNodes() on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-05-15 10:51:48.8226 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-15 10:51:48.8226 ${level} Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[NoteId], [u].[Color], [u].[CreatedAt], [u].[Description], [u].[IsArchive], [u].[IsPinned], [u].[IsTrash], [u].[ModifiedAt], [u].[Remainder], [u].[Title], [u].[UserId]
+FROM [UserNotes] AS [u]
+2024-05-15 10:51:48.8226 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-15 10:51:48.8226 ${level} Executed action FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp) in 12.098ms
+2024-05-15 10:51:48.8226 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 10:51:48.8226 ${level} Request finished HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json - - 200 - application/json;+charset=utf-8 15.7853ms
+2024-05-15 10:53:54.4267 ${level} Request starting HTTP/2 OPTIONS https://localhost:7086/api/Notes/GetAllNotes - -
+2024-05-15 10:53:54.4267 ${level} CORS policy execution successful.
+2024-05-15 10:53:54.4267 ${level} Request finished HTTP/2 OPTIONS https://localhost:7086/api/Notes/GetAllNotes - - - 204 - - 2.4990ms
+2024-05-15 10:53:54.4482 ${level} Request starting HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json -
+2024-05-15 10:53:54.4482 ${level} CORS policy execution successful.
+2024-05-15 10:53:54.4724 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 10:53:54.4724 ${level} Route matched with {action = "GetNodes", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetNodes() on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-05-15 10:53:54.4795 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-15 10:53:54.4970 ${level} Executed DbCommand (17ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[NoteId], [u].[Color], [u].[CreatedAt], [u].[Description], [u].[IsArchive], [u].[IsPinned], [u].[IsTrash], [u].[ModifiedAt], [u].[Remainder], [u].[Title], [u].[UserId]
+FROM [UserNotes] AS [u]
+2024-05-15 10:53:54.4970 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-15 10:53:54.4970 ${level} Executed action FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp) in 25.4946ms
+2024-05-15 10:53:54.4970 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 10:53:54.4970 ${level} Request finished HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json - - 200 - application/json;+charset=utf-8 50.3746ms
+2024-05-15 11:01:07.6164 ${level} Request starting HTTP/2 OPTIONS https://localhost:7086/api/Notes/GetAllNotes - -
+2024-05-15 11:01:07.6164 ${level} CORS policy execution successful.
+2024-05-15 11:01:07.6164 ${level} Request finished HTTP/2 OPTIONS https://localhost:7086/api/Notes/GetAllNotes - - - 204 - - 8.1310ms
+2024-05-15 11:01:07.6298 ${level} Request starting HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json -
+2024-05-15 11:01:07.6298 ${level} CORS policy execution successful.
+2024-05-15 11:01:07.6512 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 11:01:07.6512 ${level} Route matched with {action = "GetNodes", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetNodes() on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-05-15 11:01:07.6687 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-15 11:01:07.8582 ${level} Executed DbCommand (31ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[NoteId], [u].[Color], [u].[CreatedAt], [u].[Description], [u].[IsArchive], [u].[IsPinned], [u].[IsTrash], [u].[ModifiedAt], [u].[Remainder], [u].[Title], [u].[UserId]
+FROM [UserNotes] AS [u]
+2024-05-15 11:01:07.8723 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-15 11:01:07.8799 ${level} Executed action FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp) in 223.9831ms
+2024-05-15 11:01:07.8799 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 11:01:07.8799 ${level} Request finished HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json - - 200 - application/json;+charset=utf-8 252.1198ms
+2024-05-15 11:01:16.4007 ${level} Request starting HTTP/2 OPTIONS https://localhost:7086/api/Notes/GetAllNotes - -
+2024-05-15 11:01:16.4007 ${level} CORS policy execution successful.
+2024-05-15 11:01:16.4007 ${level} Request finished HTTP/2 OPTIONS https://localhost:7086/api/Notes/GetAllNotes - - - 204 - - 2.1476ms
+2024-05-15 11:01:16.4007 ${level} Request starting HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json -
+2024-05-15 11:01:16.4007 ${level} CORS policy execution successful.
+2024-05-15 11:01:16.4103 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 11:01:16.4103 ${level} Route matched with {action = "GetNodes", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetNodes() on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-05-15 11:01:16.4103 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-15 11:01:16.4103 ${level} Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[NoteId], [u].[Color], [u].[CreatedAt], [u].[Description], [u].[IsArchive], [u].[IsPinned], [u].[IsTrash], [u].[ModifiedAt], [u].[Remainder], [u].[Title], [u].[UserId]
+FROM [UserNotes] AS [u]
+2024-05-15 11:01:16.4103 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-15 11:01:16.4103 ${level} Executed action FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp) in 11.524ms
+2024-05-15 11:01:16.4103 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 11:01:16.4103 ${level} Request finished HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json - - 200 - application/json;+charset=utf-8 17.4221ms
+2024-05-15 11:02:12.6520 ${level} Request starting HTTP/2 OPTIONS https://localhost:7086/api/Notes/GetAllNotes - -
+2024-05-15 11:02:12.6520 ${level} CORS policy execution successful.
+2024-05-15 11:02:12.6520 ${level} Request finished HTTP/2 OPTIONS https://localhost:7086/api/Notes/GetAllNotes - - - 204 - - 0.9080ms
+2024-05-15 11:02:12.6520 ${level} Request starting HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json -
+2024-05-15 11:02:12.6520 ${level} CORS policy execution successful.
+2024-05-15 11:02:12.6520 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 11:02:12.6520 ${level} Route matched with {action = "GetNodes", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetNodes() on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-05-15 11:02:12.6520 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-15 11:02:12.6640 ${level} Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[NoteId], [u].[Color], [u].[CreatedAt], [u].[Description], [u].[IsArchive], [u].[IsPinned], [u].[IsTrash], [u].[ModifiedAt], [u].[Remainder], [u].[Title], [u].[UserId]
+FROM [UserNotes] AS [u]
+2024-05-15 11:02:12.6640 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-15 11:02:12.6640 ${level} Executed action FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp) in 7.4745ms
+2024-05-15 11:02:12.6640 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 11:02:12.6640 ${level} Request finished HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json - - 200 - application/json;+charset=utf-8 9.6213ms
+2024-05-15 14:20:26.4005 ${level} User profile is available. Using 'C:\Users\billu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-15 14:20:28.8466 ${level} Now listening on: https://localhost:7086
+2024-05-15 14:20:28.8466 ${level} Now listening on: http://localhost:5222
+2024-05-15 14:20:28.8466 ${level} Application started. Press Ctrl+C to shut down.
+2024-05-15 14:20:28.8466 ${level} Hosting environment: Development
+2024-05-15 14:20:28.8466 ${level} Content root path: C:\Users\billu\source\repos\FunduNotesApp\FunduNotesApp\
+2024-05-15 14:20:30.4781 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-05-15 14:20:31.0446 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 568.4594ms
+2024-05-15 14:20:31.0798 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-05-15 14:20:31.0798 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 4.0351ms
+2024-05-15 14:20:31.1046 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-05-15 14:20:31.2130 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 108.3269ms
+2024-05-15 14:20:31.3113 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-05-15 14:20:31.4957 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 184.4021ms
+2024-05-15 18:04:48.2220 ${level} Request starting HTTP/2 OPTIONS https://localhost:7086/api/User/login - -
+2024-05-15 18:04:48.3119 ${level} CORS policy execution successful.
+2024-05-15 18:04:48.3332 ${level} Request finished HTTP/2 OPTIONS https://localhost:7086/api/User/login - - - 204 - - 114.6966ms
+2024-05-15 18:04:48.3332 ${level} Request starting HTTP/2 POST https://localhost:7086/api/User/login application/json 52
+2024-05-15 18:04:48.3644 ${level} CORS policy execution successful.
+2024-05-15 18:04:48.6103 ${level} Executing endpoint 'FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp)'
+2024-05-15 18:04:48.7476 ${level} Route matched with {action = "UserLogin", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UserLogin(CommonLayer.Models.UserLogin) on controller FunduNotesApp.Controllers.UserController (FunduNotesApp).
+2024-05-15 18:04:51.1197 ${level} Request starting HTTP/2 POST https://localhost:7086/api/User/login application/json 52
+2024-05-15 18:04:51.1197 ${level} CORS policy execution successful.
+2024-05-15 18:04:51.1197 ${level} Executing endpoint 'FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp)'
+2024-05-15 18:04:51.1197 ${level} Route matched with {action = "UserLogin", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UserLogin(CommonLayer.Models.UserLogin) on controller FunduNotesApp.Controllers.UserController (FunduNotesApp).
+2024-05-15 18:04:51.6125 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-15 18:04:51.6125 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-15 18:04:53.1351 ${level} Request starting HTTP/2 POST https://localhost:7086/api/User/login application/json 52
+2024-05-15 18:04:53.1351 ${level} CORS policy execution successful.
+2024-05-15 18:04:53.1351 ${level} Executing endpoint 'FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp)'
+2024-05-15 18:04:53.1351 ${level} Route matched with {action = "UserLogin", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UserLogin(CommonLayer.Models.UserLogin) on controller FunduNotesApp.Controllers.UserController (FunduNotesApp).
+2024-05-15 18:04:53.2723 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-15 18:04:53.6000 ${level} Executed DbCommand (145ms) [Parameters=[@__login_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[CreatedDate], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedDate]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__login_Email_0
+2024-05-15 18:04:53.6000 ${level} Executed DbCommand (133ms) [Parameters=[@__login_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[CreatedDate], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedDate]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__login_Email_0
+2024-05-15 18:04:53.6000 ${level} Executed DbCommand (140ms) [Parameters=[@__login_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[CreatedDate], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedDate]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__login_Email_0
+2024-05-15 18:04:54.1250 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-15 18:04:54.1250 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-15 18:04:54.1250 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-15 18:04:54.1497 ${level} Executed action FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp) in 1002.791ms
+2024-05-15 18:04:54.1497 ${level} Executed action FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp) in 5395.8636ms
+2024-05-15 18:04:54.1497 ${level} Executed endpoint 'FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp)'
+2024-05-15 18:04:54.1497 ${level} Executed endpoint 'FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp)'
+2024-05-15 18:04:54.1497 ${level} Executed action FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp) in 3018.3656ms
+2024-05-15 18:04:54.1497 ${level} Executed endpoint 'FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp)'
+2024-05-15 18:04:54.1588 ${level} Request finished HTTP/2 POST https://localhost:7086/api/User/login application/json 52 - 200 - application/json;+charset=utf-8 5821.7775ms
+2024-05-15 18:04:54.1588 ${level} Request finished HTTP/2 POST https://localhost:7086/api/User/login application/json 52 - 200 - application/json;+charset=utf-8 1023.6721ms
+2024-05-15 18:04:54.1588 ${level} Request finished HTTP/2 POST https://localhost:7086/api/User/login application/json 52 - 200 - application/json;+charset=utf-8 3039.0532ms
+2024-05-15 18:04:54.1946 ${level} Request starting HTTP/2 OPTIONS https://localhost:7086/api/Notes/GetAllNotes - -
+2024-05-15 18:04:54.1946 ${level} CORS policy execution successful.
+2024-05-15 18:04:54.1946 ${level} Request finished HTTP/2 OPTIONS https://localhost:7086/api/Notes/GetAllNotes - - - 204 - - 0.7291ms
+2024-05-15 18:04:54.1946 ${level} Request starting HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json -
+2024-05-15 18:04:54.2039 ${level} CORS policy execution successful.
+2024-05-15 18:04:54.3399 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 18:04:54.3399 ${level} Route matched with {action = "GetNodes", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetNodes() on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-05-15 18:04:54.3399 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-15 18:04:54.3804 ${level} Executed DbCommand (19ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[NoteId], [u].[Color], [u].[CreatedAt], [u].[Description], [u].[IsArchive], [u].[IsPinned], [u].[IsTrash], [u].[ModifiedAt], [u].[Remainder], [u].[Title], [u].[UserId]
+FROM [UserNotes] AS [u]
+2024-05-15 18:04:54.4360 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-15 18:04:54.4595 ${level} Executed action FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp) in 116.888ms
+2024-05-15 18:04:54.4595 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 18:04:54.4595 ${level} Request finished HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json - - 200 - application/json;+charset=utf-8 262.1911ms
+2024-05-15 18:05:24.8037 ${level} Request starting HTTP/2 OPTIONS https://localhost:7086/api/Notes/GetAllNotes - -
+2024-05-15 18:05:24.8037 ${level} CORS policy execution successful.
+2024-05-15 18:05:24.8037 ${level} Request finished HTTP/2 OPTIONS https://localhost:7086/api/Notes/GetAllNotes - - - 204 - - 1.4603ms
+2024-05-15 18:05:24.8037 ${level} Request starting HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json -
+2024-05-15 18:05:24.8037 ${level} CORS policy execution successful.
+2024-05-15 18:05:24.8037 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 18:05:24.8037 ${level} Route matched with {action = "GetNodes", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetNodes() on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-05-15 18:05:24.8115 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-15 18:05:24.8115 ${level} Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[NoteId], [u].[Color], [u].[CreatedAt], [u].[Description], [u].[IsArchive], [u].[IsPinned], [u].[IsTrash], [u].[ModifiedAt], [u].[Remainder], [u].[Title], [u].[UserId]
+FROM [UserNotes] AS [u]
+2024-05-15 18:05:24.8115 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-15 18:05:24.8115 ${level} Executed action FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp) in 8.8365ms
+2024-05-15 18:05:24.8115 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 18:05:24.8115 ${level} Request finished HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json - - 200 - application/json;+charset=utf-8 10.4360ms
+2024-05-15 18:05:31.1106 ${level} Request starting HTTP/2 OPTIONS https://localhost:7086/api/Notes/GetAllNotes - -
+2024-05-15 18:05:31.1106 ${level} CORS policy execution successful.
+2024-05-15 18:05:31.1106 ${level} Request finished HTTP/2 OPTIONS https://localhost:7086/api/Notes/GetAllNotes - - - 204 - - 1.7508ms
+2024-05-15 18:05:31.1106 ${level} Request starting HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json -
+2024-05-15 18:05:31.1106 ${level} CORS policy execution successful.
+2024-05-15 18:05:31.1106 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 18:05:31.1106 ${level} Route matched with {action = "GetNodes", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetNodes() on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-05-15 18:05:31.1106 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-15 18:05:31.1106 ${level} Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[NoteId], [u].[Color], [u].[CreatedAt], [u].[Description], [u].[IsArchive], [u].[IsPinned], [u].[IsTrash], [u].[ModifiedAt], [u].[Remainder], [u].[Title], [u].[UserId]
+FROM [UserNotes] AS [u]
+2024-05-15 18:05:31.1218 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-15 18:05:31.1218 ${level} Executed action FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp) in 5.8883ms
+2024-05-15 18:05:31.1218 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 18:05:31.1218 ${level} Request finished HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json - - 200 - application/json;+charset=utf-8 8.0460ms
+2024-05-15 18:05:34.9441 ${level} Request starting HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json -
+2024-05-15 18:05:34.9441 ${level} CORS policy execution successful.
+2024-05-15 18:05:34.9441 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 18:05:34.9441 ${level} Route matched with {action = "GetNodes", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetNodes() on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-05-15 18:05:34.9441 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-15 18:05:34.9475 ${level} Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[NoteId], [u].[Color], [u].[CreatedAt], [u].[Description], [u].[IsArchive], [u].[IsPinned], [u].[IsTrash], [u].[ModifiedAt], [u].[Remainder], [u].[Title], [u].[UserId]
+FROM [UserNotes] AS [u]
+2024-05-15 18:05:34.9475 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-15 18:05:34.9475 ${level} Executed action FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp) in 3.2918ms
+2024-05-15 18:05:34.9475 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 18:05:34.9475 ${level} Request finished HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json - - 200 - application/json;+charset=utf-8 4.5738ms
+2024-05-15 18:16:12.3905 ${level} Request starting HTTP/2 OPTIONS https://localhost:7086/api/Notes/GetAllNotes - -
+2024-05-15 18:16:12.3905 ${level} CORS policy execution successful.
+2024-05-15 18:16:12.3905 ${level} Request finished HTTP/2 OPTIONS https://localhost:7086/api/Notes/GetAllNotes - - - 204 - - 1.6854ms
+2024-05-15 18:16:12.3905 ${level} Request starting HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json -
+2024-05-15 18:16:12.3905 ${level} CORS policy execution successful.
+2024-05-15 18:16:12.3905 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 18:16:12.3905 ${level} Route matched with {action = "GetNodes", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetNodes() on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-05-15 18:16:12.3905 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-15 18:16:12.5274 ${level} Executed DbCommand (20ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[NoteId], [u].[Color], [u].[CreatedAt], [u].[Description], [u].[IsArchive], [u].[IsPinned], [u].[IsTrash], [u].[ModifiedAt], [u].[Remainder], [u].[Title], [u].[UserId]
+FROM [UserNotes] AS [u]
+2024-05-15 18:16:12.5274 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-15 18:16:12.5274 ${level} Executed action FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp) in 131.8627ms
+2024-05-15 18:16:12.5274 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 18:16:12.5274 ${level} Request finished HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json - - 200 - application/json;+charset=utf-8 134.3124ms
+2024-05-15 18:16:54.8702 ${level} Request starting HTTP/2 OPTIONS https://localhost:7086/api/Notes/GetAllNotes - -
+2024-05-15 18:16:54.8708 ${level} CORS policy execution successful.
+2024-05-15 18:16:54.8708 ${level} Request finished HTTP/2 OPTIONS https://localhost:7086/api/Notes/GetAllNotes - - - 204 - - 0.9202ms
+2024-05-15 18:16:54.8708 ${level} Request starting HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json -
+2024-05-15 18:16:54.8708 ${level} CORS policy execution successful.
+2024-05-15 18:16:54.8708 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 18:16:54.8708 ${level} Route matched with {action = "GetNodes", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetNodes() on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-05-15 18:16:54.8708 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-15 18:16:54.8980 ${level} Executed DbCommand (21ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[NoteId], [u].[Color], [u].[CreatedAt], [u].[Description], [u].[IsArchive], [u].[IsPinned], [u].[IsTrash], [u].[ModifiedAt], [u].[Remainder], [u].[Title], [u].[UserId]
+FROM [UserNotes] AS [u]
+2024-05-15 18:16:54.8980 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-15 18:16:54.8980 ${level} Executed action FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp) in 24.0543ms
+2024-05-15 18:16:54.8980 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 18:16:54.8980 ${level} Request finished HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json - - 200 - application/json;+charset=utf-8 25.8787ms
+2024-05-15 18:17:47.0155 ${level} Request starting HTTP/2 OPTIONS https://localhost:7086/api/Notes/GetAllNotes - -
+2024-05-15 18:17:47.0155 ${level} CORS policy execution successful.
+2024-05-15 18:17:47.0155 ${level} Request finished HTTP/2 OPTIONS https://localhost:7086/api/Notes/GetAllNotes - - - 204 - - 1.3076ms
+2024-05-15 18:17:47.0155 ${level} Request starting HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json -
+2024-05-15 18:17:47.0155 ${level} CORS policy execution successful.
+2024-05-15 18:17:47.0155 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 18:17:47.0155 ${level} Route matched with {action = "GetNodes", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetNodes() on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-05-15 18:17:47.0155 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-15 18:17:47.0388 ${level} Executed DbCommand (16ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[NoteId], [u].[Color], [u].[CreatedAt], [u].[Description], [u].[IsArchive], [u].[IsPinned], [u].[IsTrash], [u].[ModifiedAt], [u].[Remainder], [u].[Title], [u].[UserId]
+FROM [UserNotes] AS [u]
+2024-05-15 18:17:47.0388 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-15 18:17:47.0388 ${level} Executed action FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp) in 18.4545ms
+2024-05-15 18:17:47.0388 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 18:17:47.0388 ${level} Request finished HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json - - 200 - application/json;+charset=utf-8 19.6453ms
+2024-05-15 18:17:54.3603 ${level} Request starting HTTP/2 OPTIONS https://localhost:7086/api/Notes/GetAllNotes - -
+2024-05-15 18:17:54.3603 ${level} CORS policy execution successful.
+2024-05-15 18:17:54.3603 ${level} Request finished HTTP/2 OPTIONS https://localhost:7086/api/Notes/GetAllNotes - - - 204 - - 0.5168ms
+2024-05-15 18:17:54.3795 ${level} Request starting HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json -
+2024-05-15 18:17:54.3795 ${level} CORS policy execution successful.
+2024-05-15 18:17:54.3795 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 18:17:54.3795 ${level} Route matched with {action = "GetNodes", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetNodes() on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-05-15 18:17:54.3795 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-15 18:17:54.4369 ${level} Executed DbCommand (55ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[NoteId], [u].[Color], [u].[CreatedAt], [u].[Description], [u].[IsArchive], [u].[IsPinned], [u].[IsTrash], [u].[ModifiedAt], [u].[Remainder], [u].[Title], [u].[UserId]
+FROM [UserNotes] AS [u]
+2024-05-15 18:17:54.4369 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-15 18:17:54.4369 ${level} Executed action FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp) in 57.2074ms
+2024-05-15 18:17:54.4369 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 18:17:54.4369 ${level} Request finished HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json - - 200 - application/json;+charset=utf-8 58.8423ms
+2024-05-15 18:21:11.2186 ${level} Request starting HTTP/2 OPTIONS https://localhost:7086/api/User/login - -
+2024-05-15 18:21:11.2186 ${level} CORS policy execution successful.
+2024-05-15 18:21:11.2186 ${level} Request finished HTTP/2 OPTIONS https://localhost:7086/api/User/login - - - 204 - - 5.7690ms
+2024-05-15 18:21:11.2186 ${level} Request starting HTTP/2 POST https://localhost:7086/api/User/login application/json 52
+2024-05-15 18:21:11.2186 ${level} CORS policy execution successful.
+2024-05-15 18:21:11.2186 ${level} Executing endpoint 'FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp)'
+2024-05-15 18:21:11.2286 ${level} Route matched with {action = "UserLogin", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UserLogin(CommonLayer.Models.UserLogin) on controller FunduNotesApp.Controllers.UserController (FunduNotesApp).
+2024-05-15 18:21:11.2757 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-15 18:21:11.3515 ${level} Executed DbCommand (51ms) [Parameters=[@__login_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[CreatedDate], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedDate]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__login_Email_0
+2024-05-15 18:21:11.3599 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-15 18:21:11.3599 ${level} Executed action FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp) in 131.7064ms
+2024-05-15 18:21:11.3599 ${level} Executed endpoint 'FunduNotesApp.Controllers.UserController.UserLogin (FunduNotesApp)'
+2024-05-15 18:21:11.3599 ${level} Request finished HTTP/2 POST https://localhost:7086/api/User/login application/json 52 - 200 - application/json;+charset=utf-8 135.3839ms
+2024-05-15 18:21:11.3931 ${level} Request starting HTTP/2 OPTIONS https://localhost:7086/api/Notes/GetAllNotes - -
+2024-05-15 18:21:11.3931 ${level} CORS policy execution successful.
+2024-05-15 18:21:11.3931 ${level} Request finished HTTP/2 OPTIONS https://localhost:7086/api/Notes/GetAllNotes - - - 204 - - 0.4046ms
+2024-05-15 18:21:11.3931 ${level} Request starting HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json -
+2024-05-15 18:21:11.3931 ${level} CORS policy execution successful.
+2024-05-15 18:21:11.3998 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 18:21:11.3998 ${level} Route matched with {action = "GetNodes", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetNodes() on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-05-15 18:21:11.3998 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-15 18:21:11.3998 ${level} Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[NoteId], [u].[Color], [u].[CreatedAt], [u].[Description], [u].[IsArchive], [u].[IsPinned], [u].[IsTrash], [u].[ModifiedAt], [u].[Remainder], [u].[Title], [u].[UserId]
+FROM [UserNotes] AS [u]
+2024-05-15 18:21:11.3998 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-15 18:21:11.3998 ${level} Executed action FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp) in 9.3861ms
+2024-05-15 18:21:11.3998 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 18:21:11.3998 ${level} Request finished HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json - - 200 - application/json;+charset=utf-8 12.4068ms
+2024-05-15 18:21:29.2845 ${level} Request starting HTTP/2 OPTIONS https://localhost:7086/api/Notes/GetAllNotes - -
+2024-05-15 18:21:29.2845 ${level} CORS policy execution successful.
+2024-05-15 18:21:29.2845 ${level} Request finished HTTP/2 OPTIONS https://localhost:7086/api/Notes/GetAllNotes - - - 204 - - 0.7486ms
+2024-05-15 18:21:29.2845 ${level} Request starting HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json -
+2024-05-15 18:21:29.2845 ${level} CORS policy execution successful.
+2024-05-15 18:21:29.2845 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 18:21:29.2845 ${level} Route matched with {action = "GetNodes", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetNodes() on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-05-15 18:21:29.2845 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-15 18:21:29.3433 ${level} Executed DbCommand (53ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[NoteId], [u].[Color], [u].[CreatedAt], [u].[Description], [u].[IsArchive], [u].[IsPinned], [u].[IsTrash], [u].[ModifiedAt], [u].[Remainder], [u].[Title], [u].[UserId]
+FROM [UserNotes] AS [u]
+2024-05-15 18:21:29.3433 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-15 18:21:29.3433 ${level} Executed action FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp) in 56.6719ms
+2024-05-15 18:21:29.3433 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 18:21:29.3433 ${level} Request finished HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json - - 200 - application/json;+charset=utf-8 58.0368ms
+2024-05-15 18:21:50.9313 ${level} Request starting HTTP/2 OPTIONS https://localhost:7086/api/Notes/GetAllNotes - -
+2024-05-15 18:21:50.9313 ${level} CORS policy execution successful.
+2024-05-15 18:21:50.9313 ${level} Request finished HTTP/2 OPTIONS https://localhost:7086/api/Notes/GetAllNotes - - - 204 - - 14.6002ms
+2024-05-15 18:21:50.9479 ${level} Request starting HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json -
+2024-05-15 18:21:50.9703 ${level} CORS policy execution successful.
+2024-05-15 18:21:50.9851 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 18:21:50.9851 ${level} Route matched with {action = "GetNodes", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetNodes() on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-05-15 18:21:50.9990 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-15 18:21:51.0668 ${level} Executed DbCommand (67ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[NoteId], [u].[Color], [u].[CreatedAt], [u].[Description], [u].[IsArchive], [u].[IsPinned], [u].[IsTrash], [u].[ModifiedAt], [u].[Remainder], [u].[Title], [u].[UserId]
+FROM [UserNotes] AS [u]
+2024-05-15 18:21:51.0668 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-15 18:21:51.0668 ${level} Executed action FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp) in 84.5278ms
+2024-05-15 18:21:51.0668 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 18:21:51.0668 ${level} Request finished HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json - - 200 - application/json;+charset=utf-8 122.3688ms
+2024-05-15 18:23:12.0807 ${level} Request starting HTTP/2 OPTIONS https://localhost:7086/api/Notes/GetAllNotes - -
+2024-05-15 18:23:12.0807 ${level} CORS policy execution successful.
+2024-05-15 18:23:12.0807 ${level} Request finished HTTP/2 OPTIONS https://localhost:7086/api/Notes/GetAllNotes - - - 204 - - 0.7688ms
+2024-05-15 18:23:12.0807 ${level} Request starting HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json -
+2024-05-15 18:23:12.0807 ${level} CORS policy execution successful.
+2024-05-15 18:23:12.0887 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 18:23:12.0887 ${level} Route matched with {action = "GetNodes", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetNodes() on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-05-15 18:23:12.0887 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-15 18:23:12.0887 ${level} Executed DbCommand (13ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[NoteId], [u].[Color], [u].[CreatedAt], [u].[Description], [u].[IsArchive], [u].[IsPinned], [u].[IsTrash], [u].[ModifiedAt], [u].[Remainder], [u].[Title], [u].[UserId]
+FROM [UserNotes] AS [u]
+2024-05-15 18:23:12.1049 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-15 18:23:12.1049 ${level} Executed action FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp) in 16.6995ms
+2024-05-15 18:23:12.1049 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 18:23:12.1049 ${level} Request finished HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json - - 200 - application/json;+charset=utf-8 21.8793ms
+2024-05-15 18:50:15.6108 ${level} Request starting HTTP/2 OPTIONS https://localhost:7086/api/Notes/UpdateNotesById?noteid=1 - -
+2024-05-15 18:50:15.6344 ${level} CORS policy execution successful.
+2024-05-15 18:50:15.6415 ${level} Request finished HTTP/2 OPTIONS https://localhost:7086/api/Notes/UpdateNotesById?noteid=1 - - - 204 - - 29.5797ms
+2024-05-15 18:50:15.6415 ${level} Request starting HTTP/2 PUT https://localhost:7086/api/Notes/UpdateNotesById?noteid=1 application/json 72
+2024-05-15 18:50:15.6415 ${level} CORS policy execution successful.
+2024-05-15 18:50:15.6808 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.UpdateNotes (FunduNotesApp)'
+2024-05-15 18:50:15.7764 ${level} Route matched with {action = "UpdateNotes", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UpdateNotes(CommonLayer.Models.NotesModel, Int32) on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-05-15 18:50:15.9181 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-15 18:50:16.3127 ${level} Executed DbCommand (35ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[NoteId], [u].[Color], [u].[CreatedAt], [u].[Description], [u].[IsArchive], [u].[IsPinned], [u].[IsTrash], [u].[ModifiedAt], [u].[Remainder], [u].[Title], [u].[UserId]
+FROM [UserNotes] AS [u]
+WHERE [u].[NoteId] = @__id_0
+2024-05-15 18:50:16.5929 ${level} Executed DbCommand (26ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [UserNotes] SET [CreatedAt] = @p0
+WHERE [NoteId] = @p1;
+SELECT @@ROWCOUNT;
+2024-05-15 18:50:16.6288 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-15 18:50:16.6363 ${level} Executed action FunduNotesApp.Controllers.NotesController.UpdateNotes (FunduNotesApp) in 859.7355ms
+2024-05-15 18:50:16.6363 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.UpdateNotes (FunduNotesApp)'
+2024-05-15 18:50:16.6363 ${level} Request finished HTTP/2 PUT https://localhost:7086/api/Notes/UpdateNotesById?noteid=1 application/json 72 - 200 - application/json;+charset=utf-8 993.8273ms
+2024-05-15 18:51:09.3476 ${level} Request starting HTTP/2 OPTIONS https://localhost:7086/api/Notes/GetAllNotes - -
+2024-05-15 18:51:09.3476 ${level} CORS policy execution successful.
+2024-05-15 18:51:09.3476 ${level} Request finished HTTP/2 OPTIONS https://localhost:7086/api/Notes/GetAllNotes - - - 204 - - 2.1868ms
+2024-05-15 18:51:09.3528 ${level} Request starting HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json -
+2024-05-15 18:51:09.3528 ${level} CORS policy execution successful.
+2024-05-15 18:51:09.3528 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 18:51:09.3528 ${level} Route matched with {action = "GetNodes", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetNodes() on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-05-15 18:51:09.3528 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-15 18:51:09.3818 ${level} Executed DbCommand (21ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[NoteId], [u].[Color], [u].[CreatedAt], [u].[Description], [u].[IsArchive], [u].[IsPinned], [u].[IsTrash], [u].[ModifiedAt], [u].[Remainder], [u].[Title], [u].[UserId]
+FROM [UserNotes] AS [u]
+2024-05-15 18:51:09.3818 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-15 18:51:09.3818 ${level} Executed action FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp) in 25.9016ms
+2024-05-15 18:51:09.3818 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 18:51:09.3818 ${level} Request finished HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json - - 200 - application/json;+charset=utf-8 30.1286ms
+2024-05-15 18:51:13.1660 ${level} Request starting HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json -
+2024-05-15 18:51:13.1660 ${level} CORS policy execution successful.
+2024-05-15 18:51:13.1660 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 18:51:13.1660 ${level} Route matched with {action = "GetNodes", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetNodes() on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-05-15 18:51:13.1660 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-15 18:51:13.1660 ${level} Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[NoteId], [u].[Color], [u].[CreatedAt], [u].[Description], [u].[IsArchive], [u].[IsPinned], [u].[IsTrash], [u].[ModifiedAt], [u].[Remainder], [u].[Title], [u].[UserId]
+FROM [UserNotes] AS [u]
+2024-05-15 18:51:13.1660 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-15 18:51:13.1660 ${level} Executed action FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp) in 3.3571ms
+2024-05-15 18:51:13.1660 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 18:51:13.1660 ${level} Request finished HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json - - 200 - application/json;+charset=utf-8 5.6238ms
+2024-05-15 18:51:15.1828 ${level} Request starting HTTP/2 OPTIONS https://localhost:7086/api/Notes/GetAllNotes - -
+2024-05-15 18:51:15.1828 ${level} CORS policy execution successful.
+2024-05-15 18:51:15.1828 ${level} Request finished HTTP/2 OPTIONS https://localhost:7086/api/Notes/GetAllNotes - - - 204 - - 0.5396ms
+2024-05-15 18:51:15.1828 ${level} Request starting HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json -
+2024-05-15 18:51:15.1828 ${level} CORS policy execution successful.
+2024-05-15 18:51:15.1828 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 18:51:15.1828 ${level} Route matched with {action = "GetNodes", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetNodes() on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-05-15 18:51:15.1828 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-15 18:51:15.1828 ${level} Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[NoteId], [u].[Color], [u].[CreatedAt], [u].[Description], [u].[IsArchive], [u].[IsPinned], [u].[IsTrash], [u].[ModifiedAt], [u].[Remainder], [u].[Title], [u].[UserId]
+FROM [UserNotes] AS [u]
+2024-05-15 18:51:15.1828 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-15 18:51:15.1828 ${level} Executed action FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp) in 4.203ms
+2024-05-15 18:51:15.1828 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 18:51:15.1828 ${level} Request finished HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json - - 200 - application/json;+charset=utf-8 5.2639ms
+2024-05-15 18:51:22.0247 ${level} Request starting HTTP/2 OPTIONS https://localhost:7086/api/Notes/IsTrash?noteid=8 - -
+2024-05-15 18:51:22.0247 ${level} CORS policy execution successful.
+2024-05-15 18:51:22.0247 ${level} Request finished HTTP/2 OPTIONS https://localhost:7086/api/Notes/IsTrash?noteid=8 - - - 204 - - 0.8266ms
+2024-05-15 18:51:22.0274 ${level} Request starting HTTP/2 PUT https://localhost:7086/api/Notes/IsTrash?noteid=8 application/json 12
+2024-05-15 18:51:22.0274 ${level} CORS policy execution successful.
+2024-05-15 18:51:22.0486 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.IsTrashNotes (FunduNotesApp)'
+2024-05-15 18:51:22.0486 ${level} Route matched with {action = "IsTrashNotes", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult IsTrashNotes(Int32) on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-05-15 18:51:22.0486 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-15 18:51:22.0698 ${level} Executed DbCommand (5ms) [Parameters=[@__userId_0='?' (DbType = Int32), @__NoteId_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[NoteId], [u].[Color], [u].[CreatedAt], [u].[Description], [u].[IsArchive], [u].[IsPinned], [u].[IsTrash], [u].[ModifiedAt], [u].[Remainder], [u].[Title], [u].[UserId]
+FROM [UserNotes] AS [u]
+WHERE ([u].[UserId] = @__userId_0) AND ([u].[NoteId] = @__NoteId_1)
+2024-05-15 18:51:22.0698 ${level} Executing OkObjectResult, writing value of type 'CommonLayer.Models.Response`1[[RepositoryLayer.Entity.NotesEntity, RepositoryLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-15 18:51:22.0698 ${level} Executed action FunduNotesApp.Controllers.NotesController.IsTrashNotes (FunduNotesApp) in 21.5436ms
+2024-05-15 18:51:22.0698 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.IsTrashNotes (FunduNotesApp)'
+2024-05-15 18:51:22.0698 ${level} Request finished HTTP/2 PUT https://localhost:7086/api/Notes/IsTrash?noteid=8 application/json 12 - 200 - application/json;+charset=utf-8 44.1374ms
+2024-05-15 18:51:26.1075 ${level} Request starting HTTP/2 OPTIONS https://localhost:7086/api/Notes/GetAllNotes - -
+2024-05-15 18:51:26.1075 ${level} CORS policy execution successful.
+2024-05-15 18:51:26.1075 ${level} Request finished HTTP/2 OPTIONS https://localhost:7086/api/Notes/GetAllNotes - - - 204 - - 0.3873ms
+2024-05-15 18:51:26.1075 ${level} Request starting HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json -
+2024-05-15 18:51:26.1075 ${level} CORS policy execution successful.
+2024-05-15 18:51:26.1075 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 18:51:26.1075 ${level} Route matched with {action = "GetNodes", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetNodes() on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-05-15 18:51:26.1075 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-15 18:51:26.1075 ${level} Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[NoteId], [u].[Color], [u].[CreatedAt], [u].[Description], [u].[IsArchive], [u].[IsPinned], [u].[IsTrash], [u].[ModifiedAt], [u].[Remainder], [u].[Title], [u].[UserId]
+FROM [UserNotes] AS [u]
+2024-05-15 18:51:26.1075 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-15 18:51:26.1075 ${level} Executed action FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp) in 2.8041ms
+2024-05-15 18:51:26.1075 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 18:51:26.1075 ${level} Request finished HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json - - 200 - application/json;+charset=utf-8 3.6733ms
+2024-05-15 18:51:29.4882 ${level} Request starting HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json -
+2024-05-15 18:51:29.4882 ${level} CORS policy execution successful.
+2024-05-15 18:51:29.4882 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 18:51:29.4882 ${level} Route matched with {action = "GetNodes", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetNodes() on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-05-15 18:51:29.4882 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-15 18:51:29.4940 ${level} Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[NoteId], [u].[Color], [u].[CreatedAt], [u].[Description], [u].[IsArchive], [u].[IsPinned], [u].[IsTrash], [u].[ModifiedAt], [u].[Remainder], [u].[Title], [u].[UserId]
+FROM [UserNotes] AS [u]
+2024-05-15 18:51:29.4940 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-15 18:51:29.4940 ${level} Executed action FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp) in 4.8215ms
+2024-05-15 18:51:29.4940 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 18:51:29.4940 ${level} Request finished HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json - - 200 - application/json;+charset=utf-8 7.3025ms
+2024-05-15 18:51:33.6374 ${level} Request starting HTTP/2 OPTIONS https://localhost:7086/api/Notes/GetAllNotes - -
+2024-05-15 18:51:33.6374 ${level} CORS policy execution successful.
+2024-05-15 18:51:33.6374 ${level} Request finished HTTP/2 OPTIONS https://localhost:7086/api/Notes/GetAllNotes - - - 204 - - 0.5868ms
+2024-05-15 18:51:33.6374 ${level} Request starting HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json -
+2024-05-15 18:51:33.6374 ${level} CORS policy execution successful.
+2024-05-15 18:51:33.6374 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 18:51:33.6374 ${level} Route matched with {action = "GetNodes", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetNodes() on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-05-15 18:51:33.6374 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-15 18:51:33.6374 ${level} Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[NoteId], [u].[Color], [u].[CreatedAt], [u].[Description], [u].[IsArchive], [u].[IsPinned], [u].[IsTrash], [u].[ModifiedAt], [u].[Remainder], [u].[Title], [u].[UserId]
+FROM [UserNotes] AS [u]
+2024-05-15 18:51:33.6374 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-15 18:51:33.6374 ${level} Executed action FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp) in 3.4351ms
+2024-05-15 18:51:33.6374 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 18:51:33.6374 ${level} Request finished HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json - - 200 - application/json;+charset=utf-8 4.6922ms
+2024-05-15 18:51:34.5196 ${level} Request starting HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json -
+2024-05-15 18:51:34.5196 ${level} CORS policy execution successful.
+2024-05-15 18:51:34.5196 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 18:51:34.5196 ${level} Route matched with {action = "GetNodes", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetNodes() on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-05-15 18:51:34.5196 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-15 18:51:34.5196 ${level} Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[NoteId], [u].[Color], [u].[CreatedAt], [u].[Description], [u].[IsArchive], [u].[IsPinned], [u].[IsTrash], [u].[ModifiedAt], [u].[Remainder], [u].[Title], [u].[UserId]
+FROM [UserNotes] AS [u]
+2024-05-15 18:51:34.5196 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-15 18:51:34.5196 ${level} Executed action FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp) in 2.9383ms
+2024-05-15 18:51:34.5196 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 18:51:34.5196 ${level} Request finished HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json - - 200 - application/json;+charset=utf-8 4.1770ms
+2024-05-15 18:51:38.1073 ${level} Request starting HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json -
+2024-05-15 18:51:38.1081 ${level} CORS policy execution successful.
+2024-05-15 18:51:38.1081 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 18:51:38.1081 ${level} Route matched with {action = "GetNodes", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetNodes() on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-05-15 18:51:38.1081 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-15 18:51:38.1234 ${level} Executed DbCommand (11ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[NoteId], [u].[Color], [u].[CreatedAt], [u].[Description], [u].[IsArchive], [u].[IsPinned], [u].[IsTrash], [u].[ModifiedAt], [u].[Remainder], [u].[Title], [u].[UserId]
+FROM [UserNotes] AS [u]
+2024-05-15 18:51:38.1234 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-15 18:51:38.1234 ${level} Executed action FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp) in 14.7305ms
+2024-05-15 18:51:38.1234 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.GetNodes (FunduNotesApp)'
+2024-05-15 18:51:38.1234 ${level} Request finished HTTP/2 GET https://localhost:7086/api/Notes/GetAllNotes application/json - - 200 - application/json;+charset=utf-8 17.1750ms
+2024-05-15 18:51:48.4414 ${level} Request starting HTTP/2 OPTIONS https://localhost:7086/api/Notes/IsTrash?noteid=8 - -
+2024-05-15 18:51:48.4414 ${level} CORS policy execution successful.
+2024-05-15 18:51:48.4414 ${level} Request finished HTTP/2 OPTIONS https://localhost:7086/api/Notes/IsTrash?noteid=8 - - - 204 - - 0.6617ms
+2024-05-15 18:51:48.4414 ${level} Request starting HTTP/2 PUT https://localhost:7086/api/Notes/IsTrash?noteid=8 application/json 12
+2024-05-15 18:51:48.4414 ${level} CORS policy execution successful.
+2024-05-15 18:51:48.4414 ${level} Executing endpoint 'FunduNotesApp.Controllers.NotesController.IsTrashNotes (FunduNotesApp)'
+2024-05-15 18:51:48.4414 ${level} Route matched with {action = "IsTrashNotes", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult IsTrashNotes(Int32) on controller FunduNotesApp.Controllers.NotesController (FunduNotesApp).
+2024-05-15 18:51:48.4479 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-15 18:51:48.4674 ${level} Executed DbCommand (19ms) [Parameters=[@__userId_0='?' (DbType = Int32), @__NoteId_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[NoteId], [u].[Color], [u].[CreatedAt], [u].[Description], [u].[IsArchive], [u].[IsPinned], [u].[IsTrash], [u].[ModifiedAt], [u].[Remainder], [u].[Title], [u].[UserId]
+FROM [UserNotes] AS [u]
+WHERE ([u].[UserId] = @__userId_0) AND ([u].[NoteId] = @__NoteId_1)
+2024-05-15 18:51:48.4674 ${level} Executing OkObjectResult, writing value of type 'CommonLayer.Models.Response`1[[RepositoryLayer.Entity.NotesEntity, RepositoryLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-15 18:51:48.4674 ${level} Executed action FunduNotesApp.Controllers.NotesController.IsTrashNotes (FunduNotesApp) in 22.0419ms
+2024-05-15 18:51:48.4674 ${level} Executed endpoint 'FunduNotesApp.Controllers.NotesController.IsTrashNotes (FunduNotesApp)'
+2024-05-15 18:51:48.4674 ${level} Request finished HTTP/2 PUT https://localhost:7086/api/Notes/IsTrash?noteid=8 application/json 12 - 200 - application/json;+charset=utf-8 24.0838ms

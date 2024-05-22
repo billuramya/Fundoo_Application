@@ -1,0 +1,14 @@
+2024-04-10 17:40:44.1183 ${level} User profile is available. Using 'C:\Users\billu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-10 17:40:44.4628 ${level} Now listening on: https://localhost:7086
+2024-04-10 17:40:44.4628 ${level} Now listening on: http://localhost:5222
+2024-04-10 17:40:44.4628 ${level} Application started. Press Ctrl+C to shut down.
+2024-04-10 17:40:44.4628 ${level} Hosting environment: Development
+2024-04-10 17:40:44.4628 ${level} Content root path: C:\Users\billu\source\repos\FunduNotesApp\FunduNotesApp\
+2024-04-10 17:40:44.8975 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-04-10 17:40:45.1538 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 257.0911ms
+2024-04-10 17:40:45.1538 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-04-10 17:40:45.1538 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-04-10 17:40:45.1538 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 2.5948ms
+2024-04-10 17:40:45.1969 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 37.8936ms
+2024-04-10 17:40:45.2599 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-04-10 17:40:45.3941 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 134.1083ms

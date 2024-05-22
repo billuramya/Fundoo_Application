@@ -1,0 +1,325 @@
+2024-05-08 08:28:52.7624 ${level} User profile is available. Using 'C:\Users\billu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-08 08:28:56.0021 ${level} Now listening on: https://localhost:7086
+2024-05-08 08:28:56.0021 ${level} Now listening on: http://localhost:5222
+2024-05-08 08:28:56.0021 ${level} Application started. Press Ctrl+C to shut down.
+2024-05-08 08:28:56.0021 ${level} Hosting environment: Development
+2024-05-08 08:28:56.0021 ${level} Content root path: C:\Users\billu\source\repos\FunduNotesApp\FunduNotesApp\
+2024-05-08 08:28:58.7828 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/index.html - -
+2024-05-08 08:28:59.4738 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/index.html - - - 200 - text/html;charset=utf-8 693.9086ms
+2024-05-08 08:28:59.5147 ${level} Request starting HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - -
+2024-05-08 08:28:59.5147 ${level} Request finished HTTP/2 GET https://localhost:7086/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 7.9987ms
+2024-05-08 08:28:59.5357 ${level} Request starting HTTP/2 GET https://localhost:7086/_vs/browserLink - -
+2024-05-08 08:28:59.6707 ${level} Request finished HTTP/2 GET https://localhost:7086/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 135.8563ms
+2024-05-08 08:28:59.9029 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - -
+2024-05-08 08:29:00.1425 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 239.5703ms
+2024-05-08 08:32:49.7776 ${level} Request starting HTTP/2 OPTIONS https://localhost:7086/api/User/ForgotPassword?Email=undefined - -
+2024-05-08 08:32:49.8171 ${level} CORS policy execution successful.
+2024-05-08 08:32:49.8340 ${level} Request finished HTTP/2 OPTIONS https://localhost:7086/api/User/ForgotPassword?Email=undefined - - - 204 - - 58.9763ms
+2024-05-08 08:32:49.8406 ${level} Request starting HTTP/2 POST https://localhost:7086/api/User/ForgotPassword?Email=undefined application/json 2
+2024-05-08 08:32:49.8406 ${level} CORS policy execution successful.
+2024-05-08 08:32:49.9827 ${level} Executing endpoint 'FunduNotesApp.Controllers.UserController.ForgotPassword (FunduNotesApp)'
+2024-05-08 08:32:50.0619 ${level} Route matched with {action = "ForgotPassword", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ForgotPassword(System.String) on controller FunduNotesApp.Controllers.UserController (FunduNotesApp).
+2024-05-08 08:32:52.3637 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-08 08:32:54.4432 ${level} Executed DbCommand (187ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[CreatedDate], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedDate]
+FROM [Users] AS [u]
+2024-05-08 08:32:54.6535 ${level} Executed action FunduNotesApp.Controllers.UserController.ForgotPassword (FunduNotesApp) in 4583.1576ms
+2024-05-08 08:32:54.6535 ${level} Executed endpoint 'FunduNotesApp.Controllers.UserController.ForgotPassword (FunduNotesApp)'
+2024-05-08 08:32:54.6617 ${level} An unhandled exception has occurred while executing the request.
+2024-05-08 08:32:54.9103 ${level} Request finished HTTP/2 POST https://localhost:7086/api/User/ForgotPassword?Email=undefined application/json 2 - 500 - text/plain;+charset=utf-8 5069.6176ms
+2024-05-08 08:32:58.1675 ${level} Request starting HTTP/2 OPTIONS https://localhost:7086/api/User/ForgotPassword?Email=undefined - -
+2024-05-08 08:32:58.1702 ${level} CORS policy execution successful.
+2024-05-08 08:32:58.1702 ${level} Request finished HTTP/2 OPTIONS https://localhost:7086/api/User/ForgotPassword?Email=undefined - - - 204 - - 3.4233ms
+2024-05-08 08:32:58.1702 ${level} Request starting HTTP/2 POST https://localhost:7086/api/User/ForgotPassword?Email=undefined application/json 2
+2024-05-08 08:32:58.1702 ${level} CORS policy execution successful.
+2024-05-08 08:32:58.1702 ${level} Executing endpoint 'FunduNotesApp.Controllers.UserController.ForgotPassword (FunduNotesApp)'
+2024-05-08 08:32:58.1702 ${level} Route matched with {action = "ForgotPassword", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ForgotPassword(System.String) on controller FunduNotesApp.Controllers.UserController (FunduNotesApp).
+2024-05-08 08:32:58.1943 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-08 08:32:58.2166 ${level} Executed DbCommand (17ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[CreatedDate], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedDate]
+FROM [Users] AS [u]
+2024-05-08 08:32:58.2166 ${level} Executed action FunduNotesApp.Controllers.UserController.ForgotPassword (FunduNotesApp) in 40.5821ms
+2024-05-08 08:32:58.2166 ${level} Executed endpoint 'FunduNotesApp.Controllers.UserController.ForgotPassword (FunduNotesApp)'
+2024-05-08 08:32:58.2166 ${level} An unhandled exception has occurred while executing the request.
+2024-05-08 08:32:58.2166 ${level} Request finished HTTP/2 POST https://localhost:7086/api/User/ForgotPassword?Email=undefined application/json 2 - 500 - text/plain;+charset=utf-8 47.6351ms
+2024-05-08 08:36:21.9916 ${level} Request starting HTTP/2 OPTIONS https://localhost:7086/api/User/ForgotPassword?Email=undefined - -
+2024-05-08 08:36:21.9916 ${level} CORS policy execution successful.
+2024-05-08 08:36:21.9916 ${level} Request finished HTTP/2 OPTIONS https://localhost:7086/api/User/ForgotPassword?Email=undefined - - - 204 - - 1.5243ms
+2024-05-08 08:36:21.9916 ${level} Request starting HTTP/2 POST https://localhost:7086/api/User/ForgotPassword?Email=undefined application/json 2
+2024-05-08 08:36:21.9916 ${level} CORS policy execution successful.
+2024-05-08 08:36:22.0033 ${level} Executing endpoint 'FunduNotesApp.Controllers.UserController.ForgotPassword (FunduNotesApp)'
+2024-05-08 08:36:22.0033 ${level} Route matched with {action = "ForgotPassword", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ForgotPassword(System.String) on controller FunduNotesApp.Controllers.UserController (FunduNotesApp).
+2024-05-08 08:36:22.1291 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-08 08:36:22.1510 ${level} Executed DbCommand (20ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[CreatedDate], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedDate]
+FROM [Users] AS [u]
+2024-05-08 08:36:22.1510 ${level} Executed action FunduNotesApp.Controllers.UserController.ForgotPassword (FunduNotesApp) in 148.6827ms
+2024-05-08 08:36:22.1510 ${level} Executed endpoint 'FunduNotesApp.Controllers.UserController.ForgotPassword (FunduNotesApp)'
+2024-05-08 08:36:22.1510 ${level} An unhandled exception has occurred while executing the request.
+2024-05-08 08:36:22.1553 ${level} Request finished HTTP/2 POST https://localhost:7086/api/User/ForgotPassword?Email=undefined application/json 2 - 500 - text/plain;+charset=utf-8 159.8763ms
+2024-05-08 08:39:18.1130 ${level} Request starting HTTP/2 OPTIONS https://localhost:7086/api/User/UserRegister - -
+2024-05-08 08:39:18.1130 ${level} CORS policy execution successful.
+2024-05-08 08:39:18.1130 ${level} Request finished HTTP/2 OPTIONS https://localhost:7086/api/User/UserRegister - - - 204 - - 1.5992ms
+2024-05-08 08:39:18.1130 ${level} Request starting HTTP/2 POST https://localhost:7086/api/User/UserRegister application/json 85
+2024-05-08 08:39:18.1130 ${level} CORS policy execution successful.
+2024-05-08 08:39:18.1130 ${level} Executing endpoint 'FunduNotesApp.Controllers.UserController.Reg (FunduNotesApp)'
+2024-05-08 08:39:18.1319 ${level} Route matched with {action = "Reg", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Reg(CommonLayer.Models.UserRegisterModel) on controller FunduNotesApp.Controllers.UserController (FunduNotesApp).
+2024-05-08 08:39:18.2071 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-08 08:39:18.5438 ${level} Executed DbCommand (112ms) [Parameters=[@__Mail_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[CreatedDate], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedDate]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__Mail_0
+2024-05-08 08:39:18.9087 ${level} Executed DbCommand (60ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([CreatedDate], [Email], [FirstName], [LastName], [Password], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT [UserId]
+FROM [Users]
+WHERE @@ROWCOUNT = 1 AND [UserId] = scope_identity();
+2024-05-08 08:39:19.0092 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[RepositoryLayer.Entity.UserEntity, RepositoryLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-08 08:39:19.0330 ${level} Executed action FunduNotesApp.Controllers.UserController.Reg (FunduNotesApp) in 900.9263ms
+2024-05-08 08:39:19.0330 ${level} Executed endpoint 'FunduNotesApp.Controllers.UserController.Reg (FunduNotesApp)'
+2024-05-08 08:39:19.0330 ${level} Request finished HTTP/2 POST https://localhost:7086/api/User/UserRegister application/json 85 - 200 - application/json;+charset=utf-8 916.9430ms
+2024-05-08 08:41:59.9426 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/[object Module] - -
+2024-05-08 08:41:59.9426 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/[object Module] - - - 404 0 - 4.2254ms
+2024-05-08 08:42:14.0869 ${level} Request starting HTTP/2 POST https://localhost:7086/api/User/ForgotPassword?Email=geetha%40gmail.com - 0
+2024-05-08 08:42:14.0869 ${level} CORS policy execution successful.
+2024-05-08 08:42:14.0869 ${level} Executing endpoint 'FunduNotesApp.Controllers.UserController.ForgotPassword (FunduNotesApp)'
+2024-05-08 08:42:14.0869 ${level} Route matched with {action = "ForgotPassword", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ForgotPassword(System.String) on controller FunduNotesApp.Controllers.UserController (FunduNotesApp).
+2024-05-08 08:42:14.0910 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-08 08:42:14.0910 ${level} Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[CreatedDate], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedDate]
+FROM [Users] AS [u]
+2024-05-08 08:42:14.6163 ${level} Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[CreatedDate], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedDate]
+FROM [Users] AS [u]
+2024-05-08 08:42:19.0183 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-08 08:42:19.0183 ${level} Executed action FunduNotesApp.Controllers.UserController.ForgotPassword (FunduNotesApp) in 4934.8728ms
+2024-05-08 08:42:19.0183 ${level} Executed endpoint 'FunduNotesApp.Controllers.UserController.ForgotPassword (FunduNotesApp)'
+2024-05-08 08:42:19.0183 ${level} Request finished HTTP/2 POST https://localhost:7086/api/User/ForgotPassword?Email=geetha%40gmail.com - 0 - 200 - application/json;+charset=utf-8 4940.3874ms
+2024-05-08 08:43:15.0899 ${level} Request starting HTTP/2 OPTIONS https://localhost:7086/api/User/ForgotPassword?Email=undefined - -
+2024-05-08 08:43:15.0899 ${level} CORS policy execution successful.
+2024-05-08 08:43:15.0899 ${level} Request finished HTTP/2 OPTIONS https://localhost:7086/api/User/ForgotPassword?Email=undefined - - - 204 - - 1.3501ms
+2024-05-08 08:43:15.0948 ${level} Request starting HTTP/2 POST https://localhost:7086/api/User/ForgotPassword?Email=undefined application/json 2
+2024-05-08 08:43:15.0948 ${level} CORS policy execution successful.
+2024-05-08 08:43:15.0948 ${level} Executing endpoint 'FunduNotesApp.Controllers.UserController.ForgotPassword (FunduNotesApp)'
+2024-05-08 08:43:15.0948 ${level} Route matched with {action = "ForgotPassword", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ForgotPassword(System.String) on controller FunduNotesApp.Controllers.UserController (FunduNotesApp).
+2024-05-08 08:43:15.0948 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-08 08:43:15.1093 ${level} Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[CreatedDate], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedDate]
+FROM [Users] AS [u]
+2024-05-08 08:43:15.1093 ${level} Executed action FunduNotesApp.Controllers.UserController.ForgotPassword (FunduNotesApp) in 14.175ms
+2024-05-08 08:43:15.1093 ${level} Executed endpoint 'FunduNotesApp.Controllers.UserController.ForgotPassword (FunduNotesApp)'
+2024-05-08 08:43:15.1093 ${level} An unhandled exception has occurred while executing the request.
+2024-05-08 08:43:15.1093 ${level} Request finished HTTP/2 POST https://localhost:7086/api/User/ForgotPassword?Email=undefined application/json 2 - 500 - text/plain;+charset=utf-8 18.4538ms
+2024-05-08 08:43:58.2918 ${level} Request starting HTTP/2 GET https://localhost:7086/swagger/[object Module] - -
+2024-05-08 08:43:58.2940 ${level} Request finished HTTP/2 GET https://localhost:7086/swagger/[object Module] - - - 404 0 - 2.1132ms
+2024-05-08 08:44:02.4037 ${level} Request starting HTTP/2 GET https://localhost:7086/api/User/GetAllData - -
+2024-05-08 08:44:02.4037 ${level} Executing endpoint 'FunduNotesApp.Controllers.UserController.GetAll (FunduNotesApp)'
+2024-05-08 08:44:02.4037 ${level} Route matched with {action = "GetAll", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller FunduNotesApp.Controllers.UserController (FunduNotesApp).
+2024-05-08 08:44:02.4037 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-08 08:44:02.4227 ${level} Executed DbCommand (13ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[CreatedDate], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedDate]
+FROM [Users] AS [u]
+2024-05-08 08:44:02.4227 ${level} Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[RepositoryLayer.Entity.UserEntity, RepositoryLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-08 08:44:02.4227 ${level} Executed action FunduNotesApp.Controllers.UserController.GetAll (FunduNotesApp) in 20.5927ms
+2024-05-08 08:44:02.4227 ${level} Executed endpoint 'FunduNotesApp.Controllers.UserController.GetAll (FunduNotesApp)'
+2024-05-08 08:44:02.4227 ${level} Request finished HTTP/2 GET https://localhost:7086/api/User/GetAllData - - - 200 - application/json;+charset=utf-8 23.6154ms
+2024-05-08 08:45:19.3132 ${level} Request starting HTTP/2 OPTIONS https://localhost:7086/api/User/ForgotPassword?Email=undefined - -
+2024-05-08 08:45:19.3132 ${level} CORS policy execution successful.
+2024-05-08 08:45:19.3132 ${level} Request finished HTTP/2 OPTIONS https://localhost:7086/api/User/ForgotPassword?Email=undefined - - - 204 - - 1.6444ms
+2024-05-08 08:45:19.3132 ${level} Request starting HTTP/2 POST https://localhost:7086/api/User/ForgotPassword?Email=undefined application/json 2
+2024-05-08 08:45:19.3132 ${level} CORS policy execution successful.
+2024-05-08 08:45:19.3132 ${level} Executing endpoint 'FunduNotesApp.Controllers.UserController.ForgotPassword (FunduNotesApp)'
+2024-05-08 08:45:19.3132 ${level} Route matched with {action = "ForgotPassword", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ForgotPassword(System.String) on controller FunduNotesApp.Controllers.UserController (FunduNotesApp).
+2024-05-08 08:45:19.3132 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-08 08:45:19.3326 ${level} Executed DbCommand (12ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[CreatedDate], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedDate]
+FROM [Users] AS [u]
+2024-05-08 08:45:19.3326 ${level} Executed action FunduNotesApp.Controllers.UserController.ForgotPassword (FunduNotesApp) in 16.1017ms
+2024-05-08 08:45:19.3326 ${level} Executed endpoint 'FunduNotesApp.Controllers.UserController.ForgotPassword (FunduNotesApp)'
+2024-05-08 08:45:19.3326 ${level} An unhandled exception has occurred while executing the request.
+2024-05-08 08:45:19.3326 ${level} Request finished HTTP/2 POST https://localhost:7086/api/User/ForgotPassword?Email=undefined application/json 2 - 500 - text/plain;+charset=utf-8 22.4395ms
+2024-05-08 09:53:37.0511 ${level} Request starting HTTP/2 OPTIONS https://localhost:7086/api/User/ForgotPassword?Email=undefined - -
+2024-05-08 09:53:37.0626 ${level} CORS policy execution successful.
+2024-05-08 09:53:37.0626 ${level} Request finished HTTP/2 OPTIONS https://localhost:7086/api/User/ForgotPassword?Email=undefined - - - 204 - - 16.6355ms
+2024-05-08 09:53:37.0690 ${level} Request starting HTTP/2 POST https://localhost:7086/api/User/ForgotPassword?Email=undefined application/json 2
+2024-05-08 09:53:37.0690 ${level} CORS policy execution successful.
+2024-05-08 09:53:37.0845 ${level} Executing endpoint 'FunduNotesApp.Controllers.UserController.ForgotPassword (FunduNotesApp)'
+2024-05-08 09:53:37.0845 ${level} Route matched with {action = "ForgotPassword", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ForgotPassword(System.String) on controller FunduNotesApp.Controllers.UserController (FunduNotesApp).
+2024-05-08 09:53:37.1142 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-08 09:53:37.2866 ${level} Executed DbCommand (27ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[CreatedDate], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedDate]
+FROM [Users] AS [u]
+2024-05-08 09:53:37.2929 ${level} Executed action FunduNotesApp.Controllers.UserController.ForgotPassword (FunduNotesApp) in 202.7456ms
+2024-05-08 09:53:37.2929 ${level} Executed endpoint 'FunduNotesApp.Controllers.UserController.ForgotPassword (FunduNotesApp)'
+2024-05-08 09:53:37.2929 ${level} An unhandled exception has occurred while executing the request.
+2024-05-08 09:53:37.3137 ${level} Request finished HTTP/2 POST https://localhost:7086/api/User/ForgotPassword?Email=undefined application/json 2 - 500 - text/plain;+charset=utf-8 244.8834ms
+2024-05-08 10:09:26.9826 ${level} Request starting HTTP/2 OPTIONS https://localhost:7086/api/User/ForgotPassword?Email=undefined - -
+2024-05-08 10:09:26.9826 ${level} CORS policy execution successful.
+2024-05-08 10:09:26.9826 ${level} Request finished HTTP/2 OPTIONS https://localhost:7086/api/User/ForgotPassword?Email=undefined - - - 204 - - 5.4388ms
+2024-05-08 10:09:26.9943 ${level} Request starting HTTP/2 POST https://localhost:7086/api/User/ForgotPassword?Email=undefined application/json 2
+2024-05-08 10:09:26.9943 ${level} CORS policy execution successful.
+2024-05-08 10:09:26.9943 ${level} Executing endpoint 'FunduNotesApp.Controllers.UserController.ForgotPassword (FunduNotesApp)'
+2024-05-08 10:09:26.9943 ${level} Route matched with {action = "ForgotPassword", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ForgotPassword(System.String) on controller FunduNotesApp.Controllers.UserController (FunduNotesApp).
+2024-05-08 10:09:26.9943 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-08 10:09:30.5757 ${level} Executed DbCommand (3,468ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[CreatedDate], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedDate]
+FROM [Users] AS [u]
+2024-05-08 10:09:30.5757 ${level} Executed action FunduNotesApp.Controllers.UserController.ForgotPassword (FunduNotesApp) in 3584.9927ms
+2024-05-08 10:09:30.5757 ${level} Executed endpoint 'FunduNotesApp.Controllers.UserController.ForgotPassword (FunduNotesApp)'
+2024-05-08 10:09:30.5852 ${level} An unhandled exception has occurred while executing the request.
+2024-05-08 10:09:30.6041 ${level} Request finished HTTP/2 POST https://localhost:7086/api/User/ForgotPassword?Email=undefined application/json 2 - 500 - text/plain;+charset=utf-8 3610.2326ms
+2024-05-08 10:12:32.5840 ${level} Request starting HTTP/2 OPTIONS https://localhost:7086/api/User/ForgotPassword?Email=undefined - -
+2024-05-08 10:12:32.5847 ${level} CORS policy execution successful.
+2024-05-08 10:12:32.5847 ${level} Request finished HTTP/2 OPTIONS https://localhost:7086/api/User/ForgotPassword?Email=undefined - - - 204 - - 1.3908ms
+2024-05-08 10:12:32.5847 ${level} Request starting HTTP/2 POST https://localhost:7086/api/User/ForgotPassword?Email=undefined application/json 2
+2024-05-08 10:12:32.5847 ${level} CORS policy execution successful.
+2024-05-08 10:12:32.5847 ${level} Executing endpoint 'FunduNotesApp.Controllers.UserController.ForgotPassword (FunduNotesApp)'
+2024-05-08 10:12:32.5847 ${level} Route matched with {action = "ForgotPassword", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ForgotPassword(System.String) on controller FunduNotesApp.Controllers.UserController (FunduNotesApp).
+2024-05-08 10:12:32.5847 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-08 10:12:32.6075 ${level} Executed DbCommand (13ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[CreatedDate], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedDate]
+FROM [Users] AS [u]
+2024-05-08 10:12:32.6075 ${level} Executed action FunduNotesApp.Controllers.UserController.ForgotPassword (FunduNotesApp) in 18.2442ms
+2024-05-08 10:12:32.6075 ${level} Executed endpoint 'FunduNotesApp.Controllers.UserController.ForgotPassword (FunduNotesApp)'
+2024-05-08 10:12:32.6075 ${level} An unhandled exception has occurred while executing the request.
+2024-05-08 10:12:32.6075 ${level} Request finished HTTP/2 POST https://localhost:7086/api/User/ForgotPassword?Email=undefined application/json 2 - 500 - text/plain;+charset=utf-8 22.6447ms
+2024-05-08 10:12:46.2561 ${level} Request starting HTTP/2 POST https://localhost:7086/api/User/ForgotPassword?Email=geetha%40gmail.com - 0
+2024-05-08 10:12:46.2565 ${level} CORS policy execution successful.
+2024-05-08 10:12:46.2565 ${level} Executing endpoint 'FunduNotesApp.Controllers.UserController.ForgotPassword (FunduNotesApp)'
+2024-05-08 10:12:46.2565 ${level} Route matched with {action = "ForgotPassword", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ForgotPassword(System.String) on controller FunduNotesApp.Controllers.UserController (FunduNotesApp).
+2024-05-08 10:12:46.2565 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-08 10:12:46.2565 ${level} Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[CreatedDate], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedDate]
+FROM [Users] AS [u]
+2024-05-08 10:12:46.2882 ${level} Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[CreatedDate], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedDate]
+FROM [Users] AS [u]
+2024-05-08 10:12:50.2756 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-08 10:12:50.2756 ${level} Executed action FunduNotesApp.Controllers.UserController.ForgotPassword (FunduNotesApp) in 4023.8641ms
+2024-05-08 10:12:50.2756 ${level} Executed endpoint 'FunduNotesApp.Controllers.UserController.ForgotPassword (FunduNotesApp)'
+2024-05-08 10:12:50.2756 ${level} Request finished HTTP/2 POST https://localhost:7086/api/User/ForgotPassword?Email=geetha%40gmail.com - 0 - 200 - application/json;+charset=utf-8 4025.2793ms
+2024-05-08 10:28:46.2838 ${level} Request starting HTTP/2 OPTIONS https://localhost:7086/api/User/ForgotPassword?Email=geetha@gmail.com - -
+2024-05-08 10:28:46.3007 ${level} CORS policy execution successful.
+2024-05-08 10:28:46.3090 ${level} Request finished HTTP/2 OPTIONS https://localhost:7086/api/User/ForgotPassword?Email=geetha@gmail.com - - - 204 - - 25.0915ms
+2024-05-08 10:28:46.3090 ${level} Request starting HTTP/2 POST https://localhost:7086/api/User/ForgotPassword?Email=geetha@gmail.com application/json 2
+2024-05-08 10:28:46.3090 ${level} CORS policy execution successful.
+2024-05-08 10:28:46.3299 ${level} Executing endpoint 'FunduNotesApp.Controllers.UserController.ForgotPassword (FunduNotesApp)'
+2024-05-08 10:28:46.3375 ${level} Route matched with {action = "ForgotPassword", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ForgotPassword(System.String) on controller FunduNotesApp.Controllers.UserController (FunduNotesApp).
+2024-05-08 10:28:46.3754 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-08 10:28:54.3495 ${level} Request starting HTTP/2 OPTIONS https://localhost:7086/api/User/ForgotPassword?Email=geetha@gmail.com - -
+2024-05-08 10:28:54.3518 ${level} CORS policy execution successful.
+2024-05-08 10:28:54.3518 ${level} Request finished HTTP/2 OPTIONS https://localhost:7086/api/User/ForgotPassword?Email=geetha@gmail.com - - - 204 - - 2.6767ms
+2024-05-08 10:28:54.3518 ${level} Request starting HTTP/2 POST https://localhost:7086/api/User/ForgotPassword?Email=geetha@gmail.com application/json 2
+2024-05-08 10:28:54.3518 ${level} CORS policy execution successful.
+2024-05-08 10:28:54.3518 ${level} Executing endpoint 'FunduNotesApp.Controllers.UserController.ForgotPassword (FunduNotesApp)'
+2024-05-08 10:28:54.3518 ${level} Route matched with {action = "ForgotPassword", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ForgotPassword(System.String) on controller FunduNotesApp.Controllers.UserController (FunduNotesApp).
+2024-05-08 10:28:54.3518 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-08 10:29:00.5164 ${level} An error occurred using the connection to database 'FunduNoteAppDB' on server 'CHANDUU\SQLEXPRESS'.
+2024-05-08 10:29:00.5164 ${level} An error occurred using the connection to database 'FunduNoteAppDB' on server 'CHANDUU\SQLEXPRESS'.
+2024-05-08 10:29:00.6137 ${level} An exception occurred while iterating over the results of a query for context type 'RepositoryLayer.Context.FunduContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Connection Timeout Expired.  The timeout period elapsed during the post-login phase.  The connection could have timed out while waiting for server to complete the login process and respond; Or it could have timed out while attempting to create multiple active connections.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=9; handshake=5; [Login] initialization=0; authentication=4; [Post-Login] complete=14033; 
+ ---> System.ComponentModel.Win32Exception (258): The wait operation timed out.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ThrowExceptionAndWarning(Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   at Microsoft.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   at Microsoft.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   at Microsoft.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__19_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:295056d5-47ca-4224-95d0-37fe6a6e04b4
+Error Number:-2,State:0,Class:11
+2024-05-08 10:29:00.6137 ${level} An exception occurred while iterating over the results of a query for context type 'RepositoryLayer.Context.FunduContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Connection Timeout Expired.  The timeout period elapsed during the post-login phase.  The connection could have timed out while waiting for server to complete the login process and respond; Or it could have timed out while attempting to create multiple active connections.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=9; handshake=5; [Login] initialization=0; authentication=4; [Post-Login] complete=14033; 
+ ---> System.ComponentModel.Win32Exception (258): The wait operation timed out.
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__19_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:295056d5-47ca-4224-95d0-37fe6a6e04b4
+Error Number:-2,State:0,Class:11
+2024-05-08 10:29:00.6191 ${level} Executed action FunduNotesApp.Controllers.UserController.ForgotPassword (FunduNotesApp) in 14280.8542ms
+2024-05-08 10:29:00.6191 ${level} Executed action FunduNotesApp.Controllers.UserController.ForgotPassword (FunduNotesApp) in 6262.4437ms
+2024-05-08 10:29:00.6191 ${level} Executed endpoint 'FunduNotesApp.Controllers.UserController.ForgotPassword (FunduNotesApp)'
+2024-05-08 10:29:00.6191 ${level} Executed endpoint 'FunduNotesApp.Controllers.UserController.ForgotPassword (FunduNotesApp)'
+2024-05-08 10:29:00.6191 ${level} An unhandled exception has occurred while executing the request.
+2024-05-08 10:29:00.6191 ${level} An unhandled exception has occurred while executing the request.
+2024-05-08 10:29:00.8857 ${level} Request finished HTTP/2 POST https://localhost:7086/api/User/ForgotPassword?Email=geetha@gmail.com application/json 2 - 500 - text/plain;+charset=utf-8 6531.3167ms
+2024-05-08 10:29:00.8857 ${level} Request finished HTTP/2 POST https://localhost:7086/api/User/ForgotPassword?Email=geetha@gmail.com application/json 2 - 500 - text/plain;+charset=utf-8 14569.9155ms
+2024-05-08 10:29:07.3172 ${level} Request starting HTTP/2 OPTIONS https://localhost:7086/api/User/ForgotPassword?Email=geetha@gmail.com - -
+2024-05-08 10:29:07.3172 ${level} CORS policy execution successful.
+2024-05-08 10:29:07.3186 ${level} Request finished HTTP/2 OPTIONS https://localhost:7086/api/User/ForgotPassword?Email=geetha@gmail.com - - - 204 - - 1.3606ms
+2024-05-08 10:29:07.3186 ${level} Request starting HTTP/2 POST https://localhost:7086/api/User/ForgotPassword?Email=geetha@gmail.com application/json 2
+2024-05-08 10:29:07.3186 ${level} CORS policy execution successful.
+2024-05-08 10:29:07.3186 ${level} Executing endpoint 'FunduNotesApp.Controllers.UserController.ForgotPassword (FunduNotesApp)'
+2024-05-08 10:29:07.3186 ${level} Route matched with {action = "ForgotPassword", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ForgotPassword(System.String) on controller FunduNotesApp.Controllers.UserController (FunduNotesApp).
+2024-05-08 10:29:07.3186 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-08 10:29:07.7802 ${level} Executed DbCommand (65ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[CreatedDate], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedDate]
+FROM [Users] AS [u]
+2024-05-08 10:29:07.7962 ${level} Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[CreatedDate], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedDate]
+FROM [Users] AS [u]
+2024-05-08 10:29:11.1303 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-08 10:29:11.1347 ${level} Executed action FunduNotesApp.Controllers.UserController.ForgotPassword (FunduNotesApp) in 3811.0585ms
+2024-05-08 10:29:11.1347 ${level} Executed endpoint 'FunduNotesApp.Controllers.UserController.ForgotPassword (FunduNotesApp)'
+2024-05-08 10:29:11.1347 ${level} Request finished HTTP/2 POST https://localhost:7086/api/User/ForgotPassword?Email=geetha@gmail.com application/json 2 - 200 - application/json;+charset=utf-8 3814.1302ms
+2024-05-08 10:29:12.4333 ${level} Request starting HTTP/2 OPTIONS https://localhost:7086/api/User/ForgotPassword?Email=geetha@gmail.com - -
+2024-05-08 10:29:12.4333 ${level} CORS policy execution successful.
+2024-05-08 10:29:12.4333 ${level} Request finished HTTP/2 OPTIONS https://localhost:7086/api/User/ForgotPassword?Email=geetha@gmail.com - - - 204 - - 1.3151ms
+2024-05-08 10:29:12.4333 ${level} Request starting HTTP/2 POST https://localhost:7086/api/User/ForgotPassword?Email=geetha@gmail.com application/json 2
+2024-05-08 10:29:12.4333 ${level} CORS policy execution successful.
+2024-05-08 10:29:12.4333 ${level} Executing endpoint 'FunduNotesApp.Controllers.UserController.ForgotPassword (FunduNotesApp)'
+2024-05-08 10:29:12.4333 ${level} Route matched with {action = "ForgotPassword", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ForgotPassword(System.String) on controller FunduNotesApp.Controllers.UserController (FunduNotesApp).
+2024-05-08 10:29:12.4333 ${level} Entity Framework Core 6.0.0 initialized 'FunduContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2024-05-08 10:29:12.4576 ${level} Executed DbCommand (15ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[CreatedDate], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedDate]
+FROM [Users] AS [u]
+2024-05-08 10:29:12.4592 ${level} Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[CreatedDate], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[UpdatedDate]
+FROM [Users] AS [u]
+2024-05-08 10:29:15.9593 ${level} Executing OkObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-08 10:29:15.9593 ${level} Executed action FunduNotesApp.Controllers.UserController.ForgotPassword (FunduNotesApp) in 3521.7243ms
+2024-05-08 10:29:15.9593 ${level} Executed endpoint 'FunduNotesApp.Controllers.UserController.ForgotPassword (FunduNotesApp)'
+2024-05-08 10:29:15.9593 ${level} Request finished HTTP/2 POST https://localhost:7086/api/User/ForgotPassword?Email=geetha@gmail.com application/json 2 - 200 - application/json;+charset=utf-8 3522.8948ms
